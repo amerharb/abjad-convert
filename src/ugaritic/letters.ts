@@ -30,3 +30,36 @@ export const letters = [
 	'\uD800\uDF9C', // 𐎜 U+1039C UGARITIC LETTER U
 	'\uD800\uDF9D', // 𐎝 U+1039D UGARITIC LETTER SSU
 ]
+
+export const Ug = {
+	Alpa: '\uD800\uDF80',
+	Beta: '\uD800\uDF81',
+	Gamla: '\uD800\uDF82',
+	Kha: '\uD800\uDF83',
+	Delta: '\uD800\uDF84',
+	Ho: '\uD800\uDF85',
+	Wo: '\uD800\uDF86',
+	Zeta: '\uD800\uDF87',
+	Hota: '\uD800\uDF88',
+	Tet: '\uD800\uDF89',
+	Yod: '\uD800\uDF8A',
+	Kaf: '\uD800\uDF8B',
+	Shin: '\uD800\uDF8C',
+	Lamda: '\uD800\uDF8D',
+	Mem: '\uD800\uDF8E',
+	Dhal: '\uD800\uDF8F',
+	Nun: '\uD800\uDF90',
+	Zu: '\uD800\uDF91',
+	Samka: '\uD800\uDF92',
+	Ain: '\uD800\uDF93',
+	Pu: '\uD800\uDF94',
+	Sade: '\uD800\uDF95',
+	Qopa: '\uD800\uDF96',
+	Rasha: '\uD800\uDF97',
+	Thanna: '\uD800\uDF98',
+	Ghain: '\uD800\uDF99',
+	To: '\uD800\uDF9A',
+	I: '\uD800\uDF9B',
+	U: '\uD800\uDF9C',
+	Ssu: '\uD800\uDF9D',
+}
