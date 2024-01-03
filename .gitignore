@@ -1,0 +1,9 @@
+### JetBrains template
+.idea/
+dist/
+
+### macOS template
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
