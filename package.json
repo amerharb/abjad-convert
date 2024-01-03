@@ -8,6 +8,10 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "build&start": "yarn build && yarn start"
+    "dev": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

@@ -1,12 +1,8 @@
-import { letters } from "./ugaritic/letters"
-import { letters as arabicLetters } from "./arabic/letters"
+import { convertArabicToUgaritic } from "./arabic/toUgaritic"
 
-console.log('Abjad Convert')
+console.log('ABJAD Convert')
 
-for (const letter of letters) {
-	console.log(letter)
-}
-
-for (const letter of arabicLetters) {
-	console.log(letter)
-}
+const arabic = 'ا ب ج د';
+const ugaritic = convertArabicToUgaritic(arabic);
+console.log(arabic);
+console.log(ugaritic);

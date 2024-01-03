@@ -1,6 +1,6 @@
-### JetBrains template
 .idea/
 dist/
+node_modules/
 
 ### macOS template
 # General
