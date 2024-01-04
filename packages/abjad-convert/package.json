@@ -5,6 +5,14 @@
   "types": "dist/src/index.d.ts",
   "repository": "git@github.com:amerharb/abjad-convert.git",
   "author": "Amer Harb",
+  "email": "abjad@amerharb.com",
+  "keywords": [
+    "abjad",
+    "phonetic",
+    "arabic",
+    "phoenician",
+    "ugaritic"
+  ],
   "license": "ISC",
   "scripts": {
     "build": "tsc",
