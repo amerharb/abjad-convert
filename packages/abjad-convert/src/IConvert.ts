@@ -1,5 +1,7 @@
 import { Abjad } from './types'
 
 export interface IConvert {
-	convert(text: string): string;
+	readonly from: Abjad
+	readonly to: Abjad
+	convert(text: string): string
 }

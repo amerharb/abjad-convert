@@ -1,11 +1,11 @@
-import { Ug } from "./letters"
-import { Ar } from "../arabic/letters"
-import { IConvert } from "../IConvert";
 import { Ug } from './letters'
 import { Ar } from '../arabic/letters'
 import { IConvert } from '../IConvert';
+import { Abjad } from '../types';
 
 export class UgariticToArabicConverter implements IConvert {
+	public readonly from = Abjad.Ugaritic
+	public readonly to = Abjad.Arabic
 
 	private map = new Map<string, string>(
 		[

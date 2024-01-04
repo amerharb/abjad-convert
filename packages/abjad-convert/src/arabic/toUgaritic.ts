@@ -1,11 +1,11 @@
-import { Ar } from "./letters"
-import { Ug } from "../ugaritic/letters"
-import { IConvert } from "../IConvert";
 import { Ar } from './letters'
 import { Ug } from '../ugaritic/letters'
 import { IConvert } from '../IConvert';
+import { Abjad } from '../types';
 
 export class ArabicToUgariticConverter implements IConvert {
+	public readonly from = Abjad.Arabic;
+	public readonly to = Abjad.Ugaritic;
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
@@ -47,7 +47,7 @@ export class ArabicToUgariticConverter implements IConvert {
 		]
 	);
 
-	convert(text: string): string {
+	public convert(text: string): string {
 		let result = '';
 		for (const letter of text) {
 			const u = this.map.get(letter) ?? ''
