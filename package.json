@@ -6,7 +6,7 @@
     "packages/abjad-convert-client"
   ],
   "version": "0.0.1",
-  "author": "Amer Harb <abjad-convert>",
+  "author": "Amer Harb",
   "license": "ISC",
   "scripts": {
     "build": "yarn workspaces run build",
