@@ -24,6 +24,9 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "jest",
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "lint": "npx eslint . --max-warnings 0",
+    "lint-fix": "npx eslint . --fix",
+    "prepublishOnly": "yarn lint && yarn build && yarn test"
   }
 }
