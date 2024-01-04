@@ -5,6 +5,7 @@ import { IConvert } from "../IConvert";
 export class ArabicToUgariticConverter implements IConvert {
 	private map = new Map<string, string>(
 		[
+			[' ', ' '],
 			[Ar.Hamza, ''],
 			[Ar.AlefMadda, Ug.Alpa],
 			[Ar.AlefHamza, Ug.Alpa],

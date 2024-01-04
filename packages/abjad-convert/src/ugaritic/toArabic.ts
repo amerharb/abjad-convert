@@ -6,6 +6,7 @@ export class UgariticToArabicConverter implements IConvert {
 
 	private map = new Map<string, string>(
 		[
+			[' ', ' '],
 			[Ug.Alpa, Ar.Alef],
 			[Ug.Beta, Ar.Ba],
 			[Ug.Gamla, Ar.Jeem],
