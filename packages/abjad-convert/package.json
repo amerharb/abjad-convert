@@ -9,6 +9,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
+    "test": "jest",
     "dev": "ts-node src/index.ts"
   }
 }
