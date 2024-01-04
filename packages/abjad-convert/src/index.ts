@@ -5,3 +5,5 @@ export function convert(source: string, from: Abjad, to: Abjad): string {
 	const converter = getConverter(from, to);
 	return converter.convert(source);
 }
+
+export { Abjad } from "./types";
