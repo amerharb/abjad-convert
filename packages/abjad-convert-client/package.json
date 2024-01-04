@@ -2,14 +2,15 @@
   "name": "abjad-convert-client",
   "private": true,
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "ts-node src/index.ts"
   },
   "dependencies": {
-    "abjad-convert": "^0.0.1"
+    "abjad-convert": "0.0.1"
   }
 }
