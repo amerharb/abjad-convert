@@ -1,4 +1,4 @@
-import { Abjad, convert } from "abjad-convert/src"
+import { Abjad, convert } from 'abjad-convert/src'
 
 console.log('Abjad Convert')
 

@@ -1,6 +1,9 @@
 import { Ar } from "./letters"
 import { Ug } from "../ugaritic/letters"
 import { IConvert } from "../IConvert";
+import { Ar } from './letters'
+import { Ug } from '../ugaritic/letters'
+import { IConvert } from '../IConvert';
 
 export class ArabicToUgariticConverter implements IConvert {
 	private map = new Map<string, string>(

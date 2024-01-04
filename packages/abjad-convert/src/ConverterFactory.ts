@@ -1,7 +1,8 @@
-import { Abjad } from "./types";
-import { IConvert } from "./IConvert";
-import { ArabicToUgariticConverter } from "./arabic/toUgaritic";
-import { UgariticToArabicConverter } from "./ugaritic/toArabic";
+import { Abjad } from './types';
+import { IConvert } from './IConvert';
+import { ArabicToUgariticConverter } from './arabic/toUgaritic';
+import { UgariticToArabicConverter } from './ugaritic/toArabic';
+import { PhoenicianToArabicConverter } from './phoenician/toArabic';
 
 export function getConverter(from: Abjad, to: Abjad): IConvert {
 	switch (from) {

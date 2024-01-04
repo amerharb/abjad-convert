@@ -1,6 +1,9 @@
 import { Ug } from "./letters"
 import { Ar } from "../arabic/letters"
 import { IConvert } from "../IConvert";
+import { Ug } from './letters'
+import { Ar } from '../arabic/letters'
+import { IConvert } from '../IConvert';
 
 export class UgariticToArabicConverter implements IConvert {
 
