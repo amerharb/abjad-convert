@@ -1,7 +1,7 @@
 import { Ug } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConvert } from '../IConvert';
-import { Abjad } from '../types';
+import { IConvert } from '../IConvert'
+import { Abjad } from '../types'
 
 export class UgariticToArabicConverter implements IConvert {
 	public readonly from = Abjad.Ugaritic
@@ -44,13 +44,13 @@ export class UgariticToArabicConverter implements IConvert {
 			[Ug.U, Ar.Waw],
 			[Ug.Ssu, Ar.Sad],
 		]
-	);
+	)
 
 	public convert(text: string): string {
-		let result = '';
+		let result = ''
 		for (const letter of text) {
-			result += this.map.get(letter) ?? '';
+			result += this.map.get(letter) ?? ''
 		}
-		return result;
+		return result
 	}
 }

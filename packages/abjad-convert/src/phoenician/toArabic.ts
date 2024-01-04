@@ -1,11 +1,11 @@
 import { Ph } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConvert } from '../IConvert';
-import { Abjad } from '../types';
+import { IConvert } from '../IConvert'
+import { Abjad } from '../types'
 
 export class PhoenicianToArabicConverter implements IConvert {
-	public readonly from = Abjad.Phoenician;
-	public readonly to = Abjad.Arabic;
+	public readonly from = Abjad.Phoenician
+	public readonly to = Abjad.Arabic
 
 	private map = new Map<string, string>(
 		[
@@ -34,13 +34,13 @@ export class PhoenicianToArabicConverter implements IConvert {
 			[Ph.Shin, Ar.Sheen], // 𐤔 -> ش
 			[Ph.Tau, Ar.Ta], // 𐤕 -> ث
 		]
-	);
+	)
 
 	public convert(text: string): string {
-		let result = '';
+		let result = ''
 		for (const letter of text) {
-			result += this.map.get(letter) ?? '';
+			result += this.map.get(letter) ?? ''
 		}
-		return result;
+		return result
 	}
 }

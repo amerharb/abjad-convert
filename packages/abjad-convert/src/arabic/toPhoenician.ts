@@ -1,11 +1,11 @@
 import { Ar } from './letters'
 import { Ph } from '../phoenician/letters'
-import { IConvert } from '../IConvert';
-import { Abjad } from '../types';
+import { IConvert } from '../IConvert'
+import { Abjad } from '../types'
 
 export class ArabicToPhoenicianConverter implements IConvert {
-	public readonly from = Abjad.Arabic;
-	public readonly to = Abjad.Phoenician;
+	public readonly from = Abjad.Arabic
+	public readonly to = Abjad.Phoenician
 
 	private map = new Map<string, string>(
 		[
@@ -46,10 +46,10 @@ export class ArabicToPhoenicianConverter implements IConvert {
 			[Ar.Yaa, Ph.Yod], // 𐤉 <- ي
 			[Ar.AlefMaksura, Ph.Alep], // 𐤀 <- ى
 		]
-	);
+	)
 
 	public convert(text: string): string {
-		let result = '';
+		let result = ''
 		for (const letter of text) {
 			const u = this.map.get(letter) ?? ''
 			result += u
