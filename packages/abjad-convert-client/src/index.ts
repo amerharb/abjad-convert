@@ -20,6 +20,9 @@ console.log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Arabic))
 console.log(`convert Phoenician text ${phoenician} to Ugaritic`)
 console.log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Ugaritic))
 
+console.log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Phoenician))
+console.log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Ugaritic))
+
 function calmConvert(source: string, from: Abjad, to: Abjad): string {
 	try {
 		return convert(source, from, to)
