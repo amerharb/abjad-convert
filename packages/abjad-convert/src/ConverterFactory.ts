@@ -5,6 +5,7 @@ import { UgariticToArabicConverter } from './ugaritic/toArabic';
 import { PhoenicianToArabicConverter } from './phoenician/toArabic';
 import { ArabicToPhoenicianConverter } from './arabic/toPhoenician';
 import { PhoenicianToUgariticConverter } from "./phoenician/toUgaritic";
+import { UgariticToPhoenicianConverter } from "./ugaritic/toPhoenician";
 
 export function getConverter(from: Abjad, to: Abjad): IConvert {
 	switch (from) {
@@ -21,6 +22,8 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 			switch (to) {
 				case Abjad.Arabic:
 					return new UgariticToArabicConverter();
+				case Abjad.Phoenician:
+					return new UgariticToPhoenicianConverter();
 				default:
 					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`);
 			}
