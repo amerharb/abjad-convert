@@ -20,6 +20,13 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 				default:
 					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`);
 			}
+		case Abjad.Phoenician:
+			switch (to) {
+				case Abjad.Arabic:
+					return new PhoenicianToArabicConverter();
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`);
+			}
 		default:
 			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`);
 	}
