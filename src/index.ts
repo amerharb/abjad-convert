@@ -1,8 +1,8 @@
-import { convertArabicToUgaritic } from "./arabic/toUgaritic"
-
-console.log('ABJAD Convert')
+import { getConverter } from "./ConverterFactory";
+import { Abjad } from "./types";
 
 const arabic = 'ا ب ج د';
-const ugaritic = convertArabicToUgaritic(arabic);
+const c = getConverter(Abjad.Arabic, Abjad.Ugaritic);
+const ugaritic = c.convert(arabic);
 console.log(arabic);
 console.log(ugaritic);
