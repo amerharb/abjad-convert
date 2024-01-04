@@ -2,7 +2,8 @@
   "name": "abjad-convert-root",
   "private": true,
   "workspaces": [
-    "packages/abjad-convert"
+    "packages/abjad-convert",
+    "packages/abjad-convert-client"
   ],
   "version": "0.0.1",
   "author": "Amer Harb <abjad-convert>",
