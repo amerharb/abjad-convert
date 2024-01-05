@@ -22,8 +22,10 @@ Java Script:
 import { convert, Abjad } from 'abjad-convert';
 
 const arabicWord = 'مرحبا';
+
 const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
 console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
+
 const ugariticWord = convert(arabicWord, Abjad.Arabic, Abjad.Ugaritic);
 console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
 ```
