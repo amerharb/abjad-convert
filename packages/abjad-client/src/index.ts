@@ -22,6 +22,7 @@ log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Ugaritic))
 
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Phoenician))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Ugaritic))
+log(calmConvert('مرحبا', Abjad.Arabic, Abjad.ImperialAramaic))
 
 function calmConvert(source: string, from: Abjad, to: Abjad): string {
 	try {
