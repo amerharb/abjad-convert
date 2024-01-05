@@ -1,8 +1,8 @@
 # Abjad Convert
 
-Abjad Convert is a package for converting Abjad alphabets phonetic word.
+**abjad-convert** is a package for converting Abjad alphabets phonetically.
 
-currently supported alphabets:
+current supported alphabets:
 - Arabic
 - Uguritic
 - Phoenician
