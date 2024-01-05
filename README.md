@@ -1,4 +1,4 @@
-# Abjad Convert Mono Repo
+# Abjad Mono Repo
 
 This is a monorepo for the Abjad Convert project.
 ## Abajd Convert package

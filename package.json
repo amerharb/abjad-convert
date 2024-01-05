@@ -1,5 +1,5 @@
 {
-  "name": "abjad-convert-root",
+  "name": "abjad-root",
   "private": true,
   "workspaces": [
     "packages/abjad-convert",
