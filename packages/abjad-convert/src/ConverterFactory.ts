@@ -7,20 +7,22 @@ import { ImperialAramaicToArabicConverter } from "./imperialAramaic/toArabic";
 import { ImperialAramaicToPhoenicianConverter } from "./imperialAramaic/toPhoenician";
 import { ImperialAramaicToUgariticConverter } from "./imperialAramaic/toUgaritic";
 import { PhoenicianToArabicConverter } from './phoenician/toArabic'
+import { PhoenicianToImperialAramaicConverter } from './phoenician/toImperialAramaic'
 import { PhoenicianToUgariticConverter } from './phoenician/toUgaritic'
 import { UgariticToArabicConverter } from './ugaritic/toArabic'
+import { UgariticToImperialAramaicConverter } from './ugaritic/toImperialAramaic'
 import { UgariticToPhoenicianConverter } from './ugaritic/toPhoenician'
 
 export function getConverter(from: Abjad, to: Abjad): IConvert {
 	switch (from) {
 		case Abjad.Arabic:
 			switch (to) {
-				case Abjad.Ugaritic:
-					return new ArabicToUgariticConverter()
 				case Abjad.ImperialAramaic:
 					return new ArabicToImperialAramaicConverter()
 				case Abjad.Phoenician:
 					return new ArabicToPhoenicianConverter()
+				case Abjad.Ugaritic:
+					return new ArabicToUgariticConverter()
 				default:
 					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
 			}
@@ -28,6 +30,8 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 			switch (to) {
 				case Abjad.Arabic:
 					return new UgariticToArabicConverter()
+				case Abjad.ImperialAramaic:
+					return new UgariticToImperialAramaicConverter()
 				case Abjad.Phoenician:
 					return new UgariticToPhoenicianConverter()
 				default:
@@ -37,6 +41,8 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 			switch (to) {
 				case Abjad.Arabic:
 					return new PhoenicianToArabicConverter()
+				case Abjad.ImperialAramaic:
+					return new PhoenicianToImperialAramaicConverter()
 				case Abjad.Ugaritic:
 					return new PhoenicianToUgariticConverter()
 				default:
