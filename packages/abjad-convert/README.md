@@ -6,6 +6,7 @@ current supported alphabets:
 - Arabic
 - Uguritic
 - Phoenician
+- Imperial Aramaic
 
 ## How to use
 npm:
@@ -28,4 +29,7 @@ console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
 
 const ugariticWord = convert(arabicWord, Abjad.Arabic, Abjad.Ugaritic);
 console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
+
+const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
+console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 ```

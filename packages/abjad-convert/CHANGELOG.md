@@ -5,6 +5,7 @@
 ### Added
 - Test in GitHub actions
 - Publish to npm via GitHub actions
+- Support Imperial Aramaic
 
 ## [0.0.1]  2024-01-04
 ### Added
