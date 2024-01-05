@@ -9,12 +9,8 @@ export class PhoenicianToUgariticConverter implements IConvert {
 
 	public convert(text: string): string {
 		const PhToAr = new PhoenicianToArabicConverter()
+		const ar = PhToAr.convert(text)
 		const ArToUg = new ArabicToUgariticConverter()
-		let result = ''
-		for (const letter of text) {
-			const ar = PhToAr.convert(letter)
-			result += ArToUg.convert(ar)
-		}
-		return result
+		return ArToUg.convert(ar)
 	}
 }
