@@ -1,12 +1,13 @@
 import { Abjad } from './types'
 import { IConvert } from './IConvert'
-import { ArabicToUgariticConverter } from './arabic/toUgaritic'
+import { ArabicToImperialAramaicConverter } from "./arabic/toImperialAramaic";
 import { ArabicToPhoenicianConverter } from './arabic/toPhoenician'
+import { ArabicToUgariticConverter } from './arabic/toUgaritic'
 import { ImperialAramaicToArabicConverter } from "./imperialAramaic/toArabic";
 import { ImperialAramaicToPhoenicianConverter } from "./imperialAramaic/toPhoenician";
 import { ImperialAramaicToUgariticConverter } from "./imperialAramaic/toUgaritic";
-import { PhoenicianToUgariticConverter } from './phoenician/toUgaritic'
 import { PhoenicianToArabicConverter } from './phoenician/toArabic'
+import { PhoenicianToUgariticConverter } from './phoenician/toUgaritic'
 import { UgariticToArabicConverter } from './ugaritic/toArabic'
 import { UgariticToPhoenicianConverter } from './ugaritic/toPhoenician'
 
@@ -16,6 +17,8 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 			switch (to) {
 				case Abjad.Ugaritic:
 					return new ArabicToUgariticConverter()
+				case Abjad.ImperialAramaic:
+					return new ArabicToImperialAramaicConverter()
 				case Abjad.Phoenician:
 					return new ArabicToPhoenicianConverter()
 				default:
