@@ -1,7 +1,7 @@
 {
   "name": "abjad-client",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "scripts": {
     "prebuild": "rm -rf dist",
@@ -13,6 +13,6 @@
     "lint-fix": "npx eslint . --fix"
   },
   "dependencies": {
-    "abjad-convert": "0.0.1"
+    "abjad-convert": "0.0.2-next.1"
   }
 }
