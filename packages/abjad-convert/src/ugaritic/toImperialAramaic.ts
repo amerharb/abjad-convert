@@ -1,7 +1,7 @@
 import { IConvert } from '../IConvert'
 import { Abjad } from '../types'
 import { UgariticToArabicConverter } from './toArabic'
-import { ArabicToImperialAramaicConverter } from "../arabic/toImperialAramaic";
+import { ArabicToImperialAramaicConverter } from '../arabic/toImperialAramaic'
 
 export class UgariticToImperialAramaicConverter implements IConvert {
 	public readonly from = Abjad.Ugaritic
