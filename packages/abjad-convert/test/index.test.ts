@@ -132,11 +132,27 @@ describe('convert()', () => {
 				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Arabic)
 				expect(actual).toEqual('ا ب ج')
 			})
-			describe('to Phoenician', () => {
-				it('convert 𐎀 𐎁 𐎂 into 𐤀𐤟𐤁𐤟𐤂', () => {
-					const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Phoenician)
-					expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
-				})
+		})
+		describe('to ImperialAramaic', () => {
+			it('convert 𐎀 𐎁 𐎂 into 𐡀 𐡁 𐡂', () => {
+				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.ImperialAramaic)
+				expect(actual).toEqual('𐡀 𐡁 𐡂')
+			})
+		})
+		describe('to Phoenician', () => {
+			it('convert 𐎀 𐎁 𐎂 into 𐤀𐤟𐤁𐤟𐤂', () => {
+				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Phoenician)
+				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
+			})
+		})
+		describe('to Syriac', () => {
+			it.skip('convert 𐎀 𐎁 𐎂 into ܐ ܒ ܓ', () => {
+				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Syriac)
+				expect(actual).toEqual('ܐ ܒ ܓ')
+			})
+			it('throws error: No converter exists from Ugaritic to Syriac', () => {
+				const actual = () => convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Syriac)
+				expect(actual).toThrowError('No converter exists from Ugaritic to Syriac')
 			})
 		})
 	})
