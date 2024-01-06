@@ -32,4 +32,7 @@ console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
 
 const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
 console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
+
+const syriacWord = convert(arabicWord, Abjad.Arabic, Abjad.Syriac);
+console.log(syriacWord); // ܡܪܚܒܐ
 ```
