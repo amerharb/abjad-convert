@@ -5,7 +5,7 @@ import { Abjad } from '../types'
 
 export class ArabicToImperialAramaicConverter implements IConverter {
 	public readonly from = Abjad.Arabic
-	public readonly to = Abjad.Phoenician
+	public readonly to = Abjad.ImperialAramaic
 
 	private map = new Map<string, string>(
 		[

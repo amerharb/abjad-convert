@@ -5,7 +5,7 @@ import { ArabicToImperialAramaicConverter } from '../arabic/toImperialAramaic'
 
 export class UgariticToImperialAramaicConverter implements IConverter {
 	public readonly from = Abjad.Ugaritic
-	public readonly to = Abjad.Phoenician
+	public readonly to = Abjad.ImperialAramaic
 
 	public convert(text: string): string {
 		const UgToAr = new UgariticToArabicConverter()
