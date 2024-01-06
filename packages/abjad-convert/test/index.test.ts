@@ -61,6 +61,18 @@ describe('convert()', () => {
 				expect(actual).toEqual('ا ب ج')
 			})
 		})
+		describe('to ImperialAramaic', () => {
+			it('convert 𐤀𐤟𐤁𐤟𐤂 into 𐡀 𐡁 𐡂', () => {
+				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.ImperialAramaic)
+				expect(actual).toEqual('𐡀 𐡁 𐡂')
+			})
+		})
+		describe('to Syriac', () => {
+			it.skip('convert 𐤀𐤟𐤁𐤟𐤂 into ܐ ܒ ܓ', () => {
+				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Syriac)
+				expect(actual).toEqual('ܐ ܒ ܓ')
+			})
+		})
 		describe('to Ugaritic', () => {
 			it('convert 𐤀𐤟𐤁𐤟𐤂 into 𐎀𐎁𐎂', () => {
 				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Ugaritic)
