@@ -80,6 +80,32 @@ describe('convert()', () => {
 			})
 		})
 	})
+	describe('from Syriac', () => {
+		describe('to Arabic', () => {
+			it('convert ܐ ܒ ܓ into ا ب ج', () => {
+				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Arabic)
+				expect(actual).toEqual('ا ب ج')
+			})
+		})
+		describe('to ImperialAramaic', () => {
+			it.skip('convert ܐ ܒ ܓ into 𐡀 𐡁 𐡂', () => {
+				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.ImperialAramaic)
+				expect(actual).toEqual('𐡀 𐡁 𐡂')
+			})
+		})
+		describe('to Phoenician', () => {
+			it.skip('convert ܐ ܒ ܓ into 𐤀𐤟𐤁𐤟𐤂', () => {
+				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Phoenician)
+				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
+			})
+		})
+		describe('to Ugaritic', () => {
+			it.skip('convert ܐ ܒ ܓ into 𐎀 𐎁 𐎂', () => {
+				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Ugaritic)
+				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+		})
+	})
 	describe('from Ugaritic', () => {
 		describe('to Arabic', () => {
 			it('convert 𐎀 𐎁 𐎂 into ا ب ج', () => {
