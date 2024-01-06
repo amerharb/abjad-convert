@@ -9,6 +9,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
 			})
 		})
+		describe('to Syriac', () => {
+			it('convert ا ب ج into ܐ ܒ ܓ', () => {
+				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Syriac)
+				expect(actual).toEqual('ܐ ܒ ܓ')
+			})
+		})
 		describe('to Ugaritic', () => {
 			it('convert ا ب ج into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Ugaritic)
