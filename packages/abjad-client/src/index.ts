@@ -1,4 +1,4 @@
-import { Abjad, convert } from '../../abjad-convert/src'
+import { Abjad, convert } from 'abjad-convert'
 
 log('Abjad Convert')
 
@@ -8,22 +8,24 @@ log(calmConvert(arabic, Abjad.Arabic, Abjad.Ugaritic))
 log(`convert Arabic text ${arabic} to Phoenician`)
 log(calmConvert(arabic, Abjad.Arabic, Abjad.Phoenician))
 
-const ugaritic = '𐎀 𐎁 𐎚 𐎂 𐎄 𐎃'
-log(`convert Ugaritic text ${ugaritic} to Arabic`)
-log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Arabic))
-log(`convert Ugaritic text ${ugaritic} to Phoenician`)
-log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Phoenician))
-
 const phoenician = '𐤀 𐤁 𐤂 𐤃 𐤄 𐤅'
 log(`convert Phoenician text ${phoenician} to Arabic`)
 log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Arabic))
 log(`convert Phoenician text ${phoenician} to Ugaritic`)
 log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Ugaritic))
 
+const ugaritic = '𐎀 𐎁 𐎚 𐎂 𐎄 𐎃'
+log(`convert Ugaritic text ${ugaritic} to Arabic`)
+log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Arabic))
+log(`convert Ugaritic text ${ugaritic} to Phoenician`)
+log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Phoenician))
+
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Phoenician))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.ImperialAramaic))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Syriac))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Ugaritic))
+
+log('Done')
 
 function calmConvert(source: string, from: Abjad, to: Abjad): string {
 	try {
