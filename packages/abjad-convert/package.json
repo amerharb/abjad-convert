@@ -17,7 +17,8 @@
     "phonetic",
     "arabic",
     "phoenician",
-    "ugaritic"
+    "ugaritic",
+    "syriac"
   ],
   "license": "ISC",
   "scripts": {
@@ -27,7 +28,7 @@
     "test": "jest",
     "dev": "ts-node src/index.ts",
     "lint": "npx eslint . --max-warnings 0",
-    "lint-fix": "npx eslint . --fix",
+    "lint:fix": "npx eslint . --fix",
     "prepublishOnly": "yarn lint && yarn build && yarn test"
   }
 }
