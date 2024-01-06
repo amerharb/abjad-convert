@@ -8,11 +8,23 @@ log(calmConvert(arabic, Abjad.Arabic, Abjad.Ugaritic))
 log(`convert Arabic text ${arabic} to Phoenician`)
 log(calmConvert(arabic, Abjad.Arabic, Abjad.Phoenician))
 
+const imperialAramaic = '𐡀 𐡁 𐡂 𐡃 𐡄 𐡅'
+log(`convert ImperialAramaic text ${imperialAramaic} to Arabic`)
+log(calmConvert(imperialAramaic, Abjad.ImperialAramaic, Abjad.Arabic))
+log(`convert ImperialAramaic text ${imperialAramaic} to Phoenician`)
+log(calmConvert(imperialAramaic, Abjad.ImperialAramaic, Abjad.Phoenician))
+
 const phoenician = '𐤀 𐤁 𐤂 𐤃 𐤄 𐤅'
 log(`convert Phoenician text ${phoenician} to Arabic`)
 log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Arabic))
 log(`convert Phoenician text ${phoenician} to Ugaritic`)
 log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Ugaritic))
+
+const syriac = 'ܐ ܒ ܓ ܕ ܗ ܘ'
+log(`convert Syriac text ${syriac} to Arabic`)
+log(calmConvert(syriac, Abjad.Syriac, Abjad.Arabic))
+log(`convert Syriac text ${syriac} to ImperialAramaic`)
+log(calmConvert(syriac, Abjad.Syriac, Abjad.ImperialAramaic))
 
 const ugaritic = '𐎀 𐎁 𐎚 𐎂 𐎄 𐎃'
 log(`convert Ugaritic text ${ugaritic} to Arabic`)
