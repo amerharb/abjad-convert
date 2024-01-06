@@ -56,7 +56,7 @@ export function getConverter(from: Abjad, to: Abjad): IConvert {
 	case Abjad.Syriac: {
 		switch (to) {
 		case Abjad.Arabic:
-			throw new SyriacToArabicConverter()
+			return new SyriacToArabicConverter()
 		case Abjad.Phoenician:
 			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
 		case Abjad.Ugaritic:
