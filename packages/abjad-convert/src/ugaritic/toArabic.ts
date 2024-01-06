@@ -1,9 +1,9 @@
 import { Ug } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConvert } from '../IConvert'
+import { IConverter } from '../IConverter'
 import { Abjad } from '../types'
 
-export class UgariticToArabicConverter implements IConvert {
+export class UgariticToArabicConverter implements IConverter {
 	public readonly from = Abjad.Ugaritic
 	public readonly to = Abjad.Arabic
 
