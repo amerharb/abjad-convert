@@ -5,7 +5,7 @@ import { Abjad, convert } from 'abjad-convert'
 
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
-	const [copiedText, setCopiedText] = useState('')
+	const [resultText, setResultText] = useState('')
 
 	const handleConvert = () => {
 		const fromDropdown = document.getElementById('fromDropdown') as HTMLSelectElement
@@ -13,7 +13,7 @@ export default function Home() {
 		const toDropdown = document.getElementById('toDropdown') as HTMLSelectElement
 		const toValue = toDropdown.selectedIndex as Abjad
 		const result = convert(textBoxValue, from, toValue)
-		setCopiedText(result)
+		setResultText(result)
 	}
 
 	return (
@@ -50,11 +50,11 @@ export default function Home() {
 				/>
 			</div>
 			<div>
-				<button onClick={handleConvert}>Copy Text</button>
+				<button onClick={handleConvert}>Convert</button>
 			</div>
 			<div>
-				<label htmlFor="copiedLabel">Copied Text:</label>
-				<span id="copiedLabel">{copiedText}</span>
+				<label htmlFor="resultLabel">Result:</label>
+				<span id="resultLabel">{resultText}</span>
 			</div>
 		</main>
 	)
