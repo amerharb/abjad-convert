@@ -46,6 +46,10 @@ describe('convert()', () => {
 				const actual = convert('𐡀 𐡁 𐡂', Abjad.ImperialAramaic, Abjad.Syriac)
 				expect(actual).toEqual('ܐ ܒ ܓ')
 			})
+			it('throws error: No converter exists from ImperialAramaic to Syriac', () => {
+				const actual = () => convert('𐡀 𐡁 𐡂', Abjad.ImperialAramaic, Abjad.Syriac)
+				expect(actual).toThrowError('No converter exists from ImperialAramaic to Syriac')
+			})
 		})
 		describe('to Ugaritic', () => {
 			it('convert 𐡀 𐡁 𐡂 into 𐎀 𐎁 𐎂', () => {
@@ -72,6 +76,10 @@ describe('convert()', () => {
 				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Syriac)
 				expect(actual).toEqual('ܐ ܒ ܓ')
 			})
+			it('throws error: No converter exists from Phoenician to Syriac', () => {
+				const actual = () => convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Syriac)
+				expect(actual).toThrowError('No converter exists from Phoenician to Syriac')
+			})
 		})
 		describe('to Ugaritic', () => {
 			it('convert 𐤀𐤟𐤁𐤟𐤂 into 𐎀𐎁𐎂', () => {
@@ -92,17 +100,29 @@ describe('convert()', () => {
 				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.ImperialAramaic)
 				expect(actual).toEqual('𐡀 𐡁 𐡂')
 			})
+			it('throws error: No converter exists from Syric to ImperialAramaic', () => {
+				const actual = () => convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.ImperialAramaic)
+				expect(actual).toThrowError('No converter exists from Syriac to ImperialAramaic')
+			})
 		})
 		describe('to Phoenician', () => {
 			it.skip('convert ܐ ܒ ܓ into 𐤀𐤟𐤁𐤟𐤂', () => {
 				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Phoenician)
 				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
 			})
+			it('throws error: No converter exists from Syriac to Phoenician', () => {
+				const actual = () => convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Phoenician)
+				expect(actual).toThrowError('No converter exists from Syriac to Phoenician')
+			})
 		})
 		describe('to Ugaritic', () => {
 			it.skip('convert ܐ ܒ ܓ into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Ugaritic)
 				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+			it('throws error: No converter exists from Syriac to Ugaritic', () => {
+				const actual = () => convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Ugaritic)
+				expect(actual).toThrowError('No converter exists from Syriac to Ugaritic')
 			})
 		})
 	})
