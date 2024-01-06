@@ -4,9 +4,10 @@
 
 current supported alphabets:
 - Arabic
-- Uguritic
-- Phoenician
 - Imperial Aramaic
+- Phoenician
+- Syriac
+- Uguritic
 
 ## How to use
 npm:
