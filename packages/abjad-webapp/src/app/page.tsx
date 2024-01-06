@@ -1,15 +1,20 @@
 'use client'
 
-import { useState } from 'react';
+import { useState } from 'react'
+import { Abjad, convert } from 'abjad-convert'
 
 export default function Home() {
-	const [textBoxValue, setTextBoxValue] = useState('');
-	const [copiedText, setCopiedText] = useState('');
+	const [textBoxValue, setTextBoxValue] = useState('')
+	const [copiedText, setCopiedText] = useState('')
 
-	const handleCopyText = () => {
-		// Copy the text from the text box to the label
-		setCopiedText(textBoxValue);
-	};
+	const handleConvert = () => {
+		const fromDropdown = document.getElementById('fromDropdown') as HTMLSelectElement
+		const from = fromDropdown.selectedIndex as Abjad
+		const toDropdown = document.getElementById('toDropdown') as HTMLSelectElement
+		const toValue = toDropdown.selectedIndex as Abjad
+		const result = convert(textBoxValue, from, toValue)
+		setCopiedText(result)
+	}
 
 	return (
 		<main>
@@ -45,7 +50,7 @@ export default function Home() {
 				/>
 			</div>
 			<div>
-				<button onClick={handleCopyText}>Copy Text</button>
+				<button onClick={handleConvert}>Copy Text</button>
 			</div>
 			<div>
 				<label htmlFor="copiedLabel">Copied Text:</label>
