@@ -3,4 +3,5 @@ export enum Abjad {
 	Ugaritic,
 	Phoenician,
 	ImperialAramaic,
+	Syriac,
 }

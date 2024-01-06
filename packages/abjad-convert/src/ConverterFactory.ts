@@ -12,55 +12,70 @@ import { PhoenicianToUgariticConverter } from './phoenician/toUgaritic'
 import { UgariticToArabicConverter } from './ugaritic/toArabic'
 import { UgariticToImperialAramaicConverter } from './ugaritic/toImperialAramaic'
 import { UgariticToPhoenicianConverter } from './ugaritic/toPhoenician'
+import { SyriacToArabicConverter } from "./syriac/toArabic";
 
 export function getConverter(from: Abjad, to: Abjad): IConvert {
 	switch (from) {
-	case Abjad.Arabic:
-		switch (to) {
-		case Abjad.ImperialAramaic:
-			return new ArabicToImperialAramaicConverter()
-		case Abjad.Phoenician:
-			return new ArabicToPhoenicianConverter()
-		case Abjad.Ugaritic:
-			return new ArabicToUgariticConverter()
-		default:
-			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
-		}
-	case Abjad.Ugaritic:
-		switch (to) {
 		case Abjad.Arabic:
-			return new UgariticToArabicConverter()
-		case Abjad.ImperialAramaic:
-			return new UgariticToImperialAramaicConverter()
-		case Abjad.Phoenician:
-			return new UgariticToPhoenicianConverter()
-		default:
-			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
-		}
-	case Abjad.Phoenician:
-		switch (to) {
-		case Abjad.Arabic:
-			return new PhoenicianToArabicConverter()
-		case Abjad.ImperialAramaic:
-			return new PhoenicianToImperialAramaicConverter()
+			switch (to) {
+				case Abjad.ImperialAramaic:
+					return new ArabicToImperialAramaicConverter()
+				case Abjad.Phoenician:
+					return new ArabicToPhoenicianConverter()
+				case Abjad.Ugaritic:
+					return new ArabicToUgariticConverter()
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+			}
 		case Abjad.Ugaritic:
-			return new PhoenicianToUgariticConverter()
-		default:
-			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
-		}
-	case Abjad.ImperialAramaic: {
-		switch (to) {
-		case Abjad.Arabic:
-			return new ImperialAramaicToArabicConverter()
+			switch (to) {
+				case Abjad.Arabic:
+					return new UgariticToArabicConverter()
+				case Abjad.ImperialAramaic:
+					return new UgariticToImperialAramaicConverter()
+				case Abjad.Phoenician:
+					return new UgariticToPhoenicianConverter()
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+			}
 		case Abjad.Phoenician:
-			return new ImperialAramaicToPhoenicianConverter()
-		case Abjad.Ugaritic:
-			return new ImperialAramaicToUgariticConverter()
+			switch (to) {
+				case Abjad.Arabic:
+					return new PhoenicianToArabicConverter()
+				case Abjad.ImperialAramaic:
+					return new PhoenicianToImperialAramaicConverter()
+				case Abjad.Ugaritic:
+					return new PhoenicianToUgariticConverter()
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+			}
+		case Abjad.ImperialAramaic: {
+			switch (to) {
+				case Abjad.Arabic:
+					return new ImperialAramaicToArabicConverter()
+				case Abjad.Phoenician:
+					return new ImperialAramaicToPhoenicianConverter()
+				case Abjad.Ugaritic:
+					return new ImperialAramaicToUgariticConverter()
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+			}
+		}
+		case Abjad.Syriac: {
+			switch (to) {
+				case Abjad.Arabic:
+					throw new SyriacToArabicConverter()
+				case Abjad.Phoenician:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+				case Abjad.Ugaritic:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+				case Abjad.ImperialAramaic:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+				default:
+					throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+			}
+		}
 		default:
 			throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
-		}
-	}
-	default:
-		throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
 	}
 }
