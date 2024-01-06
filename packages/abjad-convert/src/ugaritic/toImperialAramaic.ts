@@ -1,16 +1,16 @@
 import { IConvert } from '../IConvert'
 import { Abjad } from '../types'
 import { UgariticToArabicConverter } from './toArabic'
-import { ArabicToPhoenicianConverter } from '../arabic/toPhoenician'
+import { ArabicToImperialAramaicConverter } from '../arabic/toImperialAramaic'
 
-export class UgariticToPhoenicianConverter implements IConvert {
+export class UgariticToImperialAramaicConverter implements IConvert {
 	public readonly from = Abjad.Ugaritic
 	public readonly to = Abjad.Phoenician
 
 	public convert(text: string): string {
 		const UgToAr = new UgariticToArabicConverter()
 		const ar = UgToAr.convert(text)
-		const ArToPh = new ArabicToPhoenicianConverter()
-		return ArToPh.convert(ar)
+		const ArToIa = new ArabicToImperialAramaicConverter()
+		return ArToIa.convert(ar)
 	}
 }

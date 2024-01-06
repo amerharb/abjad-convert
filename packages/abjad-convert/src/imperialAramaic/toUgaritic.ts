@@ -1,15 +1,15 @@
 import { IConvert } from '../IConvert'
 import { Abjad } from '../types'
-import { PhoenicianToArabicConverter } from './toArabic'
+import { ImperialAramaicToArabicConverter } from './toArabic'
 import { ArabicToUgariticConverter } from '../arabic/toUgaritic'
 
-export class PhoenicianToUgariticConverter implements IConvert {
-	public readonly from = Abjad.Phoenician
+export class ImperialAramaicToUgariticConverter implements IConvert {
+	public readonly from = Abjad.ImperialAramaic
 	public readonly to = Abjad.Ugaritic
 
 	public convert(text: string): string {
-		const PhToAr = new PhoenicianToArabicConverter()
-		const ar = PhToAr.convert(text)
+		const IaToAr = new ImperialAramaicToArabicConverter()
+		const ar = IaToAr.convert(text)
 		const ArToUg = new ArabicToUgariticConverter()
 		return ArToUg.convert(ar)
 	}

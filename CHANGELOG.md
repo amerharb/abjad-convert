@@ -2,11 +2,10 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
 ## [0.0.2]  2024-01-05
-### Added
-- Test in GitHub actions
+### Changed
+- Renaming
 - Publish to npm via GitHub actions
-- Support Imperial Aramaic
 
 ## [0.0.1]  2024-01-04
 ### Added
-- Initial project covert between 3 languages Arabic, Phoenician and Ugaritic
+- Root project structure

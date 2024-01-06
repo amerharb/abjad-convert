@@ -1,5 +1,10 @@
-# Abjad Convert Mono Repo
+# Abjad Mono Repo
 
 This is a monorepo for the Abjad Convert project.
-## Abajd Convert package
-[README](https://github.com/amerharb/abjad-convert/blob/main/packages/abjad-convert/README.md)
+
+## Packages
+### Abajd Convert
+[README](https://github.com/amerharb/abjad/blob/main/packages/abjad-convert/README.md)
+
+### Abjad Client
+example of a client for the abjad convert package
