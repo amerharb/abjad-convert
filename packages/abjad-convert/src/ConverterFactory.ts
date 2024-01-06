@@ -33,9 +33,28 @@ const converters: IConverter[] = [
 ]
 
 export function getConverter(from: Abjad, to: Abjad): IConverter {
+	// try to find a direct converter
 	const converter = converters.find(c => c.from === from && c.to === to)
 	if (converter) {
 		return converter
 	}
+
+	// try to find two converters and create a composite converter from them
+	const fromConverters = converters.filter(c => c.from === from)
+	const toConverters = converters.filter(c => c.to === to)
+	for (const fromConverter of fromConverters) {
+		for (const toConverter of toConverters) {
+			if (fromConverter.to === toConverter.from) {
+				return {
+					from,
+					to,
+					convert(text: string): string {
+						return toConverter.convert(fromConverter.convert(text))
+					},
+				}
+			}
+		}
+	}
+
 	throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
 }
