@@ -56,5 +56,5 @@ export function getConverter(from: Abjad, to: Abjad): IConverter {
 		}
 	}
 
-	throw new Error(`No converter exists from ${Abjad[from]} to ${Abjad[to]}`)
+	throw new Error(`No converter exists from ${from} to ${to}`)
 }
