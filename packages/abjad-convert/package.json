@@ -1,12 +1,13 @@
 {
   "name": "abjad-convert",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "files": [
     "dist/src/**/*.d.ts",
     "dist/src/**/*.js",
     "LICENSE",
+    "CHANGELOG.md",
     "README.md"
   ],
   "repository": "git@github.com:amerharb/abjad.git",
@@ -16,7 +17,9 @@
     "abjad",
     "phonetic",
     "arabic",
+    "imperial-aramaic",
     "phoenician",
+    "syriac",
     "ugaritic"
   ],
   "license": "ISC",
@@ -25,9 +28,10 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "jest",
+    "posttest": "npx make-coverage-badge --report-path coverage/coverage-summary.json --output-path badges/coverage.svg",
     "dev": "ts-node src/index.ts",
     "lint": "npx eslint . --max-warnings 0",
-    "lint-fix": "npx eslint . --fix",
+    "lint:fix": "npx eslint . --fix",
     "prepublishOnly": "yarn lint && yarn build && yarn test"
   }
 }

@@ -10,9 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "dev": "ts-node src/index.ts",
     "lint": "npx eslint . --max-warnings 0",
-    "lint-fix": "npx eslint . --fix"
+    "lint:fix": "npx eslint . --fix"
   },
   "dependencies": {
-    "abjad-convert": "^0.0.2"
+    "abjad-convert": "^0.1.0-next.0"
   }
 }

@@ -1,11 +1,11 @@
-import { IConvert } from '../IConvert'
+import { IConverter } from '../IConverter'
 import { Abjad } from '../types'
 import { UgariticToArabicConverter } from './toArabic'
 import { ArabicToImperialAramaicConverter } from '../arabic/toImperialAramaic'
 
-export class UgariticToImperialAramaicConverter implements IConvert {
+export class UgariticToImperialAramaicConverter implements IConverter {
 	public readonly from = Abjad.Ugaritic
-	public readonly to = Abjad.Phoenician
+	public readonly to = Abjad.ImperialAramaic
 
 	public convert(text: string): string {
 		const UgToAr = new UgariticToArabicConverter()

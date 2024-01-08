@@ -1,6 +1,7 @@
 export enum Abjad {
-	Arabic,
-	Ugaritic,
-	Phoenician,
-	ImperialAramaic,
+	Arabic = 'arabic',
+	ImperialAramaic = 'imperial-aramaic',
+	Phoenician = 'phoenician',
+	Syriac = 'syriac',
+	Ugaritic = 'ugaritic',
 }

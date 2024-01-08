@@ -2,7 +2,7 @@ name: Lint and Test
 
 on:
   push:
-    branches: [ "main", "version/*" ]
+    branches: [ "main", "*/version/*" ]
   pull_request:
 
 jobs:
