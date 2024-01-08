@@ -17,10 +17,13 @@ export default function Home() {
 	}
 
 	return (
-		<main>
-			<h1>Abjad</h1>
-			<div>
-				<label htmlFor="fromDropdown">From:</label>
+		<main style={{ textAlign: 'center', padding: '20px' }}>
+			<h1>Abjad Converter</h1>
+
+			<div style={{ marginBottom: '10px' }}>
+				<label htmlFor="fromDropdown" style={{ marginRight: '10px' }}>
+					From:
+				</label>
 				<select id="fromDropdown">
 					<option value="0">Arabic</option>
 					<option value="1">Imperial Aramaic</option>
@@ -29,8 +32,11 @@ export default function Home() {
 					<option value="4">Ugaritic</option>
 				</select>
 			</div>
-			<div>
-				<label htmlFor="toDropdown">To:</label>
+
+			<div style={{ marginBottom: '10px' }}>
+				<label htmlFor="toDropdown" style={{ marginRight: '10px' }}>
+					To:
+				</label>
 				<select id="toDropdown">
 					<option value="0">Arabic</option>
 					<option value="1">Imperial Aramaic</option>
@@ -39,22 +45,37 @@ export default function Home() {
 					<option value="4">Ugaritic</option>
 				</select>
 			</div>
-			<div>
-				<label htmlFor="editTextBox">Enter Text:</label>
-				<input
-					type="text"
+
+			<div style={{ marginBottom: '10px' }}>
+				<label htmlFor="editTextBox" style={{ marginRight: '10px' }}>
+					Enter Text:
+				</label>
+				<textarea
 					id="editTextBox"
 					placeholder="Type here"
 					value={textBoxValue}
 					onChange={(e) => setTextBoxValue(e.target.value)}
+					style={{ padding: '10px', width: '100%', minHeight: '100px' }}
 				/>
 			</div>
-			<div>
-				<button onClick={handleConvert}>Convert</button>
+
+			<div style={{ marginBottom: '10px' }}>
+				<button onClick={handleConvert} style={{
+					padding: '10px',
+					backgroundColor: '#4CAF50',
+					color: 'white',
+					border: 'none',
+					borderRadius: '5px'
+				}}>
+					Convert
+				</button>
 			</div>
+
 			<div>
-				<label htmlFor="resultLabel">Result:</label>
-				<span id="resultLabel">{resultText}</span>
+				<label htmlFor="resultLabel" style={{ marginRight: '10px' }}>
+					Result:
+				</label>
+				<span id="resultLabel" style={{ fontWeight: 'bold' }}>{resultText}</span>
 			</div>
 		</main>
 	)
