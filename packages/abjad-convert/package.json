@@ -17,9 +17,10 @@
     "abjad",
     "phonetic",
     "arabic",
+    "imperial-aramaic",
     "phoenician",
-    "ugaritic",
-    "syriac"
+    "syriac",
+    "ugaritic"
   ],
   "license": "ISC",
   "scripts": {
