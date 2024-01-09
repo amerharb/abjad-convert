@@ -4,4 +4,5 @@
 
 ## [0.0.1] 2024-01-06
 ### Added
-- setup Next
+- Setup NextJS
+- Simple web page

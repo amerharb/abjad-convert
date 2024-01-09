@@ -3,7 +3,7 @@
 
 ## [0.3.0]  2024-01-06
 ### Added
-- Webapp package
+- abjad-web package
 
 ## [0.0.2]  2024-01-05
 ### Changed

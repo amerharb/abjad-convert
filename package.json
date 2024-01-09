@@ -4,7 +4,7 @@
 	"workspaces": [
 		"packages/abjad-convert",
 		"packages/abjad-client",
-		"packages/abjad-webapp"
+		"packages/abjad-web"
 	],
 	"version": "0.3.0",
 	"author": "Amer Harb",

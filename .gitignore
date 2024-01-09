@@ -9,4 +9,4 @@ node_modules/
 .LSOverride
 
 /packages/*/coverage/coverage-summary.json
-/packages/abjad-webapp/.next/
+/packages/*/.next/
