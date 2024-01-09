@@ -9,10 +9,10 @@ export default function Home() {
 
 	const handleConvert = () => {
 		const fromDropdown = document.getElementById('fromDropdown') as HTMLSelectElement
-		const from = fromDropdown.selectedIndex as Abjad
+		const fromValue = fromDropdown.value as Abjad
 		const toDropdown = document.getElementById('toDropdown') as HTMLSelectElement
-		const toValue = toDropdown.selectedIndex as Abjad
-		const result = convert(textBoxValue, from, toValue)
+		const toValue = toDropdown.value as Abjad
+		const result = convert(textBoxValue, fromValue, toValue)
 		setResultText(result)
 	}
 
@@ -25,11 +25,11 @@ export default function Home() {
 					From:
 				</label>
 				<select id="fromDropdown">
-					<option value="0">Arabic</option>
-					<option value="1">Imperial Aramaic</option>
-					<option value="2">Phoenician</option>
-					<option value="3">Syriac</option>
-					<option value="4">Ugaritic</option>
+					<option value={Abjad.Arabic}>Arabic</option>
+					<option value={Abjad.ImperialAramaic}>Imperial Aramaic</option>
+					<option value={Abjad.Phoenician}>Phoenician</option>
+					<option value={Abjad.Syriac}>Syriac</option>
+					<option value={Abjad.Ugaritic}>Ugaritic</option>
 				</select>
 			</div>
 
@@ -38,11 +38,11 @@ export default function Home() {
 					To:
 				</label>
 				<select id="toDropdown">
-					<option value="0">Arabic</option>
-					<option value="1">Imperial Aramaic</option>
-					<option value="2">Phoenician</option>
-					<option value="3">Syriac</option>
-					<option value="4">Ugaritic</option>
+					<option value={Abjad.Arabic}>Arabic</option>
+					<option value={Abjad.ImperialAramaic}>Imperial Aramaic</option>
+					<option value={Abjad.Phoenician}>Phoenician</option>
+					<option value={Abjad.Syriac}>Syriac</option>
+					<option value={Abjad.Ugaritic}>Ugaritic</option>
 				</select>
 			</div>
 
