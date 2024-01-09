@@ -37,5 +37,13 @@ module.exports = {
         'sort-imports': ['warn', { 'ignoreDeclarationSort': true }],
       },
     },
+    {
+      files: [
+          '*.json',
+      ],
+      rules: {
+        'indent': ['error', 'tab'],
+      },
+    },
   ],
 }

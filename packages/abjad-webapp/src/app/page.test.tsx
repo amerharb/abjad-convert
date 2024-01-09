@@ -4,4 +4,4 @@ describe('Home Component', () => {
 	it('true', () => {
 		expect(true).toBeTruthy()
 	})
-});
+})
