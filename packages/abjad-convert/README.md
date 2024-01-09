@@ -43,8 +43,33 @@ console.log(syriacWord); // ܡܪܚܒܐ
 ```
 ## Contributing
 ### Adding new script
-Pull requests are welcome. For adding new script. let's say that you want to add a new script "Foo"
+Pull requests are welcome. For adding new script. let's say that we want to add a new script "Foo"
 - Step #1: create a feature branch from `main` named `abjad-convert/version/0.[x].0` where `x` is the next minor of current version number.
 - Step #2: create a new branch that will the previous feature branch when creating the PR.
 - Step #3: create a new folder named `foo` in `src`.
-- Step #4: add pdf documentation for the script you want to add from www.unicode.org. for example for Ugaritic the file is `U10380.pdf`. this file will be used as a reference
+- Step #4: add pdf documentation for the script we want to add from www.unicode.org. for example for Ugaritic the file is `U10380.pdf`. this file will be used as a reference
+- Step #5: add a new file named `letters.ts` in `foo` folder this file will export
+- - `letters` an array of letters written using unicode values with jsdoc each line will contain 
+the value of the letter using UTF-16 BE using escape \u followed by 4 hex digits.
+notice that UTF16BE value is not always the same as the unicode value.
+for example for letter Alpa in Ugaritic the unicode value is `0x10380` but the UTF16BE encode value is `0xD800DF80`
+follow the value with jsdoc that contain array index, letter itself, unicode value, and the name of the letter.
+for example for ugaritic looks like this:
+
+```ts
+export const letters = [
+  '\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
+  '\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
+  ...
+];
+```
+- - 'Fo' an alias object called `Fo` short of Foo. this will give an alias for all letters mentioned in the letters array.
+
+for example for ugaritic looks like this:
+```ts
+export const Ug = {
+  Alpa: letters[0], // 𐎀
+  Beta: letters[1], // 𐎁
+...
+};
+```
