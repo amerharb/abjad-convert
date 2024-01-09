@@ -73,3 +73,7 @@ export const Ug = {
 ...
 };
 ```
+
+- Step #6: Add the script to the enum `Abjad` in `src/types.ts` file.
+at this point we have finished adding the script but it is an island script. Meaning that it can't be converted to or from any other script.
+ 
