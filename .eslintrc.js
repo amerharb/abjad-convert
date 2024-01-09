@@ -16,6 +16,7 @@ module.exports = {
     {
       files: [
           'packages/*/src/**/*.ts',
+          'packages/*/src/**/*.tsx',
           'packages/*/test/**/*.ts',
           'src/**/*.ts',
           'test/**/*.ts',
@@ -34,6 +35,14 @@ module.exports = {
         'no-unused-private-class-members': ['off'],
         'no-trailing-spaces': ['warn'],
         'sort-imports': ['warn', { 'ignoreDeclarationSort': true }],
+      },
+    },
+    {
+      files: [
+          '*.json',
+      ],
+      rules: {
+        'indent': ['error', 'tab'],
       },
     },
   ],
