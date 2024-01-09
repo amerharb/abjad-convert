@@ -41,3 +41,10 @@ console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 const syriacWord = convert(arabicWord, Abjad.Arabic, Abjad.Syriac);
 console.log(syriacWord); // ܡܪܚܒܐ
 ```
+## Contributing
+### Adding new script
+Pull requests are welcome. For adding new script. let's say that you want to add a new script "Foo"
+- Step #1: create a feature branch from `main` named `abjad-convert/version/0.[x].0` where `x` is the next minor of current version number.
+- Step #2: create a new branch that will the previous feature branch when creating the PR.
+- Step #3: create a new folder named `foo` in `src`.
+- Step #4: add pdf documentation for the script you want to add from www.unicode.org. for example for Ugaritic the file is `U10380.pdf`. this file will be used as a reference
