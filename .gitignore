@@ -10,3 +10,7 @@ node_modules/
 
 /packages/*/coverage/coverage-summary.json
 /packages/*/.next/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
