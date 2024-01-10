@@ -10,8 +10,13 @@
 		"CHANGELOG.md",
 		"README.md"
 	],
-	"repository": "git@github.com:amerharb/abjad.git",
 	"author": "Amer Harb",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/amerharb/abjad.git"
+	},
+	"homepage": "https://github.com/amerharb/abjad#readme",
+	"url": "https://github.com/amerharb/abjad/issues",
 	"email": "abjad@amerharb.com",
 	"keywords": [
 		"abjad",
