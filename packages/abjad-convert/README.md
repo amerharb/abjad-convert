@@ -1,8 +1,8 @@
 # Abjad Convert
-[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/amerharb/abjad/tree/version/0.1.0)
+[![Version](https://img.shields.io/badge/version-0.2.0-blue.svg)](https://github.com/amerharb/abjad/tree/version/0.2.0)
 [![License: GPLv3](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-![Coverage](https://raw.githubusercontent.com/amerharb/abjad/version/0.1.0/packages/abjad-convert/badges/coverage.svg)
-![Github workflow](https://github.com/amerharb/abjad/actions/workflows/lint-test.yaml/badge.svg?branch=version/0.1.0)
+![Coverage](https://raw.githubusercontent.com/amerharb/abjad/version/0.2.0/packages/abjad-convert/badges/coverage.svg)
+![Github workflow](https://github.com/amerharb/abjad/actions/workflows/lint-test.yaml/badge.svg?branch=version/0.2.0)
 
 **abjad-convert** is a package for converting Abjad alphabets phonetically.
 
@@ -11,6 +11,7 @@ current supported alphabets:
 - Imperial Aramaic
 - Phoenician
 - Syriac
+- Tifinagh
 - Uguritic
 
 ## How to use
@@ -29,17 +30,20 @@ import { convert, Abjad } from 'abjad-convert';
 
 const arabicWord = 'مرحبا';
 
-const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
-console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
-
-const ugariticWord = convert(arabicWord, Abjad.Arabic, Abjad.Ugaritic);
-console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
-
 const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
 console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 
+const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
+console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
+
 const syriacWord = convert(arabicWord, Abjad.Arabic, Abjad.Syriac);
 console.log(syriacWord); // ܡܪܚܒܐ
+
+const tifinaghWord = convert(arabicWord, Abjad.Arabic, Abjad.Tifinagh);
+console.log(tifinaghWord); // ⵎⵔⵃⴱⴰ
+
+const ugariticWord = convert(arabicWord, Abjad.Arabic, Abjad.Ugaritic);
+console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
 ```
 ## Contributing
 ### Adding new script
@@ -135,3 +139,12 @@ export class ArabicToFooConverter implements IConverter {
 }
 ```
 - - Add toFoo converter to `converterFactory.ts`
+
+- Step #8 add unit test to`test/index.test.ts`.
+
+- Step #9: update for new version
+- - update `CHANGELOG.md` with the new version number and the changes.
+- - Step #10 update `README.md` links and badges.
+- - Update version in `package.json` file.
+- - run yarn to update yarn.lock files
+- - run test to update coverage badges
