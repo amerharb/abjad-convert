@@ -112,6 +112,38 @@ describe('convert()', () => {
 			})
 		})
 	})
+	describe('from Tifinagh', () => {
+		describe('to Arabic', () => {
+			it('convert ⴰ ⴱ ⵊ into ا ب ج', () => {
+				const actual = convert('ⴰ ⴱ ⵊ', Abjad.Tifinagh, Abjad.Arabic)
+				expect(actual).toEqual('ا ب ج')
+			})
+		})
+		describe('to ImperialAramaic', () => {
+			it('convert ⴰ ⴱ ⵊ into 𐡀 𐡁 𐡂', () => {
+				const actual = convert('ⴰ ⴱ ⵊ', Abjad.Tifinagh, Abjad.ImperialAramaic)
+				expect(actual).toEqual('𐡀 𐡁 𐡂')
+			})
+		})
+		describe('to Phoenician', () => {
+			it('convert ⴰ ⴱ ⵊ into 𐤀𐤟𐤁𐤟𐤂', () => {
+				const actual = convert('ⴰ ⴱ ⵊ', Abjad.Tifinagh, Abjad.Phoenician)
+				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
+			})
+		})
+		describe('to Syriac', () => {
+			it('convert ⴰ ⴱ ⵊ into ܐ ܒ ܓ', () => {
+				const actual = convert('ⴰ ⴱ ⵊ', Abjad.Tifinagh, Abjad.Syriac)
+				expect(actual).toEqual('ܐ ܒ ܓ')
+			})
+		})
+		describe('to Ugaritic', () => {
+			it('convert ⴰ ⴱ ⵊ into 𐎀 𐎁 𐎂', () => {
+				const actual = convert('ⴰ ⴱ ⵊ', Abjad.Tifinagh, Abjad.Ugaritic)
+				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+		})
+	})
 	describe('from Ugaritic', () => {
 		describe('to Arabic', () => {
 			it('convert 𐎀 𐎁 𐎂 into ا ب ج', () => {
