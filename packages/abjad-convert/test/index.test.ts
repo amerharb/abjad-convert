@@ -21,6 +21,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('ܐ ܒ ܓ')
 			})
 		})
+		describe('to Tifinagh', () => {
+			it('convert ا ب ج into ⴰ ⴱ ⵊ', () => {
+				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Tifinagh)
+				expect(actual).toEqual('ⴰ ⴱ ⵊ')
+			})
+		})
 		describe('to Ugaritic', () => {
 			it('convert ا ب ج into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Ugaritic)
