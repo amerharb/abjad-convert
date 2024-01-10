@@ -60,7 +60,7 @@ for example for ugaritic looks like this:
 export const letters = [
   '\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
   '\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
-  ...
+  //...
 ];
 ```
 - - 'Fo' an alias object called `Fo` short of Foo. this will give an alias for all letters mentioned in the letters array.
@@ -70,10 +70,50 @@ for example for ugaritic looks like this:
 export const Ug = {
   Alpa: letters[0], // 𐎀
   Beta: letters[1], // 𐎁
-...
+  //...
 };
 ```
 
 - Step #6: Add the script to the enum `Abjad` in `src/types.ts` file.
-at this point we have finished adding the script but it is an island script. Meaning that it can't be converted to or from any other script.
+at this point we have finished adding the script, but it is an island script. Meaning that it can't be converted to or from any other script.
  
+- Step #7: To make it convertable we need at least to have one from and one to converter to another script. 
+the preferred way is to add a converter to and from Arabic script, as it is currently act as a de facto hub script for all abjad scripts.
+The algorithm for converting will look first for 1-step converter (direct converter) the one that convert from the source to the target, in case there isn't any it will look for 2-steps approach where it can find a middle script,
+after that it won't look for 3 or more steps, it will basically throw an error.
+That is why Arabic is used as preferred hub, so if all script add converter to Arabic and Arabic add converter to all other scripts then all conversion is possible.
+However, there is a plan in the future to add IPA to be a canonical hub script.
+
+- - Adding to Arabic: Add file to `foo` folder with name `toArabic.ts` that include a class called FooToArabicConverter that implements `IConverter` interface.
+it should look like this:
+```ts
+import { IConverter } from '../types';
+import { Fo } from './letters'
+import { Ar } from '../arabic/letters'
+import { IConverter } from '../IConverter'
+import { Abjad } from '../types'
+
+export class FooToArabicConverter implements IConverter {
+	public readonly from = Abjad.Foo
+	public readonly to = Abjad.Arabic
+    public convert(fooText: string): string {
+		// convert logic here
+        // return (araic text)
+	}
+}
+```
+- - Add toArabic converter to `converterFactory.ts`
+- - - import the new converter in alphabetical order
+```ts
+//...
+import { FooToArabicConverter } from './foo/toArabic'
+//...
+```
+- - - add the converter to converters array in alphabetical order
+```ts
+const converters: IConverter[] = [
+    //...
+	new TifinaghToArabicConverter(),
+    //...
+];
+```

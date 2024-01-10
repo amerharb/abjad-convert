@@ -1,4 +1,4 @@
-import { getConverter } from './ConverterFactory'
+import { getConverter } from './converterFactory'
 import { Abjad } from './types'
 
 export function convert(source: string, from: Abjad, to: Abjad): string {
