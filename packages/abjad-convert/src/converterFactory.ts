@@ -3,6 +3,7 @@ import { IConverter } from './IConverter'
 import { ArabicToImperialAramaicConverter } from './arabic/toImperialAramaic'
 import { ArabicToPhoenicianConverter } from './arabic/toPhoenician'
 import { ArabicToSyriacConverter } from './arabic/toSyriac'
+import { ArabicToTifinaghConverter } from './arabic/toTifinagh'
 import { ArabicToUgariticConverter } from './arabic/toUgaritic'
 import { ImperialAramaicToArabicConverter } from './imperialAramaic/toArabic'
 import { ImperialAramaicToPhoenicianConverter } from './imperialAramaic/toPhoenician'
@@ -20,6 +21,7 @@ const converters: IConverter[] = [
 	new ArabicToImperialAramaicConverter(),
 	new ArabicToPhoenicianConverter(),
 	new ArabicToSyriacConverter(),
+	new ArabicToTifinaghConverter(),
 	new ArabicToUgariticConverter(),
 	new ImperialAramaicToArabicConverter(),
 	new ImperialAramaicToPhoenicianConverter(),

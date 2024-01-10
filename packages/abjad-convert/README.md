@@ -117,3 +117,21 @@ const converters: IConverter[] = [
     //...
 ];
 ```
+- - Add toFoo converter to `arabic` folder with name `toFoo.ts` that include a class called ArabicToFooConverter that implements `IConverter` interface.
+it should look like this:
+```ts
+import {Ar} from './letters'
+import {Fo} from '../foo/letters'
+import {IConverter} from '../IConverter'
+import {Abjad} from '../types'
+
+export class ArabicToFooConverter implements IConverter {
+    public readonly from = Abjad.Arabic
+    public readonly to = Abjad.Foo
+    public convert(arabicText: string): string {
+        // convert logic here
+        // return (foo text)
+    }
+}
+```
+- - Add toFoo converter to `converterFactory.ts`
