@@ -53,6 +53,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('ܐ ܒ ܓ')
 			})
 		})
+		describe('to Tifinagh', () => {
+			it('convert 𐡀 𐡁 𐡂 into ⴰ ⴱ ⵊ', () => {
+				const actual = convert('𐡀 𐡁 𐡂', Abjad.ImperialAramaic, Abjad.Tifinagh)
+				expect(actual).toEqual('ⴰ ⴱ ⵊ')
+			})
+		})
 		describe('to Ugaritic', () => {
 			it('convert 𐡀 𐡁 𐡂 into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('𐡀 𐡁 𐡂', Abjad.ImperialAramaic, Abjad.Ugaritic)
@@ -79,6 +85,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('ܐ ܒ ܓ')
 			})
 		})
+		describe('to Tifinagh', () => {
+			it('convert 𐤀𐤟𐤁𐤟𐤂 into ⴰ ⴱ ⵊ', () => {
+				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Tifinagh)
+				expect(actual).toEqual('ⴰ ⴱ ⵊ')
+			})
+		})
 		describe('to Ugaritic', () => {
 			it('convert 𐤀𐤟𐤁𐤟𐤂 into 𐎀𐎁𐎂', () => {
 				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Ugaritic)
@@ -103,6 +115,12 @@ describe('convert()', () => {
 			it('convert ܐ ܒ ܓ into 𐤀𐤟𐤁𐤟𐤂', () => {
 				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Phoenician)
 				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
+			})
+		})
+		describe('to Tifinagh', () => {
+			it('convert ܐ ܒ ܓ into ⴰ ⴱ ⵊ', () => {
+				const actual = convert('ܐ ܒ ܓ', Abjad.Syriac, Abjad.Tifinagh)
+				expect(actual).toEqual('ⴰ ⴱ ⵊ')
 			})
 		})
 		describe('to Ugaritic', () => {
@@ -167,6 +185,12 @@ describe('convert()', () => {
 			it('convert 𐎀 𐎁 𐎂 into ܐ ܒ ܓ', () => {
 				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Syriac)
 				expect(actual).toEqual('ܐ ܒ ܓ')
+			})
+		})
+		describe('to Tifinagh', () => {
+			it('convert 𐎀 𐎁 𐎂 into ⴰ ⴱ ⵊ', () => {
+				const actual = convert('𐎀 𐎁 𐎂', Abjad.Ugaritic, Abjad.Tifinagh)
+				expect(actual).toEqual('ⴰ ⴱ ⵊ')
 			})
 		})
 	})
