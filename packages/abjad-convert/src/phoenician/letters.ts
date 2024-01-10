@@ -41,7 +41,6 @@ export const Ph = {
 	Waw: letters[5], // 𐤅
 	Zayin: letters[6], // 𐤆
 	Het: letters[7], // 𐤇
-
 	Tet: letters[8], // 𐤈
 	Yod: letters[9], // 𐤉
 	Kap: letters[10], // 𐤊
@@ -50,20 +49,17 @@ export const Ph = {
 	Nun: letters[13], // 𐤍
 	Semk: letters[14], // 𐤎
 	Ain: letters[15], // 𐤏
-
 	Pe: letters[16], // 𐤐
 	Sade: letters[17], // 𐤑
 	Qof: letters[18], // 𐤒
 	Ros: letters[19], // 𐤓
 	Shin: letters[20], // 𐤔
 	Tau: letters[21], // 𐤕
-
 	One: letters[22], // 𐤖
 	Ten: letters[23], // 𐤗
 	Twenty: letters[24], // 𐤘
 	OneHundred: letters[25], // 𐤙
 	Two: letters[26], // 𐤚
 	Three: letters[27], // 𐤛
-
 	WordSeparator: letters[28], // 𐤟
 }
