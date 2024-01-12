@@ -1,7 +1,7 @@
 {
 	"name": "abjad-client",
 	"private": true,
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"main": "dist/index.js",
 	"scripts": {
 		"prebuild": "rm -rf dist",
