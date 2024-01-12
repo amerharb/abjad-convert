@@ -1,11 +1,11 @@
 {
 	"name": "abjad-web",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
-		"start": "next start",
+		"start": "next start -p 8080",
 		"lint": "eslint .",
 		"lint:fix": "eslint . --fix",
 		"test": "jest"
