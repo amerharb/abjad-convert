@@ -32,9 +32,10 @@ log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Arabic))
 log(`convert Ugaritic text ${ugaritic} to Phoenician`)
 log(calmConvert(ugaritic, Abjad.Ugaritic, Abjad.Phoenician))
 
-log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Phoenician))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.ImperialAramaic))
+log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Phoenician))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Syriac))
+log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Tifinagh))
 log(calmConvert('مرحبا', Abjad.Arabic, Abjad.Ugaritic))
 
 log('Done')
