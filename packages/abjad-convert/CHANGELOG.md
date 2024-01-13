@@ -4,6 +4,7 @@
 ## [0.2.1]  2024-01-13
 ### Fixed
 - badges in README.md
+- remove unneeded converter keep the direct one
 
 ## [0.2.0]  2024-01-10
 ### Added
