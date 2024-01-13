@@ -2,6 +2,10 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.0.2] 2024-01-12
+### Changed
+- Port to 8080
+
 ## [0.0.1] 2024-01-06
 ### Added
 - Setup NextJS
