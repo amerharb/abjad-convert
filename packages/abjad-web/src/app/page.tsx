@@ -29,6 +29,7 @@ export default function Home() {
 					<option value={Abjad.ImperialAramaic}>Imperial Aramaic</option>
 					<option value={Abjad.Phoenician}>Phoenician</option>
 					<option value={Abjad.Syriac}>Syriac</option>
+					<option value={Abjad.Tifinagh}>Tifinagh</option>
 					<option value={Abjad.Ugaritic}>Ugaritic</option>
 				</select>
 			</div>
@@ -42,6 +43,7 @@ export default function Home() {
 					<option value={Abjad.ImperialAramaic}>Imperial Aramaic</option>
 					<option value={Abjad.Phoenician}>Phoenician</option>
 					<option value={Abjad.Syriac}>Syriac</option>
+					<option value={Abjad.Tifinagh}>Tifinagh</option>
 					<option value={Abjad.Ugaritic}>Ugaritic</option>
 				</select>
 			</div>
