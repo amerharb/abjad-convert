@@ -44,6 +44,7 @@ module.exports = {
       rules: {
         'indent': ['error', 'tab'],
       },
+      excludedFiles: ['**/coverage/*', '**/dist/*', '**/node_modules/*'],
     },
   ],
 }
