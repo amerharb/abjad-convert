@@ -17,13 +17,14 @@
 		"start": "yarn workspaces run start"
 	},
 	"devDependencies": {
-		"ts-node": "^10.9.2",
-		"typescript": "^5.3.3",
+		"@typescript-eslint/eslint-plugin": "^6.11.0",
+		"@typescript-eslint/parser": "^6.11.0",
+		"eslint": "^8.54.0",
 		"jest": "^29.7.0",
 		"make-coverage-badge": "^1.2.0",
 		"ts-jest": "^29.1.1",
-		"@typescript-eslint/eslint-plugin": "^6.11.0",
-		"@typescript-eslint/parser": "^6.11.0",
-		"eslint": "^8.54.0"
-	}
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
+	},
+	"packageManager": "yarn@4.0.2"
 }
