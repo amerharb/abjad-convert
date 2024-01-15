@@ -17,6 +17,7 @@
 		"start": "yarn workspaces foreach --all -p run start"
 	},
 	"devDependencies": {
+		"@types/node": "^20.11.2",
 		"@typescript-eslint/eslint-plugin": "^6.11.0",
 		"@typescript-eslint/parser": "^6.11.0",
 		"eslint": "^8.54.0",
