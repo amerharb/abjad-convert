@@ -1665,6 +1665,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"abjad-convert@npm:latest":
+  version: 0.2.1
+  resolution: "abjad-convert@npm:0.2.1"
+  checksum: ad899bdec42439069e2ecdc368149bdfe7cd5de9012ed529edb3043b7afbe9eb2b59a5efdf078af1b87c3bbbcee0fcbd0fab0e95047209907cf68117bf0960d6
+  languageName: node
+  linkType: hard
+
 "abjad-convert@workspace:packages/abjad-convert":
   version: 0.0.0-use.local
   resolution: "abjad-convert@workspace:packages/abjad-convert"
@@ -1695,7 +1702,7 @@ __metadata:
     "@emotion/styled": "npm:^11.11.0"
     "@mui/joy": "npm:^5.0.0-beta.11"
     "@types/react": "npm:18.2.47"
-    abjad-convert: "npm:0.2.0"
+    abjad-convert: "npm:latest"
     next: "npm:13.5.6"
     react: "npm:^18"
     react-dom: "npm:^18"
