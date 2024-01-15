@@ -1654,7 +1654,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abjad-client@workspace:packages/abjad-client"
   dependencies:
-    abjad-convert: "npm:0.2.1"
+    abjad-convert: "npm:0.2.0"
   languageName: unknown
   linkType: soft
 
@@ -1665,7 +1665,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.2.1, abjad-convert@workspace:packages/abjad-convert":
+"abjad-convert@workspace:packages/abjad-convert":
   version: 0.0.0-use.local
   resolution: "abjad-convert@workspace:packages/abjad-convert"
   languageName: unknown
