@@ -10,11 +10,11 @@
 	"author": "Amer Harb",
 	"license": "ISC",
 	"scripts": {
-		"lint": "yarn workspaces run lint",
-		"lint:fix": "yarn workspaces run lint:fix",
-		"build": "yarn workspaces run build",
-		"test": "yarn workspaces run test",
-		"start": "yarn workspaces run start"
+		"lint": "yarn workspaces foreach --all -p run lint",
+		"lint:fix": "yarn workspaces foreach --all -p run lint:fix",
+		"build": "yarn workspaces foreach --all run build",
+		"test": "yarn workspaces foreach --all -p run test",
+		"start": "yarn workspaces foreach --all -p run start"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^6.11.0",
