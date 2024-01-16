@@ -2,6 +2,8 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.2.0] 2024-01-16
+
 ## [0.1.0] 2024-01-14
 ### Changed
 - use abjad-convert 0.2.1
