@@ -24,10 +24,16 @@ export default function Home() {
 		</label>
 		<Select
 			id="fromDropdown"
+			isSearchable={false}
 			options={options}
 			defaultValue={options[0]}
 			onChange={(selectedOption) => {
 				setFromValue(selectedOption?.value)
+				if (!selectedOption?.value || !toValue) {
+					return
+				}
+				const result = convert(textBoxValue, selectedOption?.value, toValue)
+				setResultText(result)
 			}}
 		/>
 	</div>
@@ -37,6 +43,7 @@ export default function Home() {
 		</label>
 		<Select
 			id="toDropdown"
+			isSearchable={false}
 			options={options}
 			defaultValue={options[1]}
 			onChange={(selectedOption) => {
@@ -69,26 +76,27 @@ export default function Home() {
 				id="editTextBox"
 				placeholder="Type here"
 				value={textBoxValue}
-				onChange={(e) => setTextBoxValue(e.target.value)}
-				style={{ padding: '10px', width: '100%', minHeight: '100px' }}
+				onChange={(e) => {
+					setTextBoxValue(e.target.value)
+					if (!fromValue || !toValue) {
+						return
+					}
+					const result = convert(e.target.value, fromValue, toValue)
+					setResultText(result)
+				}}
+				style={{ padding: '10px', width: '100%', minHeight: '100px', fontSize: '25px' }}
 			/>
-			<div style={{ marginBottom: '10px' }}>
-				<button onClick={() => handleConvert()} style={{
-					padding: '10px',
-					backgroundColor: '#4CAF50',
-					color: 'white',
-					border: 'none',
-					borderRadius: '5px'
-				}}>
-					Convert
-				</button>
-			</div>
-
 			<div>
 				<label htmlFor="resultLabel" style={{ marginRight: '10px' }}>
 					Result:
 				</label>
-				<span id="resultLabel" style={{ fontWeight: 'bold' }}>{resultText}</span>
+				<br/>
+				<span
+					id="resultLabel"
+					style={{ padding: '10px', width: '100%', minHeight: '100px', fontSize: '25px' }}
+				>
+					{resultText}
+				</span>
 			</div>
 		</main>
 	)
