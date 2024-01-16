@@ -11,12 +11,12 @@ export default function Home() {
 	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.ImperialAramaic)
 
 	const options = [
-		{ value: Abjad.Arabic, label: 'Arabic' },
-		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic' },
-		{ value: Abjad.Phoenician, label: 'Phoenician' },
-		{ value: Abjad.Syriac, label: 'Syriac' },
-		{ value: Abjad.Tifinagh, label: 'Tifinagh' },
-		{ value: Abjad.Ugaritic, label: 'Ugaritic' },
+		{ value: Abjad.Arabic, label: 'Arabic ابجد' },
+		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic 𐡀𐡁𐡂𐡃' },
+		{ value: Abjad.Phoenician, label: 'Phoenician 𐤀𐤁𐤂𐤃' },
+		{ value: Abjad.Syriac, label: 'Syriac ܐܒܓܕ' },
+		{ value: Abjad.Tifinagh, label: 'Tifinagh ⴰⴱⵊⴷ' },
+		{ value: Abjad.Ugaritic, label: 'Ugaritic 𐎀𐎁𐎂𐎄' },
 	];
 	const FromSelect = () => <div style={{ marginBottom: '10px' }}>
 		<label htmlFor="fromDropdown" style={{ marginRight: '10px' }}>
