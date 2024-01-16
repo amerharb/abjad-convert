@@ -62,9 +62,9 @@ for example for ugaritic looks like this:
 
 ```ts
 export const letters = [
-  '\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
-  '\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
-  //...
+	'\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
+	'\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
+	//...
 ];
 ```
 - - 'Fo' an alias object called `Fo` short of Foo. this will give an alias for all letters mentioned in the letters array.
@@ -72,9 +72,9 @@ export const letters = [
 for example for ugaritic looks like this:
 ```ts
 export const Ug = {
-  Alpa: letters[0], // 𐎀
-  Beta: letters[1], // 𐎁
-  //...
+	Alpa: letters[0], // 𐎀
+	Beta: letters[1], // 𐎁
+	//...
 };
 ```
 
@@ -91,18 +91,18 @@ However, there is a plan in the future to add IPA to be a canonical hub script.
 - - Adding to Arabic: Add file to `foo` folder with name `toArabic.ts` that include a class called FooToArabicConverter that implements `IConverter` interface.
 it should look like this:
 ```ts
-import { IConverter } from '../types';
+import { IConverter } from '../../types';
 import { Fo } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConverter } from '../IConverter'
-import { Abjad } from '../types'
+import { IConverter } from '../../IConverter'
+import { Abjad } from '../../types'
 
 export class FooToArabicConverter implements IConverter {
 	public readonly from = Abjad.Foo
 	public readonly to = Abjad.Arabic
-    public convert(fooText: string): string {
+	public convert(fooText: string): string {
 		// convert logic here
-        // return (araic text)
+		// return (araic text)
 	}
 }
 ```
@@ -116,9 +116,9 @@ import { FooToArabicConverter } from './foo/toArabic'
 - - - add the converter to converters array in alphabetical order
 ```ts
 const converters: IConverter[] = [
-    //...
+	//...
 	new TifinaghToArabicConverter(),
-    //...
+	//...
 ];
 ```
 - - Add toFoo converter to `arabic` folder with name `toFoo.ts` that include a class called ArabicToFooConverter that implements `IConverter` interface.
@@ -126,16 +126,16 @@ it should look like this:
 ```ts
 import {Ar} from './letters'
 import {Fo} from '../foo/letters'
-import {IConverter} from '../IConverter'
-import {Abjad} from '../types'
+import {IConverter} from '../../IConverter'
+import {Abjad} from '../../types'
 
 export class ArabicToFooConverter implements IConverter {
-    public readonly from = Abjad.Arabic
-    public readonly to = Abjad.Foo
-    public convert(arabicText: string): string {
-        // convert logic here
-        // return (foo text)
-    }
+	public readonly from = Abjad.Arabic
+	public readonly to = Abjad.Foo
+	public convert(arabicText: string): string {
+		// convert logic here
+		// return (foo text)
+	}
 }
 ```
 - - Add toFoo converter to `converterFactory.ts`

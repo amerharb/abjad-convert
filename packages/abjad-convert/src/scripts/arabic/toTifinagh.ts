@@ -1,7 +1,7 @@
 import { Ar } from './letters'
 import { Ti } from '../tifinagh/letters'
-import { IConverter } from '../IConverter'
-import { Abjad } from '../types'
+import { IConverter } from '../../IConverter'
+import { Abjad } from '../../types'
 
 export class ArabicToTifinaghConverter implements IConverter {
 	public readonly from = Abjad.Arabic
