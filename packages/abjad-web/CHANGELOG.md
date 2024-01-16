@@ -3,6 +3,8 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
 ## [0.2.0] 2024-01-16
+### Changed
+- style the page
 
 ## [0.1.0] 2024-01-14
 ### Changed
