@@ -17,7 +17,7 @@ export default function Home() {
 		{ value: Abjad.Syriac, label: 'Syriac ܐܒܓܕ' },
 		{ value: Abjad.Tifinagh, label: 'Tifinagh ⴰⴱⵊⴷ' },
 		{ value: Abjad.Ugaritic, label: 'Ugaritic 𐎀𐎁𐎂𐎄' },
-	];
+	]
 	const FromSelect = () => <div style={{ marginBottom: '10px' }}>
 		<label htmlFor="fromDropdown" style={{ marginRight: '10px' }}>
 			From:
