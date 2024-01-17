@@ -1,3 +1,6 @@
+import { Abjad } from '../../types'
+import { Script } from '../Script'
+
 const letters = [
 	'\uD802\uDD00', /** #0  𐤀 U+10900 PHOENICIAN LETTER Alep */
 	'\uD802\uDD01', /** #1  𐤁 U+10901 PHOENICIAN LETTER Bet */
@@ -32,7 +35,7 @@ const letters = [
 	'\uD802\uDD1F', /** #28 𐤟 U+1091F PHOENICIAN Word Separator */
 ]
 
-export const Ph = {
+const Ph = {
 	Alep: letters[0], // 𐤀
 	Bet: letters[1], // 𐤁
 	Gimi: letters[2], // 𐤂
@@ -63,3 +66,10 @@ export const Ph = {
 	Three: letters[27], // 𐤛
 	WordSeparator: letters[28], // 𐤟
 }
+
+export const phoenician = new Script(
+	Abjad.Phoenician,
+	true,
+	letters,
+	Ph,
+)
