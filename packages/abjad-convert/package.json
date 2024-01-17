@@ -1,6 +1,6 @@
 {
 	"name": "abjad-convert",
-	"version": "0.3.0",
+	"version": "0.3.1-next.0",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"files": [
@@ -35,7 +35,6 @@
 		"make-coverage-badge": "npx make-coverage-badge --report-path coverage/coverage-summary.json --output-path badges/coverage.svg",
 		"dev": "ts-node src/index.ts",
 		"lint": "npx eslint . --max-warnings 0",
-		"lint:fix": "npx eslint . --fix",
-		"prepublishOnly": "yarn lint && yarn build && yarn test"
+		"lint:fix": "npx eslint . --fix"
 	}
 }
