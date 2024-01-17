@@ -1,5 +1,5 @@
 import { Ph } from './letters'
-import { Ar } from '../arabic/letters'
+import { arabic } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
@@ -11,28 +11,28 @@ export class PhoenicianToArabicConverter implements IConverter {
 		[
 			[' ', ' '],
 			[Ph.WordSeparator, ' '],
-			[Ph.Alep, Ar.Alef], // 𐤀 -> ا
-			[Ph.Bet, Ar.Ba], // 𐤁 -> ب
-			[Ph.Gimi, Ar.Jeem], // 𐤂 -> ج
-			[Ph.Dalet, Ar.Dal], // 𐤃 -> د
-			[Ph.He, Ar.Ha], // 𐤄 ->  ه
-			[Ph.Waw, Ar.Waw], // 𐤅 ->  و
-			[Ph.Zayin, Ar.Zay], // 𐤆 ->  ز
-			[Ph.Het, Ar.H7aa], // 𐤇 ->  ح
-			[Ph.Tet, Ar.TTa], // 𐤈 -> ط
-			[Ph.Yod, Ar.Yaa], // 𐤉 -> ي
-			[Ph.Kap, Ar.Kaf], // 𐤊 -> ك
-			[Ph.Lam, Ar.Lam], // 𐤋 -> ل
-			[Ph.Mem, Ar.Meem], // 𐤌 -> م
-			[Ph.Nun, Ar.Noon], // 𐤍 -> ن
-			[Ph.Semk, Ar.Seen], // 𐤎 -> س
-			[Ph.Ain, Ar.Ayn], // 𐤏 -> ع
-			[Ph.Pe, Ar.Fa], // 𐤐 -> ف
-			[Ph.Sade, Ar.Sad], // 𐤑 -> ض
-			[Ph.Qof, Ar.Qaf], // 𐤒 -> ق
-			[Ph.Ros, Ar.Ra], // 𐤓 -> ر
-			[Ph.Shin, Ar.Sheen], // 𐤔 -> ش
-			[Ph.Tau, Ar.Ta], // 𐤕 -> ث
+			[Ph.Alep, arabic.L.Alef], // 𐤀 -> ا
+			[Ph.Bet, arabic.L.Ba], // 𐤁 -> ب
+			[Ph.Gimi, arabic.L.Jeem], // 𐤂 -> ج
+			[Ph.Dalet, arabic.L.Dal], // 𐤃 -> د
+			[Ph.He, arabic.L.Ha], // 𐤄 ->  ه
+			[Ph.Waw, arabic.L.Waw], // 𐤅 ->  و
+			[Ph.Zayin, arabic.L.Zay], // 𐤆 ->  ز
+			[Ph.Het, arabic.L.H7aa], // 𐤇 ->  ح
+			[Ph.Tet, arabic.L.TTa], // 𐤈 -> ط
+			[Ph.Yod, arabic.L.Yaa], // 𐤉 -> ي
+			[Ph.Kap, arabic.L.Kaf], // 𐤊 -> ك
+			[Ph.Lam, arabic.L.Lam], // 𐤋 -> ل
+			[Ph.Mem, arabic.L.Meem], // 𐤌 -> م
+			[Ph.Nun, arabic.L.Noon], // 𐤍 -> ن
+			[Ph.Semk, arabic.L.Seen], // 𐤎 -> س
+			[Ph.Ain, arabic.L.Ayn], // 𐤏 -> ع
+			[Ph.Pe, arabic.L.Fa], // 𐤐 -> ف
+			[Ph.Sade, arabic.L.Sad], // 𐤑 -> ض
+			[Ph.Qof, arabic.L.Qaf], // 𐤒 -> ق
+			[Ph.Ros, arabic.L.Ra], // 𐤓 -> ر
+			[Ph.Shin, arabic.L.Sheen], // 𐤔 -> ش
+			[Ph.Tau, arabic.L.Ta], // 𐤕 -> ث
 		]
 	)
 
