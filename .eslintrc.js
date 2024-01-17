@@ -11,9 +11,6 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
   ],
-  extends: [
-    'plugin:@next/next/recommended',
-  ],
   ignorePatterns: '*.js',
   overrides: [
     {

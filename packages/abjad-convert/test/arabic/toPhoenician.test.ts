@@ -1,4 +1,4 @@
-import { ArabicToPhoenicianConverter } from '../../src/arabic/toPhoenician'
+import { ArabicToPhoenicianConverter } from '../../src/scripts/arabic/toPhoenician'
 import { describe, expect, it } from '@jest/globals'
 
 describe('ArabicToPhoenicianConverter', () => {

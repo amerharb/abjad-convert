@@ -2,7 +2,10 @@
 
 import { useState } from 'react'
 import Select from 'react-select'
+// temp
+// import { Abjad, convert, getLetters } from 'abjad-convert'
 import { Abjad, convert } from 'abjad-convert'
+import OnScreenKeyboard from '@/components/OnScreenKeyboard'
 
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
@@ -56,18 +59,24 @@ export default function Home() {
 			}}
 		/>
 	</div>
-	const handleConvert = () => {
-		if (!fromValue || !toValue) {
-			return
-		}
-		const result = convert(textBoxValue, fromValue, toValue)
-		setResultText(result)
-	}
 
 	return (
 		<main style={{ textAlign: 'center', padding: '20px' }}>
 			<h1>Abjad Converter</h1>
 			{FromSelect()}
+			{/* // temp */}
+			{/*<OnScreenKeyboard*/}
+			{/*	letters={fromValue ? getLetters(fromValue) : []}*/}
+			{/*	onClick={(letter) => {*/}
+			{/*		const newTextBoxValue = textBoxValue + letter*/}
+			{/*		setTextBoxValue(newTextBoxValue)*/}
+			{/*		if (!fromValue || !toValue) {*/}
+			{/*			return*/}
+			{/*		}*/}
+			{/*		const result = convert(newTextBoxValue, fromValue, toValue)*/}
+			{/*		setResultText(result)*/}
+			{/*	}}*/}
+			{/*/>*/}
 			{ToSelect()}
 			<label htmlFor="editTextBox" style={{ marginRight: '10px' }}>
 				Enter Text:

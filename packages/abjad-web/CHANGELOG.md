@@ -1,6 +1,12 @@
-# Changelog
+# abjad-web Changelog
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
+
+## [0.3.0] 2024-01-17
+### Added
+- OnScreen Keyboard
+## Changed
+- use abjad-convert 0.3.0
 
 ## [0.2.0] 2024-01-16
 ### Changed

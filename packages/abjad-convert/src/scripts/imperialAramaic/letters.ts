@@ -1,3 +1,6 @@
+import { Script } from '../Script'
+import { Abjad } from '../../types'
+
 /**
  * Imperial Aramaic letters
  */
@@ -33,9 +36,9 @@ const letters = [
 	'\uD802\uDC5D', /** #27 𐡝 U+1085D IMPERIAL ARAMAIC NUMBER ONE HUNDRED */
 	'\uD802\uDC5E', /** #28 𐡞 U+1085E IMPERIAL ARAMAIC NUMBER ONE THOUSAND */
 	'\uD802\uDC5F', /** #29 𐡟 U+1085F IMPERIAL ARAMAIC NUMBER TEN THOUSAND */
-]
+] as const
 
-export const Ia = {
+const Ia = {
 	Aleph: letters[0], // 𐡀
 	Bet: letters[1], // 𐡁
 	Gimel: letters[2], // 𐡂
@@ -68,3 +71,10 @@ export const Ia = {
 	Thousand: letters[28], // 𐡞
 	TenThousand: letters[29], // 𐡟
 }
+
+export const imperialAramaic = new Script(
+	Abjad.ImperialAramaic,
+	true,
+	letters,
+	Ia,
+)

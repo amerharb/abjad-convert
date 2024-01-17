@@ -64,7 +64,7 @@ jobs:
           always-auth: true
           cache: yarn
 
-      - run: yarn workspace $PACKAGE_NAME install --frozen-lockfile
+      - run: yarn workspace $PACKAGE_NAME install --immutable
 
       - name: publish abjad-convert @next to npm
         if: ${{ env.PACKAGE_NAME == 'abjad-convert' }}
