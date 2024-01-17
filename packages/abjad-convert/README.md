@@ -1,8 +1,8 @@
 # Abjad Convert
-[![Version](https://img.shields.io/badge/version-0.2.1-blue.svg)](https://github.com/amerharb/abjad/tree/version/0.2.1)
+[![Version](https://img.shields.io/badge/version-0.3.0-blue.svg)](https://github.com/amerharb/abjad/tree/version/0.3.0)
 [![License: GPLv3](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-![Coverage](https://raw.githubusercontent.com/amerharb/abjad/abjad-convert/version/0.2.1/packages/abjad-convert/badges/coverage.svg)
-![Github workflow](https://github.com/amerharb/abjad/actions/workflows/lint-test.yaml/badge.svg?branch=abjad-convert/version/0.2.1)
+![Coverage](https://raw.githubusercontent.com/amerharb/abjad/abjad-convert/version/0.3.0/packages/abjad-convert/badges/coverage.svg)
+![Github workflow](https://github.com/amerharb/abjad/actions/workflows/lint-test.yaml/badge.svg?branch=abjad-convert/version/0.3.0)
 
 **abjad-convert** is a package for converting Abjad alphabets phonetically.
 
@@ -61,21 +61,34 @@ follow the value with jsdoc that contain array index, letter itself, unicode val
 for example for ugaritic looks like this:
 
 ```ts
-export const letters = [
+const letters = [
 	'\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
 	'\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
 	//...
 ];
 ```
+
 - - 'Fo' an alias object called `Fo` short of Foo. this will give an alias for all letters mentioned in the letters array.
 
 for example for ugaritic looks like this:
 ```ts
-export const Ug = {
+const Ug = {
 	Alpa: letters[0], // 𐎀
 	Beta: letters[1], // 𐎁
 	//...
 };
+```
+
+- - `foo` an instance of `Script` class, which will be exported
+
+for example for ugaritic looks like this:
+```ts
+export const ugaritic = new Script(
+	Abjad.Ugaritic, // enum value of the script
+	false,          // true if the script is right to left
+	letters,        // array of letters
+	Ug,             // alias object of letters
+)
 ```
 
 - Step #6: Add the script to the enum `Abjad` in `src/types.ts` file.
