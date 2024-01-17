@@ -35,11 +35,12 @@ jobs:
       - name: validate tag name
         run: |
           if [[ ! $TAG_NAME =~ ^$PACKAGE_NAME\/v([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)-next\.([0-9]|[1-9][0-9]*)$ ]]; then
-              echo "❌ Invalid tag name: $TAG_NAME not suitable for next tag publish"
+              echo "❌ Invalid tag name: $TAG_NAME not suitable for @next tag"
               exit 1
           else
               echo "✅ Valid tag name: $TAG_NAME"
           fi
+
       - name: validate version in package.json
         run: |
           if [[ ! $PACKAGE_VERSION =~ ^([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)-next\.([0-9]|[1-9][0-9]*)$ ]]; then
@@ -48,6 +49,7 @@ jobs:
           else
               echo "✅ Valid @next version: $PACKAGE_VERSION"
           fi
+
       - name: check if version in package.json is matching tag name
         run: |
           if [[ "$PACKAGE_NAME/v$PACKAGE_VERSION" != $TAG_NAME ]]; then

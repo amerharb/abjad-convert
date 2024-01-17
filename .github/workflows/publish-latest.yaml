@@ -10,7 +10,7 @@ env:
 
 jobs:
   publish:
-    name: Publish to npm
+    name: Publish latest to npm
     runs-on: ubuntu-latest
     steps:
       - name: fill package name
@@ -35,7 +35,7 @@ jobs:
       - name: validate tag name
         run: |
           if [[ ! $TAG_NAME =~ ^$PACKAGE_NAME\/v([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)$ ]]; then
-              echo "❌ Invalid tag name: $TAG_NAME not suitable for latest release"
+              echo "❌ Invalid tag name: $TAG_NAME not suitable for @latest tag"
               exit 1
           else
               echo "✅ Valid tag name: $TAG_NAME"
@@ -56,7 +56,7 @@ jobs:
               echo "❌ Version in package.json of $PACKAGE_NAME: $PACKAGE_VERSION is not matching with tag name: $TAG_NAME"
               exit 1
           else
-              echo "✅ Version in package.json of $PACKAGE_NAME is matching with tag name"
+              echo "✅ Version: $PACKAGE_VERSION in package.json of $PACKAGE_NAME is matching with tag name: $TAG_NAME"
           fi
 
       - uses: actions/setup-node@v4
@@ -66,10 +66,10 @@ jobs:
           always-auth: true
           cache: yarn
 
-      - run: yarn workspace $PACKAGE_NAME install --frozen-lockfile
+      - run: yarn workspace $PACKAGE_NAME install --immutable
 
       - name: publish abjad-convert @latest to npm
         if: ${{ env.PACKAGE_NAME == 'abjad-convert' }}
-        run: yarn workspace abjad-convert publish --access public --no-git-tag-version --new-version $PACKAGE_VERSION --tag latest
+        run: yarn workspace abjad-convert npm publish --access public --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ABJAD_CONVERT_PUBLISH_AUTH_TOKEN }}
