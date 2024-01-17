@@ -1,4 +1,7 @@
-export const letters = [
+import { Abjad } from '../../types'
+import { Script } from '../Script'
+
+const letters = [
 	'\u2d30', /** #0 ⴰ U+2D30 TIFINAGH LETTER YA */
 	'\u2d31', /** #1 ⴱ U+2D31 TIFINAGH LETTER YAB */
 	'\u2d32', /** #2 ⴲ U+2D32 TIFINAGH LETTER YABH */
@@ -60,7 +63,7 @@ export const letters = [
 	'\u2d7f', /** #55 ⵯ U+2D7F TIFINAGH CONSONANT JOINER */
 ]
 
-export const Ti = {
+const Ti = {
 	Ya: letters[0], // ⴰ
 	Yab: letters[1], // ⴱ
 	Yabh: letters[2], // ⴲ
@@ -121,3 +124,10 @@ export const Ti = {
 	SeparatorMark: letters[57], // ⵯ
 	ConsonantJoiner: letters[58], // ⵯ
 }
+
+export const tifinagh = new Script(
+	Abjad.Tifinagh,
+	true,
+	letters,
+	Ti,
+)
