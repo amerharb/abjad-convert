@@ -34,7 +34,7 @@ const letters = [
 	'\u072D', /** #29 ܭ U+072D SYRIAC LETTER PERSIAN BHETH */
 	'\u072E', /** #30 ܮ U+072E SYRIAC LETTER PERSIAN GHAMAL */
 	'\u072F', /** #31 ܯ U+072F SYRIAC LETTER PERSIAN DHALATH */
-]
+] as const
 
 const Sy = {
 	Alaph: letters[0], // ܐ

@@ -61,7 +61,7 @@ const letters = [
 	'\u2d6f', /** #56 ⵯ U+2D6F TIFINAGH MODIFIER LETTER LABIALIZATION MARK */
 	'\u2d70', /** #54 ⵯ U+2D70 TIFINAGH SEPARATOR MARK */
 	'\u2d7f', /** #55 ⵯ U+2D7F TIFINAGH CONSONANT JOINER */
-]
+] as const
 
 const Ti = {
 	Ya: letters[0], // ⴰ

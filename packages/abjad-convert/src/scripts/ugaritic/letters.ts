@@ -32,7 +32,7 @@ const letters = [
 	'\uD800\uDF9B', /** #27 𐎛 U+1039B UGARITIC LETTER I */
 	'\uD800\uDF9C', /** #28 𐎜 U+1039C UGARITIC LETTER U */
 	'\uD800\uDF9D', /** #29 𐎝 U+1039D UGARITIC LETTER SSU */
-]
+] as const
 
 const Ug = {
 	Alpa: letters[0], // 𐎀

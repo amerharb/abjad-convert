@@ -36,7 +36,7 @@ const letters = [
 	'\uD802\uDC5D', /** #27 𐡝 U+1085D IMPERIAL ARAMAIC NUMBER ONE HUNDRED */
 	'\uD802\uDC5E', /** #28 𐡞 U+1085E IMPERIAL ARAMAIC NUMBER ONE THOUSAND */
 	'\uD802\uDC5F', /** #29 𐡟 U+1085F IMPERIAL ARAMAIC NUMBER TEN THOUSAND */
-]
+] as const
 
 const Ia = {
 	Aleph: letters[0], // 𐡀

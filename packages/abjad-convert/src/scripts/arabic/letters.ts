@@ -37,7 +37,7 @@ const letters = [
 	'\u0648', /** #32  و */
 	'\u0649', /** #33  ى */
 	'\u064A', /** #34  ي */
-]
+] as const
 
 const Ar = {
 	Hamza: letters[0], // ء

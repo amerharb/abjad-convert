@@ -33,7 +33,7 @@ const letters = [
 	'\uD802\uDD1B', /** #27 𐤛 U+1091B PHOENICIAN NUMBER THREE */
 
 	'\uD802\uDD1F', /** #28 𐤟 U+1091F PHOENICIAN Word Separator */
-]
+] as const
 
 const Ph = {
 	Alep: letters[0], // 𐤀
