@@ -24,7 +24,7 @@ yarn:
 yarn add abjad-convert
 ```
 
-Java Script:
+Type Script:
 ```js
 import { convert, Abjad } from 'abjad-convert';
 
