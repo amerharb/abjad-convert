@@ -127,7 +127,7 @@ const Ti = {
 
 export const tifinagh = new Script(
 	Abjad.Tifinagh,
-	true,
+	false,
 	letters,
 	Ti,
 )
