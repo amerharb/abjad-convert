@@ -1,4 +1,4 @@
-import { Ia } from './letters'
+import { imperialAramaic } from './letters'
 import { arabic } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
@@ -10,28 +10,28 @@ export class ImperialAramaicToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[Ia.Aleph, arabic.L.Alef], // 𐡀 -> ا
-			[Ia.Bet, arabic.L.Ba], // 𐡁 -> ب
-			[Ia.Gimel, arabic.L.Jeem], // 𐡂 -> ج
-			[Ia.Daleth, arabic.L.Dal], // 𐡃 -> د
-			[Ia.He, arabic.L.Ha], // 𐡄 -> ه
-			[Ia.Waw, arabic.L.Waw], // 𐡅 -> و
-			[Ia.Zayin, arabic.L.Zay], // 𐡆 -> ز
-			[Ia.Heth, arabic.L.Ha], // 𐡇 -> ح
-			[Ia.Teth, arabic.L.Ta], // 𐡈 -> ط
-			[Ia.Yod, arabic.L.Yaa], // 𐡉 -> ي
-			[Ia.Kaph, arabic.L.Kaf], // 𐡊 -> ك
-			[Ia.Lamedh, arabic.L.Lam], // 𐡋 -> ل
-			[Ia.Mem, arabic.L.Meem], // 𐡌 -> م
-			[Ia.Nun, arabic.L.Noon], // 𐡍 -> ن
-			[Ia.Samekh, arabic.L.Seen], // 𐡎 -> س
-			[Ia.Ayin, arabic.L.Ayn], // 𐡏 -> ع
-			[Ia.Pe, arabic.L.Fa], // 𐡐 -> ف
-			[Ia.Sadhe, arabic.L.Sad], // 𐡑 -> ص
-			[Ia.Qoph, arabic.L.Qaf], // 𐡒 -> ق
-			[Ia.Resh, arabic.L.Ra], // 𐡓 -> ر
-			[Ia.Shin, arabic.L.Sheen], // 𐡔 -> ش
-			[Ia.Taw, arabic.L.Ta], // 𐡕 -> ت
+			[imperialAramaic.L.Aleph, arabic.L.Alef], // 𐡀 -> ا
+			[imperialAramaic.L.Bet, arabic.L.Ba], // 𐡁 -> ب
+			[imperialAramaic.L.Gimel, arabic.L.Jeem], // 𐡂 -> ج
+			[imperialAramaic.L.Daleth, arabic.L.Dal], // 𐡃 -> د
+			[imperialAramaic.L.He, arabic.L.Ha], // 𐡄 -> ه
+			[imperialAramaic.L.Waw, arabic.L.Waw], // 𐡅 -> و
+			[imperialAramaic.L.Zayin, arabic.L.Zay], // 𐡆 -> ز
+			[imperialAramaic.L.Heth, arabic.L.Ha], // 𐡇 -> ح
+			[imperialAramaic.L.Teth, arabic.L.Ta], // 𐡈 -> ط
+			[imperialAramaic.L.Yod, arabic.L.Yaa], // 𐡉 -> ي
+			[imperialAramaic.L.Kaph, arabic.L.Kaf], // 𐡊 -> ك
+			[imperialAramaic.L.Lamedh, arabic.L.Lam], // 𐡋 -> ل
+			[imperialAramaic.L.Mem, arabic.L.Meem], // 𐡌 -> م
+			[imperialAramaic.L.Nun, arabic.L.Noon], // 𐡍 -> ن
+			[imperialAramaic.L.Samekh, arabic.L.Seen], // 𐡎 -> س
+			[imperialAramaic.L.Ayin, arabic.L.Ayn], // 𐡏 -> ع
+			[imperialAramaic.L.Pe, arabic.L.Fa], // 𐡐 -> ف
+			[imperialAramaic.L.Sadhe, arabic.L.Sad], // 𐡑 -> ص
+			[imperialAramaic.L.Qoph, arabic.L.Qaf], // 𐡒 -> ق
+			[imperialAramaic.L.Resh, arabic.L.Ra], // 𐡓 -> ر
+			[imperialAramaic.L.Shin, arabic.L.Sheen], // 𐡔 -> ش
+			[imperialAramaic.L.Taw, arabic.L.Ta], // 𐡕 -> ت
 		]
 	)
 
