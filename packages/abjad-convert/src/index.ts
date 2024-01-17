@@ -19,19 +19,19 @@ export function convert(source: string, from: Abjad, to: Abjad): string {
 
 export function getLetters(script: Abjad): readonly string[] {
 	switch (script) {
-		case Abjad.Arabic:
-			return arabic.letters
-		case Abjad.ImperialAramaic:
-			return imperialAramaic.letters
-		case Abjad.Phoenician:
-			return phoenician.letters
-		case Abjad.Syriac:
-			return syriac.letters
-		case Abjad.Tifinagh:
-			return tifinagh.letters
-		case Abjad.Ugaritic:
-			return ugaritic.letters
-		default:
-			return []
+	case Abjad.Arabic:
+		return arabic.letters
+	case Abjad.ImperialAramaic:
+		return imperialAramaic.letters
+	case Abjad.Phoenician:
+		return phoenician.letters
+	case Abjad.Syriac:
+		return syriac.letters
+	case Abjad.Tifinagh:
+		return tifinagh.letters
+	case Abjad.Ugaritic:
+		return ugaritic.letters
+	default:
+		return []
 	}
 }
