@@ -1,4 +1,7 @@
-export const letters = [
+import { Script } from '../Script'
+import { Abjad } from '../../types'
+
+const letters = [
 	'\u0710', /** #0  ܐ U+0710 SYRIAC LETTER ALAPH */
 	'\u0711', /** #1  ܑ U+0711 SYRIAC LETTER SUPERSCRIPT ALAPH */
 	'\u0712', /** #2  ܒ U+0712 SYRIAC LETTER BETH */
@@ -33,7 +36,7 @@ export const letters = [
 	'\u072F', /** #31 ܯ U+072F SYRIAC LETTER PERSIAN DHALATH */
 ]
 
-export const Sy = {
+const Sy = {
 	Alaph: letters[0], // ܐ
 	SuperaAlaph: letters[1], // ܑ
 	Beth: letters[2], // ܒ
@@ -67,3 +70,10 @@ export const Sy = {
 	PersianGhamal: letters[30], // ܮ
 	PersianDhalath: letters[31], // ܯ
 }
+
+export const syriac = new Script(
+	Abjad.Syriac,
+	true,
+	letters,
+	Sy,
+)

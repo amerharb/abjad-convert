@@ -1,4 +1,4 @@
-import { Sy } from './letters'
+import { syriac } from './letters'
 import { arabic } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
@@ -10,38 +10,38 @@ export class SyriacToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[Sy.Alaph, arabic.L.Alef], // ܐ -> ا
-			[Sy.SuperaAlaph, ''], // TODO: check if this logic is correct
-			[Sy.Beth, arabic.L.Ba], // ܒ -> ب
-			[Sy.Gamal, arabic.L.Jeem], // ܓ -> ج
-			[Sy.GamalGarshuni, arabic.L.Jeem], // ܔ -> ج
-			[Sy.Dalath, arabic.L.Dal], // ܕ -> د
-			[Sy.DalathRish, arabic.L.Dal], // ܖ -> د
-			[Sy.He, arabic.L.Ha], // ܗ ->  ه
-			[Sy.Waw, arabic.L.Waw], // ܘ ->  و
-			[Sy.Zain, arabic.L.Zay], // ܙ ->  ز
-			[Sy.Heth, arabic.L.H7aa], // ܚ ->  ح
-			[Sy.Teth, arabic.L.TTa], // ܛ -> ط
-			[Sy.TethGarshuni, arabic.L.TTa], // ܜ -> ط
-			[Sy.Yudh, arabic.L.Yaa], // ܝ -> ي
-			[Sy.YudhHe, arabic.L.Yaa], // ܞ -> ي
-			[Sy.Kaph, arabic.L.Kaf], // ܟ -> ك
-			[Sy.Lamadh, arabic.L.Lam], // ܠ -> ل
-			[Sy.Mim, arabic.L.Meem], // ܡ -> م
-			[Sy.Nun, arabic.L.Noon], // ܢ -> ن
-			[Sy.Semkath, arabic.L.Seen], // ܣ -> س
-			[Sy.FinalSemkath, arabic.L.Seen], // ܤ -> س
-			[Sy.E, arabic.L.Ayn], // ܥ -> ع
-			[Sy.Pe, arabic.L.Fa], // ܦ -> ف
-			[Sy.ReversedPe, arabic.L.Fa], // ܧ -> ف
-			[Sy.Sadhe, arabic.L.Sad], // ܨ -> ص
-			[Sy.Qaph, arabic.L.Qaf], // ܩ -> ق
-			[Sy.Rish, arabic.L.Ra], // ܪ -> ر
-			[Sy.Shin, arabic.L.Sheen], // ܫ -> ش
-			[Sy.Taw, arabic.L.Ta], // ܬ -> ت
-			[Sy.PersianBheth, arabic.L.Ba], // ܭ -> ب
-			[Sy.PersianGhamal, arabic.L.Jeem],  // ܮ -> ج
-			[Sy.PersianDhalath, arabic.L.Dal],  // ܯ -> د
+			[syriac.L.Alaph, arabic.L.Alef], // ܐ -> ا
+			[syriac.L.SuperaAlaph, ''], // TODO: check if this logic is correct
+			[syriac.L.Beth, arabic.L.Ba], // ܒ -> ب
+			[syriac.L.Gamal, arabic.L.Jeem], // ܓ -> ج
+			[syriac.L.GamalGarshuni, arabic.L.Jeem], // ܔ -> ج
+			[syriac.L.Dalath, arabic.L.Dal], // ܕ -> د
+			[syriac.L.DalathRish, arabic.L.Dal], // ܖ -> د
+			[syriac.L.He, arabic.L.Ha], // ܗ ->  ه
+			[syriac.L.Waw, arabic.L.Waw], // ܘ ->  و
+			[syriac.L.Zain, arabic.L.Zay], // ܙ ->  ز
+			[syriac.L.Heth, arabic.L.H7aa], // ܚ ->  ح
+			[syriac.L.Teth, arabic.L.TTa], // ܛ -> ط
+			[syriac.L.TethGarshuni, arabic.L.TTa], // ܜ -> ط
+			[syriac.L.Yudh, arabic.L.Yaa], // ܝ -> ي
+			[syriac.L.YudhHe, arabic.L.Yaa], // ܞ -> ي
+			[syriac.L.Kaph, arabic.L.Kaf], // ܟ -> ك
+			[syriac.L.Lamadh, arabic.L.Lam], // ܠ -> ل
+			[syriac.L.Mim, arabic.L.Meem], // ܡ -> م
+			[syriac.L.Nun, arabic.L.Noon], // ܢ -> ن
+			[syriac.L.Semkath, arabic.L.Seen], // ܣ -> س
+			[syriac.L.FinalSemkath, arabic.L.Seen], // ܤ -> س
+			[syriac.L.E, arabic.L.Ayn], // ܥ -> ع
+			[syriac.L.Pe, arabic.L.Fa], // ܦ -> ف
+			[syriac.L.ReversedPe, arabic.L.Fa], // ܧ -> ف
+			[syriac.L.Sadhe, arabic.L.Sad], // ܨ -> ص
+			[syriac.L.Qaph, arabic.L.Qaf], // ܩ -> ق
+			[syriac.L.Rish, arabic.L.Ra], // ܪ -> ر
+			[syriac.L.Shin, arabic.L.Sheen], // ܫ -> ش
+			[syriac.L.Taw, arabic.L.Ta], // ܬ -> ت
+			[syriac.L.PersianBheth, arabic.L.Ba], // ܭ -> ب
+			[syriac.L.PersianGhamal, arabic.L.Jeem],  // ܮ -> ج
+			[syriac.L.PersianDhalath, arabic.L.Dal],  // ܯ -> د
 		]
 	)
 
