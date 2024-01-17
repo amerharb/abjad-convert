@@ -1,6 +1,11 @@
 # Changelog
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.3.1]  2024-01-18
+### Fixed
+- deprecate 0.3.0 for wrong publishing
+- publish via GitHub actions
+
 ## [0.3.0]  2024-01-17
 ### Added
 - return array of letters of a script
