@@ -1,4 +1,7 @@
-export const letters = [
+import { Script } from '../Script'
+import { Abjad } from '../../types'
+
+const letters = [
 	'\u0621', /** #0   ء */
 	'\u0622', /** #1   آ */
 	'\u0623', /** #2   أ */
@@ -36,7 +39,7 @@ export const letters = [
 	'\u064A', /** #34  ي */
 ]
 
-export const Ar = {
+const Ar = {
 	Hamza: letters[0], // ء
 	AlefMadda: letters[1], // آ
 	AlefHamza: letters[2], // أ
@@ -73,3 +76,10 @@ export const Ar = {
 	AlefMaksura: letters[33], // ى
 	Yaa: letters[34], // ي
 }
+
+export const arabic = new Script(
+	Abjad.Arabic,
+	true,
+	letters,
+	Ar,
+)

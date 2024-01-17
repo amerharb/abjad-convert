@@ -1,6 +1,10 @@
-export abstract class Script {
-	public abstract readonly name: string
-	public abstract readonly rtl: boolean
-	public abstract readonly letters: string[]
-	public abstract readonly L: Record<string, string>
+import { Abjad } from '../types'
+
+export class Script {
+	constructor(
+		public readonly abjad: Abjad,
+		public readonly rtl: boolean,
+		public readonly letters: string[],
+		public readonly L: Record<string, string>
+	) {}
 }

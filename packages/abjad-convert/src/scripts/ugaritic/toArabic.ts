@@ -1,5 +1,5 @@
-import { Ug } from './letters'
-import { Ar } from '../arabic/letters'
+import { ugaritic } from './letters'
+import { arabic } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
@@ -10,39 +10,36 @@ export class UgariticToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[Ug.Alpa, Ar.Alef],
-			[Ug.Beta, Ar.Ba],
-			[Ug.Gamla, Ar.Jeem],
-			[Ug.Kha, Ar.Khaa],
-			[Ug.Delta, Ar.Dal],
-			[Ug.Ho, Ar.Ha],
-			[Ug.Wo, Ar.Waw],
-			[Ug.Zeta, Ar.Zay],
-
-			[Ug.Hota, Ar.H7aa],
-			[Ug.Tet, Ar.TTa],
-			[Ug.Yod, Ar.Yaa],
-			[Ug.Kaf, Ar.Kaf],
-			[Ug.Shin, Ar.Sheen],
-			[Ug.Lamda, Ar.Lam],
-			[Ug.Mem, Ar.Meem],
-			[Ug.Dhal, Ar.Dad],
-
-			[Ug.Nun, Ar.Noon],
-			[Ug.Zu, Ar.Zay],
-			[Ug.Samka, Ar.Seen],
-			[Ug.Ain, Ar.Ayn],
-			[Ug.Pu, Ar.Fa],
-			[Ug.Sade, Ar.Sad],
-			[Ug.Qopa, Ar.Qaf],
-			[Ug.Rasha, Ar.Ra],
-
-			[Ug.Thanna, Ar.THa],
-			[Ug.Ghain, Ar.Ghayn],
-			[Ug.To, Ar.Ta],
-			[Ug.I, Ar.AlefMaksura],
-			[Ug.U, Ar.Waw],
-			[Ug.Ssu, Ar.Sad],
+			[ugaritic.L.Alpa, arabic.L.Alef],
+			[ugaritic.L.Beta, arabic.L.Ba],
+			[ugaritic.L.Gamla, arabic.L.Jeem],
+			[ugaritic.L.Kha, arabic.L.Khaa],
+			[ugaritic.L.Delta, arabic.L.Dal],
+			[ugaritic.L.Ho, arabic.L.Ha],
+			[ugaritic.L.Wo, arabic.L.Waw],
+			[ugaritic.L.Zeta, arabic.L.Zay],
+			[ugaritic.L.Hota, arabic.L.H7aa],
+			[ugaritic.L.Tet, arabic.L.TTa],
+			[ugaritic.L.Yod, arabic.L.Yaa],
+			[ugaritic.L.Kaf, arabic.L.Kaf],
+			[ugaritic.L.Shin, arabic.L.Sheen],
+			[ugaritic.L.Lamda, arabic.L.Lam],
+			[ugaritic.L.Mem, arabic.L.Meem],
+			[ugaritic.L.Dhal, arabic.L.Dad],
+			[ugaritic.L.Nun, arabic.L.Noon],
+			[ugaritic.L.Zu, arabic.L.Zay],
+			[ugaritic.L.Samka, arabic.L.Seen],
+			[ugaritic.L.Ain, arabic.L.Ayn],
+			[ugaritic.L.Pu, arabic.L.Fa],
+			[ugaritic.L.Sade, arabic.L.Sad],
+			[ugaritic.L.Qopa, arabic.L.Qaf],
+			[ugaritic.L.Rasha, arabic.L.Ra],
+			[ugaritic.L.Thanna, arabic.L.THa],
+			[ugaritic.L.Ghain, arabic.L.Ghayn],
+			[ugaritic.L.To, arabic.L.Ta],
+			[ugaritic.L.I, arabic.L.AlefMaksura],
+			[ugaritic.L.U, arabic.L.Waw],
+			[ugaritic.L.Ssu, arabic.L.Sad],
 		]
 	)
 

@@ -1,4 +1,7 @@
-export const letters = [
+import { Script } from '../Script'
+import { Abjad } from '../../types'
+
+const letters = [
 	'\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
 	'\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
 	'\uD800\uDF82', /** #2  𐎂  U+10382 UGARITIC LETTER GAMLA */
@@ -31,7 +34,7 @@ export const letters = [
 	'\uD800\uDF9D', /** #29 𐎝 U+1039D UGARITIC LETTER SSU */
 ]
 
-export const Ug = {
+const Ug = {
 	Alpa: letters[0], // 𐎀
 	Beta: letters[1], // 𐎁
 	Gamla: letters[2], // 𐎂
@@ -63,3 +66,10 @@ export const Ug = {
 	U: letters[28], // 𐎜
 	Ssu: letters[29], // 𐎝
 }
+
+export const ugaritic = new Script(
+	Abjad.Ugaritic,
+	false,
+	letters,
+	Ug,
+)
