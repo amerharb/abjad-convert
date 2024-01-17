@@ -56,13 +56,6 @@ export default function Home() {
 			}}
 		/>
 	</div>
-	const handleConvert = () => {
-		if (!fromValue || !toValue) {
-			return
-		}
-		const result = convert(textBoxValue, fromValue, toValue)
-		setResultText(result)
-	}
 
 	return (
 		<main style={{ textAlign: 'center', padding: '20px' }}>
