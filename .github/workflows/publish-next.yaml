@@ -68,6 +68,6 @@ jobs:
 
       - name: publish abjad-convert @next to npm
         if: ${{ env.PACKAGE_NAME == 'abjad-convert' }}
-        run: yarn workspace abjad-convert npm publish --access public --no-git-tag-version --new-version $PACKAGE_VERSION --tag next
+        run: yarn workspace abjad-convert npm publish --access public --tag next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.ABJAD_CONVERT_PUBLISH_AUTH_TOKEN }}
