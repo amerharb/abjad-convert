@@ -545,10 +545,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.3.0-next.6":
-  version: 0.3.0-next.6
-  resolution: "abjad-convert@npm:0.3.0-next.6"
-  checksum: a92a5f6a20ee2d228a0384e5d38f10b73dec593991f71c1d88127cab1952e694e3b7a39852ad012b67bde353abee2f8a98c601f6793900b10629a123e14ae5f6
+"abjad-convert@npm:0.3.1-next.2":
+  version: 0.3.1-next.2
+  resolution: "abjad-convert@npm:0.3.1-next.2"
+  checksum: 228ac68d8dcf8034c2ca9654bf9791a5bba6bf4d1ae19c572a52515e7f5f13412cb39525b86e84632ded182a85d1de46169762a543c80a50a54b9b0e9eaa861e
   languageName: node
   linkType: hard
 
@@ -560,7 +560,7 @@ __metadata:
     "@emotion/styled": "npm:^11.11.0"
     "@mui/joy": "npm:^5.0.0-beta.11"
     "@types/react": "npm:^18"
-    abjad-convert: "npm:0.3.0-next.6"
+    abjad-convert: "npm:0.3.1-next.2"
     next: "npm:13.5.6"
     react: "npm:^18"
     react-dom: "npm:^18"
