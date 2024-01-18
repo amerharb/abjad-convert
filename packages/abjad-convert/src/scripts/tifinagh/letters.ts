@@ -121,8 +121,8 @@ const Ti = {
 	Ye: letters[54], // ⵦ
 	Yo: letters[55], // ⵧ
 	ModifierLetterLabializationMark: letters[56], // ⵯ
-	SeparatorMark: letters[57], // ⵯ
-	ConsonantJoiner: letters[58], // ⵯ
+	SeparatorMark: letters[57], // ⵰
+	ConsonantJoiner: letters[58], // ⵿
 }
 
 export const tifinagh = new Script(
