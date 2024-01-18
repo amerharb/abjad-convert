@@ -66,20 +66,10 @@ jobs:
           always-auth: true
           cache: yarn
 
-      - name: install root dependencies
-        run: yarn install --immutable
-
-      - name: install package dependencies
-        run: yarn workspace $PACKAGE_NAME install --immutable
-
-      - name: lint
-        run: yarn workspace $PACKAGE_NAME run lint
-
-      - name: build
-        run: yarn workspace $PACKAGE_NAME run build
-
-      - name: test
-        run: yarn workspace $PACKAGE_NAME run test
+      - run: yarn workspaces foreach --all install --immutable
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test
 
       - name: publish abjad-convert @next to npm
         if: ${{ env.PACKAGE_NAME == 'abjad-convert' }}
