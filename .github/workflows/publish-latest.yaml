@@ -44,10 +44,10 @@ jobs:
       - name: validate version in package.json
         run: |
           if [[ ! $PACKAGE_VERSION =~ ^([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)\.([0-9]|[1-9][0-9]*)$ ]]; then
-              echo "❌ Invalid version name: $PACKAGE_VERSION not suitable for latest release"
+              echo "❌ Invalid version name: $PACKAGE_VERSION not suitable for @latest publish"
               exit 1
           else
-              echo "✅ Valid version: $PACKAGE_VERSION"
+              echo "✅ Valid @latest version: $PACKAGE_VERSION"
           fi
 
       - name: check if version in package.json is matching tag name
@@ -66,20 +66,10 @@ jobs:
           always-auth: true
           cache: yarn
 
-      - name: install root dependencies
-        run: yarn install --immutable
-
-      - name: install package dependencies
-        run: yarn workspace $PACKAGE_NAME install --immutable
-
-      - name: lint
-        run: yarn workspace $PACKAGE_NAME run lint
-
-      - name: build
-        run: yarn workspace $PACKAGE_NAME run build
-
-      - name: test
-        run: yarn workspace $PACKAGE_NAME run test
+      - run: yarn workspaces foreach --all install --immutable
+      - run: yarn lint
+      - run: yarn build
+      - run: yarn test
 
       - name: publish abjad-convert @latest to npm
         if: ${{ env.PACKAGE_NAME == 'abjad-convert' }}
