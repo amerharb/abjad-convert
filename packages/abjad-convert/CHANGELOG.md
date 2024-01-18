@@ -5,6 +5,7 @@
 ### Fixed
 - deprecate 0.3.0 for wrong publishing
 - publish via GitHub actions
+- fix mistake in TifinaghToArabic converter
 
 ## [0.3.0]  2024-01-17
 ### Added

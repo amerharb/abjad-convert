@@ -14,7 +14,9 @@ export class TifinaghToArabicConverter implements IConverter {
 			[tifinagh.L.Yab, arabic.L.Ba], // ⴱ -> ب
 			[tifinagh.L.Yabh, arabic.L.Ba], // ⴲ -> ب P
 			[tifinagh.L.Yag, arabic.L.Jeem], // ⴳ -> ج G
-			[tifinagh.L.Yagh, arabic.L.Jeem], // ⴴ -> ج G
+			[tifinagh.L.Yaghh, arabic.L.Jeem], // ⴴ -> ج G
+			[tifinagh.L.BerberAcademyYaj, arabic.L.Jeem], // ⴵ -> ج
+			[tifinagh.L.Yaj, arabic.L.Jeem], // ⴶ -> ج
 			[tifinagh.L.Yad, arabic.L.Dal], // ⴷ -> د
 			[tifinagh.L.Yadh, arabic.L.Thal], // ⴸ -> ذ
 			[tifinagh.L.Yadd, arabic.L.Dad], // ⴹ -> ض
@@ -65,8 +67,8 @@ export class TifinaghToArabicConverter implements IConverter {
 			[tifinagh.L.Ye, arabic.L.Yaa], // ⵦ -> ي
 			[tifinagh.L.Yo, arabic.L.Waw], // ⵧ -> و
 			[tifinagh.L.ModifierLetterLabializationMark, ''], // ⵯ -> nothing
-			[tifinagh.L.SeparatorMark, ''], // ⵯ -> nothing
-			[tifinagh.L.ConsonantJoiner, ''], // ⵯ -> nothing
+			[tifinagh.L.SeparatorMark, ''], // ⵰ -> nothing
+			[tifinagh.L.ConsonantJoiner, ''], // ⵿ -> nothing
 		]
 	)
 
