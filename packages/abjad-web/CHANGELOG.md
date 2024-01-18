@@ -6,7 +6,7 @@
 ### Added
 - OnScreen Keyboard
 ## Changed
-- use abjad-convert 0.3.0
+- use abjad-convert 0.3.1
 
 ## [0.2.0] 2024-01-16
 ### Changed
