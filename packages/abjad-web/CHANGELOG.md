@@ -2,6 +2,10 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.3.1] 2024-01-18
+### Fixed
+- add key to btn to remove warning
+
 ## [0.3.0] 2024-01-17
 ### Added
 - OnScreen Keyboard
