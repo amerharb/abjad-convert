@@ -2,6 +2,12 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.4.0] 2024-01-19
+### Added
+- Vercel analytic
+### Fixed
+- add key to btn to remove warning
+
 ## [0.3.0] 2024-01-17
 ### Added
 - OnScreen Keyboard
