@@ -7,7 +7,7 @@ type Props = {
 
 const OnScreenKeyboard: FC<Props> = ({ letters, onClick }) => {
 	return <div>
-		{letters.map((letter) => <button onClick={() => onClick(letter)}>{letter}</button>)}
+		{letters.map((letter, index) => <button key={`btn${index}`} onClick={() => onClick(letter)}>{letter}</button>)}
 	</div>
 }
 
