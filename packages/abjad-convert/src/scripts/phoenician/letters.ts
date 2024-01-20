@@ -35,7 +35,7 @@ const letters = [
 	'\uD802\uDD1F', /** #28 𐤟 U+1091F PHOENICIAN Word Separator */
 ] as const
 
-const Ph = {
+export const Ph = {
 	Alep: letters[0], // 𐤀
 	Bet: letters[1], // 𐤁
 	Gimi: letters[2], // 𐤂
@@ -71,5 +71,4 @@ export const phoenician = new Script(
 	Abjad.Phoenician,
 	true,
 	letters,
-	Ph,
 )

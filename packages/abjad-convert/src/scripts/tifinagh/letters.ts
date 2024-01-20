@@ -63,7 +63,7 @@ const letters = [
 	'\u2d7f', /** #55 ⵯ U+2D7F TIFINAGH CONSONANT JOINER */
 ] as const
 
-const Ti = {
+export const Ti = {
 	Ya: letters[0], // ⴰ
 	Yab: letters[1], // ⴱ
 	Yabh: letters[2], // ⴲ
@@ -129,5 +129,4 @@ export const tifinagh = new Script(
 	Abjad.Tifinagh,
 	false,
 	letters,
-	Ti,
 )

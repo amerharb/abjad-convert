@@ -1701,7 +1701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.3.1":
+"abjad-convert@npm:^0":
   version: 0.3.1
   resolution: "abjad-convert@npm:0.3.1"
   checksum: eb6b6a742d778d244225572a91c37829b96ec4d38d75c4eec8209e5e864008252c1eff16db2162d75799375414648c0b8328dd6eed4f2580101315f2f28749f9
@@ -1740,7 +1740,7 @@ __metadata:
     "@mui/joy": "npm:^5.0.0-beta.11"
     "@types/react": "npm:^18"
     "@vercel/analytics": "npm:^1.1.2"
-    abjad-convert: "npm:0.3.1"
+    abjad-convert: "npm:^0"
     next: "npm:13.5.6"
     react: "npm:^18"
     react-dom: "npm:^18"

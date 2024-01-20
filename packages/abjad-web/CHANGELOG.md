@@ -3,6 +3,10 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
 ## [0.4.0] 2024-01-19
+### Changed
+- use latest of abjad-convert major 0 `^0`
+
+## [0.4.0] 2024-01-19
 ### Added
 - Vercel analytic
 ### Fixed
