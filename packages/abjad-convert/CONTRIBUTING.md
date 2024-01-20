@@ -26,7 +26,7 @@ const letters = [
 
 for example for ugaritic looks like this:
 ```ts
-const Ug = {
+export const Ug = {
 	Alpa: letters[0], // 𐎀
 	Beta: letters[1], // 𐎁
 	//...
@@ -41,7 +41,6 @@ export const ugaritic = new Script(
 	Abjad.Ugaritic, // enum value of the script
 	false,          // true if the script is right to left
 	letters,        // array of letters
-	Ug,             // alias object of letters
 )
 ```
 
@@ -84,28 +83,29 @@ import { FooToArabicConverter } from './foo/toArabic'
 ```ts
 const converters: IConverter[] = [
 	//...
-	new TifinaghToArabicConverter(),
+	new FooToArabicConverter(),
 	//...
 ];
 ```
 - - Add toFoo converter to `arabic` folder with name `toFoo.ts` that include a class called ArabicToFooConverter that implements `IConverter` interface.
     it should look like this:
 ```ts
-import {Ar} from './letters'
-import {Fo} from '../foo/letters'
-import {IConverter} from '../../IConverter'
-import {Abjad} from '../../types'
+import { Ar } from './letters'
+import { Fo } from '../foo/letters'
+import { IConverter } from '../../IConverter'
+import { Abjad } from '../../types'
 
 export class ArabicToFooConverter implements IConverter {
 	public readonly from = Abjad.Arabic
 	public readonly to = Abjad.Foo
+
 	public convert(arabicText: string): string {
 		// convert logic here
 		// return (foo text)
 	}
 }
 ```
-- - Add toFoo converter to `converterFactory.ts`
+- - Add toFoo converter to `converterFactory.ts` same like above.
 
 - Step #8 add unit test to`test/index.test.ts`.
 
