@@ -2,6 +2,10 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.4.2] 2024-01-20
+### Changed
+- use abjad-convert@0.3.3
+
 ## [0.4.1] 2024-01-20
 ### Changed
 - use latest of abjad-convert major 0 `^0`
