@@ -2,6 +2,8 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
 ## [0.3.2]  2024-01-20
+### Fixed
+- letter 𐡇 in Aramaic to Arabic ح
 ### Changed
 - remove aliased L in class script and reExport letter aliases from file letters.ts
 
