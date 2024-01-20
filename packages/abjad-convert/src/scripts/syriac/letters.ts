@@ -36,7 +36,7 @@ const letters = [
 	'\u072F', /** #31 ܯ U+072F SYRIAC LETTER PERSIAN DHALATH */
 ] as const
 
-const Sy = {
+export const Sy = {
 	Alaph: letters[0], // ܐ
 	SuperaAlaph: letters[1], // ܑ
 	Beth: letters[2], // ܒ
@@ -75,5 +75,4 @@ export const syriac = new Script(
 	Abjad.Syriac,
 	true,
 	letters,
-	Sy,
 )

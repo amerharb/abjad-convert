@@ -39,7 +39,7 @@ const letters = [
 	'\u064A', /** #34  ي */
 ] as const
 
-const Ar = {
+export const Ar = {
 	Hamza: letters[0], // ء
 	AlefMadda: letters[1], // آ
 	AlefHamza: letters[2], // أ
@@ -81,5 +81,4 @@ export const arabic = new Script(
 	Abjad.Arabic,
 	true,
 	letters,
-	Ar,
 )

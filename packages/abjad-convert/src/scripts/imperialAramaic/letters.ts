@@ -38,7 +38,7 @@ const letters = [
 	'\uD802\uDC5F', /** #29 𐡟 U+1085F IMPERIAL ARAMAIC NUMBER TEN THOUSAND */
 ] as const
 
-const Ia = {
+export const Ia = {
 	Aleph: letters[0], // 𐡀
 	Bet: letters[1], // 𐡁
 	Gimel: letters[2], // 𐡂
@@ -76,5 +76,4 @@ export const imperialAramaic = new Script(
 	Abjad.ImperialAramaic,
 	true,
 	letters,
-	Ia,
 )

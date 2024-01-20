@@ -1,5 +1,5 @@
-import { tifinagh } from './letters'
-import { arabic } from '../arabic/letters'
+import { Ti } from './letters'
+import { Ar } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
@@ -10,65 +10,65 @@ export class TifinaghToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[tifinagh.L.Ya, arabic.L.Alef], // ⴰ -> ا
-			[tifinagh.L.Yab, arabic.L.Ba], // ⴱ -> ب
-			[tifinagh.L.Yabh, arabic.L.Ba], // ⴲ -> ب P
-			[tifinagh.L.Yag, arabic.L.Jeem], // ⴳ -> ج G
-			[tifinagh.L.Yaghh, arabic.L.Jeem], // ⴴ -> ج G
-			[tifinagh.L.BerberAcademyYaj, arabic.L.Jeem], // ⴵ -> ج
-			[tifinagh.L.Yaj, arabic.L.Jeem], // ⴶ -> ج
-			[tifinagh.L.Yad, arabic.L.Dal], // ⴷ -> د
-			[tifinagh.L.Yadh, arabic.L.Thal], // ⴸ -> ذ
-			[tifinagh.L.Yadd, arabic.L.Dad], // ⴹ -> ض
-			[tifinagh.L.Yaddh, arabic.L.THa], // ⴺ -> ظ
-			[tifinagh.L.Yey, arabic.L.Ha], // ⴻ -> ه
-			[tifinagh.L.Yaf, arabic.L.Fa], // ⴼ -> ف
-			[tifinagh.L.Yak, arabic.L.Kaf], // ⴽ -> ك
-			[tifinagh.L.TuaregYak, arabic.L.Kaf], // ⴾ -> ك
-			[tifinagh.L.Yakhh, arabic.L.Kaf], // ⴿ -> ك
-			[tifinagh.L.Yah, arabic.L.Ha], // ⵀ -> هـ , TODO: also it can be B ب
-			[tifinagh.L.BerberAcademyYah, arabic.L.Ha], // ⵁ -> هـ
-			[tifinagh.L.TuaregYah, arabic.L.Ha], // ⵂ -> هـ
-			[tifinagh.L.Yahh, arabic.L.H7aa], // ⵃ -> ح
-			[tifinagh.L.Yaa, arabic.L.Ayn], // ⵄ -> ع
-			[tifinagh.L.Yakh, arabic.L.Khaa], // ⵅ -> خ
-			[tifinagh.L.TuaregYakh, arabic.L.Khaa], // ⵆ -> خ
-			[tifinagh.L.Yaq, arabic.L.Qaf], // ⵇ -> ق
-			[tifinagh.L.TuaregYaq, arabic.L.Qaf], // ⵈ -> ق
-			[tifinagh.L.Yi, arabic.L.Yaa], // ⵉ -> ي
-			[tifinagh.L.Yazh, arabic.L.Jeem], // ⵊ -> ج
-			[tifinagh.L.AhaggarYazh, arabic.L.Jeem], // ⵋ -> ج
-			[tifinagh.L.TuaregYazh, arabic.L.Jeem], // ⵌ -> ج
-			[tifinagh.L.Yal, arabic.L.Lam], // ⵍ -> ل
-			[tifinagh.L.Yam, arabic.L.Meem], // ⵎ -> م
-			[tifinagh.L.Yan, arabic.L.Noon], // ⵏ -> ن
-			[tifinagh.L.TuaregYagn, arabic.L.Noon], // ⵐ -> ن IPA: ɲ TODO: this is 2 letters of ني
-			[tifinagh.L.TuaregYang, arabic.L.Noon], // ⵑ -> ن IPA: ŋ
-			[tifinagh.L.Yap, arabic.L.Ba], // ⵒ -> ب
-			[tifinagh.L.Yu, arabic.L.Waw], // ⵓ -> و
-			[tifinagh.L.Yar, arabic.L.Ra], // ⵔ -> ر
-			[tifinagh.L.Yarr, arabic.L.Ra], // ⵕ -> ر
-			[tifinagh.L.Yagh, arabic.L.Ghayn], // ⵖ -> غ
-			[tifinagh.L.TuaregYagh, arabic.L.Ghayn], // ⵗ -> غ
-			[tifinagh.L.AyerYagh, arabic.L.Ghayn], // ⵘ -> غ TODO: this can be ج
-			[tifinagh.L.Yas, arabic.L.Seen], // ⵙ -> س
-			[tifinagh.L.Yass, arabic.L.Seen], // ⵚ -> ص
-			[tifinagh.L.Yash, arabic.L.Sheen], // ⵛ -> ش
-			[tifinagh.L.Yat, arabic.L.Ta], // ⵜ -> ت
-			[tifinagh.L.Yath, arabic.L.Tha], // ⵝ -> ث
-			[tifinagh.L.Yach, arabic.L.Jeem], // ⵞ -> ج
-			[tifinagh.L.Yatt, arabic.L.Ta], // ⵟ -> ت
-			[tifinagh.L.Yav, arabic.L.Fa], // ⵠ -> ف
-			[tifinagh.L.Yaw, arabic.L.Waw], // ⵡ -> و
-			[tifinagh.L.Yay, arabic.L.Yaa], // ⵢ -> ي
-			[tifinagh.L.Yaz, arabic.L.Zay], // ⵣ -> ز
-			[tifinagh.L.TawellemetYaz, arabic.L.Zay], // ⵤ -> ز
-			[tifinagh.L.Yazz, arabic.L.Zay], // ⵥ -> ز
-			[tifinagh.L.Ye, arabic.L.Yaa], // ⵦ -> ي
-			[tifinagh.L.Yo, arabic.L.Waw], // ⵧ -> و
-			[tifinagh.L.ModifierLetterLabializationMark, ''], // ⵯ -> nothing
-			[tifinagh.L.SeparatorMark, ''], // ⵰ -> nothing
-			[tifinagh.L.ConsonantJoiner, ''], // ⵿ -> nothing
+			[Ti.Ya, Ar.Alef], // ⴰ -> ا
+			[Ti.Yab, Ar.Ba], // ⴱ -> ب
+			[Ti.Yabh, Ar.Ba], // ⴲ -> ب P
+			[Ti.Yag, Ar.Jeem], // ⴳ -> ج G
+			[Ti.Yaghh, Ar.Jeem], // ⴴ -> ج G
+			[Ti.BerberAcademyYaj, Ar.Jeem], // ⴵ -> ج
+			[Ti.Yaj, Ar.Jeem], // ⴶ -> ج
+			[Ti.Yad, Ar.Dal], // ⴷ -> د
+			[Ti.Yadh, Ar.Thal], // ⴸ -> ذ
+			[Ti.Yadd, Ar.Dad], // ⴹ -> ض
+			[Ti.Yaddh, Ar.THa], // ⴺ -> ظ
+			[Ti.Yey, Ar.Ha], // ⴻ -> ه
+			[Ti.Yaf, Ar.Fa], // ⴼ -> ف
+			[Ti.Yak, Ar.Kaf], // ⴽ -> ك
+			[Ti.TuaregYak, Ar.Kaf], // ⴾ -> ك
+			[Ti.Yakhh, Ar.Kaf], // ⴿ -> ك
+			[Ti.Yah, Ar.Ha], // ⵀ -> هـ , TODO: also it can be B ب
+			[Ti.BerberAcademyYah, Ar.Ha], // ⵁ -> هـ
+			[Ti.TuaregYah, Ar.Ha], // ⵂ -> هـ
+			[Ti.Yahh, Ar.H7aa], // ⵃ -> ح
+			[Ti.Yaa, Ar.Ayn], // ⵄ -> ع
+			[Ti.Yakh, Ar.Khaa], // ⵅ -> خ
+			[Ti.TuaregYakh, Ar.Khaa], // ⵆ -> خ
+			[Ti.Yaq, Ar.Qaf], // ⵇ -> ق
+			[Ti.TuaregYaq, Ar.Qaf], // ⵈ -> ق
+			[Ti.Yi, Ar.Yaa], // ⵉ -> ي
+			[Ti.Yazh, Ar.Jeem], // ⵊ -> ج
+			[Ti.AhaggarYazh, Ar.Jeem], // ⵋ -> ج
+			[Ti.TuaregYazh, Ar.Jeem], // ⵌ -> ج
+			[Ti.Yal, Ar.Lam], // ⵍ -> ل
+			[Ti.Yam, Ar.Meem], // ⵎ -> م
+			[Ti.Yan, Ar.Noon], // ⵏ -> ن
+			[Ti.TuaregYagn, Ar.Noon], // ⵐ -> ن IPA: ɲ TODO: this is 2 letters of ني
+			[Ti.TuaregYang, Ar.Noon], // ⵑ -> ن IPA: ŋ
+			[Ti.Yap, Ar.Ba], // ⵒ -> ب
+			[Ti.Yu, Ar.Waw], // ⵓ -> و
+			[Ti.Yar, Ar.Ra], // ⵔ -> ر
+			[Ti.Yarr, Ar.Ra], // ⵕ -> ر
+			[Ti.Yagh, Ar.Ghayn], // ⵖ -> غ
+			[Ti.TuaregYagh, Ar.Ghayn], // ⵗ -> غ
+			[Ti.AyerYagh, Ar.Ghayn], // ⵘ -> غ TODO: this can be ج
+			[Ti.Yas, Ar.Seen], // ⵙ -> س
+			[Ti.Yass, Ar.Seen], // ⵚ -> ص
+			[Ti.Yash, Ar.Sheen], // ⵛ -> ش
+			[Ti.Yat, Ar.Ta], // ⵜ -> ت
+			[Ti.Yath, Ar.Tha], // ⵝ -> ث
+			[Ti.Yach, Ar.Jeem], // ⵞ -> ج
+			[Ti.Yatt, Ar.Ta], // ⵟ -> ت
+			[Ti.Yav, Ar.Fa], // ⵠ -> ف
+			[Ti.Yaw, Ar.Waw], // ⵡ -> و
+			[Ti.Yay, Ar.Yaa], // ⵢ -> ي
+			[Ti.Yaz, Ar.Zay], // ⵣ -> ز
+			[Ti.TawellemetYaz, Ar.Zay], // ⵤ -> ز
+			[Ti.Yazz, Ar.Zay], // ⵥ -> ز
+			[Ti.Ye, Ar.Yaa], // ⵦ -> ي
+			[Ti.Yo, Ar.Waw], // ⵧ -> و
+			[Ti.ModifierLetterLabializationMark, ''], // ⵯ -> nothing
+			[Ti.SeparatorMark, ''], // ⵰ -> nothing
+			[Ti.ConsonantJoiner, ''], // ⵿ -> nothing
 		]
 	)
 

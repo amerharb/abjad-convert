@@ -1,5 +1,5 @@
-import { arabic } from './letters'
-import { tifinagh } from '../tifinagh/letters'
+import { Ar } from './letters'
+import { Ti } from '../tifinagh/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
@@ -10,41 +10,41 @@ export class ArabicToTifinaghConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[arabic.L.Hamza, tifinagh.L.Ya], /** ء -> ⴰ */
-			[arabic.L.AlefMadda, tifinagh.L.Ya], /** ا -> ⴰ */
-			[arabic.L.AlefHamza, tifinagh.L.Ya], /** أ -> ⴰ*/
-			[arabic.L.WawHamza, tifinagh.L.Yu], /** ؤ -> ⵓ */
-			[arabic.L.AlefHamzaMaksura, tifinagh.L.Ya], /** ى -> ⴰ */
-			[arabic.L.Alef, tifinagh.L.Ya], /** ا -> ⴰ */
-			[arabic.L.Ba, tifinagh.L.Yab], /** ب -> ⴱ */
-			[arabic.L.TaMarbuta, tifinagh.L.Ya], /** ة -> ⴰ */
-			[arabic.L.Ta, tifinagh.L.Yat], /** ت -> ⵜ */
-			[arabic.L.Tha, tifinagh.L.Yath], /** ث -> ⵝ */
-			[arabic.L.Jeem, tifinagh.L.Yazh], /** ج -> ⵊ */
-			[arabic.L.H7aa, tifinagh.L.Yahh], /** ح -> ⵃ */
-			[arabic.L.Khaa, tifinagh.L.Yakh], /** خ -> ⵅ */
-			[arabic.L.Dal, tifinagh.L.Yad], /** د -> ⴷ */
-			[arabic.L.Thal, tifinagh.L.Yadh], /** ذ -> ⴸ */
-			[arabic.L.Ra, tifinagh.L.Yar], /** ر -> ⵔ */
-			[arabic.L.Zay, tifinagh.L.Ya], /** ز -> ⴰ */
-			[arabic.L.Seen, tifinagh.L.Yas], /** س -> ⵙ */
-			[arabic.L.Sheen, tifinagh.L.Yash], /** ش -> ⵛ */
-			[arabic.L.Sad, tifinagh.L.Yat], /** ص -> ⵜ */
-			[arabic.L.Dad, tifinagh.L.Yadd], /** ض -> ⴹ */
-			[arabic.L.TTa, tifinagh.L.Yatt], /** ط -> ⵟ */
-			[arabic.L.THa, tifinagh.L.Yaddh], /** ظ -> ⴺ */
-			[arabic.L.Ayn, tifinagh.L.Yaa], /** ع -> ⵄ */
-			[arabic.L.Ghayn, tifinagh.L.Yagh], /** غ -> ⵖ */
-			[arabic.L.Fa, tifinagh.L.Yaf], /** ف -> ⴼ */
-			[arabic.L.Qaf, tifinagh.L.Yaq], /** ق -> ⵇ */
-			[arabic.L.Kaf, tifinagh.L.Yak], /** ك -> ⴽ */
-			[arabic.L.Lam, tifinagh.L.Yal], /** ل -> ⵍ */
-			[arabic.L.Meem, tifinagh.L.Yam], /** م -> ⵎ */
-			[arabic.L.Noon, tifinagh.L.Yan], /** ن -> ⵏ */
-			[arabic.L.Ha, tifinagh.L.Yey], /** ه -> ⴻ */
-			[arabic.L.Waw, tifinagh.L.Yu], /** و -> ⵓ */
-			[arabic.L.AlefMaksura, tifinagh.L.Ya], /** ى -> ⴰ */
-			[arabic.L.Yaa, tifinagh.L.Yi], /** ي -> ⵉ */
+			[Ar.Hamza, Ti.Ya], /** ء -> ⴰ */
+			[Ar.AlefMadda, Ti.Ya], /** ا -> ⴰ */
+			[Ar.AlefHamza, Ti.Ya], /** أ -> ⴰ*/
+			[Ar.WawHamza, Ti.Yu], /** ؤ -> ⵓ */
+			[Ar.AlefHamzaMaksura, Ti.Ya], /** ى -> ⴰ */
+			[Ar.Alef, Ti.Ya], /** ا -> ⴰ */
+			[Ar.Ba, Ti.Yab], /** ب -> ⴱ */
+			[Ar.TaMarbuta, Ti.Ya], /** ة -> ⴰ */
+			[Ar.Ta, Ti.Yat], /** ت -> ⵜ */
+			[Ar.Tha, Ti.Yath], /** ث -> ⵝ */
+			[Ar.Jeem, Ti.Yazh], /** ج -> ⵊ */
+			[Ar.H7aa, Ti.Yahh], /** ح -> ⵃ */
+			[Ar.Khaa, Ti.Yakh], /** خ -> ⵅ */
+			[Ar.Dal, Ti.Yad], /** د -> ⴷ */
+			[Ar.Thal, Ti.Yadh], /** ذ -> ⴸ */
+			[Ar.Ra, Ti.Yar], /** ر -> ⵔ */
+			[Ar.Zay, Ti.Ya], /** ز -> ⴰ */
+			[Ar.Seen, Ti.Yas], /** س -> ⵙ */
+			[Ar.Sheen, Ti.Yash], /** ش -> ⵛ */
+			[Ar.Sad, Ti.Yat], /** ص -> ⵜ */
+			[Ar.Dad, Ti.Yadd], /** ض -> ⴹ */
+			[Ar.TTa, Ti.Yatt], /** ط -> ⵟ */
+			[Ar.THa, Ti.Yaddh], /** ظ -> ⴺ */
+			[Ar.Ayn, Ti.Yaa], /** ع -> ⵄ */
+			[Ar.Ghayn, Ti.Yagh], /** غ -> ⵖ */
+			[Ar.Fa, Ti.Yaf], /** ف -> ⴼ */
+			[Ar.Qaf, Ti.Yaq], /** ق -> ⵇ */
+			[Ar.Kaf, Ti.Yak], /** ك -> ⴽ */
+			[Ar.Lam, Ti.Yal], /** ل -> ⵍ */
+			[Ar.Meem, Ti.Yam], /** م -> ⵎ */
+			[Ar.Noon, Ti.Yan], /** ن -> ⵏ */
+			[Ar.Ha, Ti.Yey], /** ه -> ⴻ */
+			[Ar.Waw, Ti.Yu], /** و -> ⵓ */
+			[Ar.AlefMaksura, Ti.Ya], /** ى -> ⴰ */
+			[Ar.Yaa, Ti.Yi], /** ي -> ⵉ */
 		]
 	)
 

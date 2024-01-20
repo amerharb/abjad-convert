@@ -34,7 +34,7 @@ const letters = [
 	'\uD800\uDF9D', /** #29 𐎝 U+1039D UGARITIC LETTER SSU */
 ] as const
 
-const Ug = {
+export const Ug = {
 	Alpa: letters[0], // 𐎀
 	Beta: letters[1], // 𐎁
 	Gamla: letters[2], // 𐎂
@@ -71,5 +71,4 @@ export const ugaritic = new Script(
 	Abjad.Ugaritic,
 	false,
 	letters,
-	Ug,
 )

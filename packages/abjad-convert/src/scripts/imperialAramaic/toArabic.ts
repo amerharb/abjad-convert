@@ -1,5 +1,5 @@
-import { imperialAramaic } from './letters'
-import { arabic } from '../arabic/letters'
+import { Ia } from './letters'
+import { Ar } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
@@ -10,28 +10,28 @@ export class ImperialAramaicToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[imperialAramaic.L.Aleph, arabic.L.Alef], // 𐡀 -> ا
-			[imperialAramaic.L.Bet, arabic.L.Ba], // 𐡁 -> ب
-			[imperialAramaic.L.Gimel, arabic.L.Jeem], // 𐡂 -> ج
-			[imperialAramaic.L.Daleth, arabic.L.Dal], // 𐡃 -> د
-			[imperialAramaic.L.He, arabic.L.Ha], // 𐡄 -> ه
-			[imperialAramaic.L.Waw, arabic.L.Waw], // 𐡅 -> و
-			[imperialAramaic.L.Zayin, arabic.L.Zay], // 𐡆 -> ز
-			[imperialAramaic.L.Heth, arabic.L.Ha], // 𐡇 -> ح
-			[imperialAramaic.L.Teth, arabic.L.Ta], // 𐡈 -> ط
-			[imperialAramaic.L.Yod, arabic.L.Yaa], // 𐡉 -> ي
-			[imperialAramaic.L.Kaph, arabic.L.Kaf], // 𐡊 -> ك
-			[imperialAramaic.L.Lamedh, arabic.L.Lam], // 𐡋 -> ل
-			[imperialAramaic.L.Mem, arabic.L.Meem], // 𐡌 -> م
-			[imperialAramaic.L.Nun, arabic.L.Noon], // 𐡍 -> ن
-			[imperialAramaic.L.Samekh, arabic.L.Seen], // 𐡎 -> س
-			[imperialAramaic.L.Ayin, arabic.L.Ayn], // 𐡏 -> ع
-			[imperialAramaic.L.Pe, arabic.L.Fa], // 𐡐 -> ف
-			[imperialAramaic.L.Sadhe, arabic.L.Sad], // 𐡑 -> ص
-			[imperialAramaic.L.Qoph, arabic.L.Qaf], // 𐡒 -> ق
-			[imperialAramaic.L.Resh, arabic.L.Ra], // 𐡓 -> ر
-			[imperialAramaic.L.Shin, arabic.L.Sheen], // 𐡔 -> ش
-			[imperialAramaic.L.Taw, arabic.L.Ta], // 𐡕 -> ت
+			[Ia.Aleph, Ar.Alef], // 𐡀 -> ا
+			[Ia.Bet, Ar.Ba], // 𐡁 -> ب
+			[Ia.Gimel, Ar.Jeem], // 𐡂 -> ج
+			[Ia.Daleth, Ar.Dal], // 𐡃 -> د
+			[Ia.He, Ar.Ha], // 𐡄 -> ه
+			[Ia.Waw, Ar.Waw], // 𐡅 -> و
+			[Ia.Zayin, Ar.Zay], // 𐡆 -> ز
+			[Ia.Heth, Ar.Ha], // 𐡇 -> ح
+			[Ia.Teth, Ar.Ta], // 𐡈 -> ط
+			[Ia.Yod, Ar.Yaa], // 𐡉 -> ي
+			[Ia.Kaph, Ar.Kaf], // 𐡊 -> ك
+			[Ia.Lamedh, Ar.Lam], // 𐡋 -> ل
+			[Ia.Mem, Ar.Meem], // 𐡌 -> م
+			[Ia.Nun, Ar.Noon], // 𐡍 -> ن
+			[Ia.Samekh, Ar.Seen], // 𐡎 -> س
+			[Ia.Ayin, Ar.Ayn], // 𐡏 -> ع
+			[Ia.Pe, Ar.Fa], // 𐡐 -> ف
+			[Ia.Sadhe, Ar.Sad], // 𐡑 -> ص
+			[Ia.Qoph, Ar.Qaf], // 𐡒 -> ق
+			[Ia.Resh, Ar.Ra], // 𐡓 -> ر
+			[Ia.Shin, Ar.Sheen], // 𐡔 -> ش
+			[Ia.Taw, Ar.Ta], // 𐡕 -> ت
 		]
 	)
 
