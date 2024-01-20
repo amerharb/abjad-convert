@@ -18,7 +18,7 @@ export class ImperialAramaicToArabicConverter implements IConverter {
 			[Ia.Waw, Ar.Waw], // 𐡅 -> و
 			[Ia.Zayin, Ar.Zay], // 𐡆 -> ز
 			[Ia.Heth, Ar.H7aa], // 𐡇 -> ح
-			[Ia.Teth, Ar.Ta], // 𐡈 -> ط
+			[Ia.Teth, Ar.TTa], // 𐡈 -> ط
 			[Ia.Yod, Ar.Yaa], // 𐡉 -> ي
 			[Ia.Kaph, Ar.Kaf], // 𐡊 -> ك
 			[Ia.Lamedh, Ar.Lam], // 𐡋 -> ل
