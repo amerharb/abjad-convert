@@ -85,6 +85,7 @@ export default function Home() {
 			</label>
 			<textarea
 				id="editTextBox"
+				dir="auto"
 				placeholder="Type here"
 				value={textBoxValue}
 				onChange={(e) => {
@@ -104,6 +105,7 @@ export default function Home() {
 				<br/>
 				<span
 					id="resultLabel"
+					dir="auto"
 					style={{ padding: '10px', width: '100%', minHeight: '100px', fontSize: '25px' }}
 				>
 					{resultText}
