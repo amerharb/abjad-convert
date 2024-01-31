@@ -6,6 +6,7 @@
 ### Added
 - favicon
 - info about page's GitHub, npm and email
+- Speed Insights
 
 ## [0.4.2] 2024-01-20
 ### Changed
