@@ -65,7 +65,7 @@ export default function Home() {
 			{FromSelect()}
 			<OnScreenKeyboard
 				letters={fromValue ? getLetters(fromValue) : []}
-				onClick={(letter) => {
+				onClickLetter={(letter) => {
 					const newTextBoxValue = textBoxValue + letter
 					setTextBoxValue(newTextBoxValue)
 					if (!fromValue || !toValue) {
@@ -73,6 +73,10 @@ export default function Home() {
 					}
 					const result = convert(newTextBoxValue, fromValue, toValue)
 					setResultText(result)
+				}}
+				onClearAll={() => {
+					setTextBoxValue('')
+					setResultText('')
 				}}
 			/>
 			{ToSelect()}
