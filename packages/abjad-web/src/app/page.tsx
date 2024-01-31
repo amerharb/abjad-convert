@@ -104,6 +104,26 @@ export default function Home() {
 					{resultText}
 				</span>
 			</div>
+			<hr/>
+			<div style={{ marginTop: '20px', fontSize: '22px' }}>
+				This is an open source project. based on npm package{' '}
+				<a href="https://www.npmjs.com/package/abjad-convert" style={{ textDecoration: 'none' }}>
+					<img src="https://static-production.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png" alt="NPM"
+						 style={{ width: '25px', height: '25px' }}/>
+					{' '}abjad-convert</a>
+				<br/>
+				You can find the source code on{' '}
+				<a href="https://www.github.com/amerharb/abjad" style={{ textDecoration: 'none' }}>
+					<img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub"
+						 style={{ width: '25px', height: '25px' }}/>
+					{' '}GitHub
+				</a>
+				<br/>
+				You welcome to contribute to the project.
+			</div>
+			<div style={{ marginTop: '25px', fontSize: '22px' }}>
+				<a href="mailto:abjad@amerharb.com" style={{ textDecoration: 'none' }}>✉️ Email</a>
+			</div>
 		</main>
 	)
 }
