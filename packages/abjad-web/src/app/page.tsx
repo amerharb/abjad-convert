@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Select from 'react-select'
 import { Abjad, convert, getLetters } from 'abjad-convert'
 import OnScreenKeyboard from '@/components/OnScreenKeyboard'
+import Image from 'next/image'
 
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
@@ -64,7 +65,7 @@ export default function Home() {
 			{FromSelect()}
 			<OnScreenKeyboard
 				letters={fromValue ? getLetters(fromValue) : []}
-				onClick={(letter) => {
+				onClickLetter={(letter) => {
 					const newTextBoxValue = textBoxValue + letter
 					setTextBoxValue(newTextBoxValue)
 					if (!fromValue || !toValue) {
@@ -72,6 +73,10 @@ export default function Home() {
 					}
 					const result = convert(newTextBoxValue, fromValue, toValue)
 					setResultText(result)
+				}}
+				onClearAll={() => {
+					setTextBoxValue('')
+					setResultText('')
 				}}
 			/>
 			{ToSelect()}
@@ -103,6 +108,28 @@ export default function Home() {
 				>
 					{resultText}
 				</span>
+			</div>
+			<hr/>
+			<div style={{ marginTop: '20px', fontSize: '22px' }}>
+				This is an open source project. based on npm package{' '}
+				<a href="https://www.npmjs.com/package/abjad-convert" style={{ textDecoration: 'none' }}>
+					<Image src="/images/Npm-logo.svg" alt="NPM" width={54} height={21}
+						 style={{ width: '54px', height: '21px' }}/>
+					{' '}abjad-convert
+				</a>
+				<br/>
+				You can find the source code on{' '}
+				<a href="https://www.github.com/amerharb/abjad" style={{ textDecoration: 'none' }}>
+					<Image src="/images/Github-logo.svg" alt="GitHub" width={32}
+						   height={32}
+						   style={{ width: '32px', height: '32px' }}/>
+					{' '}GitHub
+				</a>
+				<br/>
+				You welcome to contribute to the project.
+			</div>
+			<div style={{ marginTop: '25px', fontSize: '22px' }}>
+				<a href="mailto:abjad@amerharb.com" style={{ textDecoration: 'none' }}>✉️ Email</a>
 			</div>
 		</main>
 	)

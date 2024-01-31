@@ -2,6 +2,13 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.5.0] 2024-01-31
+### Added
+- favicon
+- info about page's GitHub, npm and email
+- Speed Insights
+- Space and Clear all buttons
+
 ## [0.4.2] 2024-01-20
 ### Changed
 - use abjad-convert@0.3.3
