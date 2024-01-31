@@ -5,6 +5,8 @@
 ## [0.5.1] 2024-02-01
 ### Fixed
 - text direction to auto to support RTL languages
+### Added
+- Backspace button
 
 ## [0.5.0] 2024-01-31
 ### Added

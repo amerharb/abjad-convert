@@ -78,6 +78,15 @@ export default function Home() {
 					setTextBoxValue('')
 					setResultText('')
 				}}
+				onBackSpace={() => {
+					const newTextBoxValue = textBoxValue.slice(0, -1)
+					setTextBoxValue(newTextBoxValue)
+					if (!fromValue || !toValue) {
+						return
+					}
+					const result = convert(newTextBoxValue, fromValue, toValue)
+					setResultText(result)
+				}}
 			/>
 			{ToSelect()}
 			<label htmlFor="editTextBox" style={{ marginRight: '10px' }}>
