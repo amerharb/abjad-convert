@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Select from 'react-select'
 import { Abjad, convert, getLetters } from 'abjad-convert'
 import OnScreenKeyboard from '@/components/OnScreenKeyboard'
+import Image from 'next/image'
 
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
@@ -108,13 +109,13 @@ export default function Home() {
 			<div style={{ marginTop: '20px', fontSize: '22px' }}>
 				This is an open source project. based on npm package{' '}
 				<a href="https://www.npmjs.com/package/abjad-convert" style={{ textDecoration: 'none' }}>
-					<img src="https://static-production.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png" alt="NPM"
+					<Image src="https://static-production.npmjs.com/b0f1a8318363185cc2ea6a40ac23eeb2.png" alt="NPM"
 						 style={{ width: '25px', height: '25px' }}/>
 					{' '}abjad-convert</a>
 				<br/>
 				You can find the source code on{' '}
 				<a href="https://www.github.com/amerharb/abjad" style={{ textDecoration: 'none' }}>
-					<img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub"
+					<Image src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub"
 						 style={{ width: '25px', height: '25px' }}/>
 					{' '}GitHub
 				</a>
