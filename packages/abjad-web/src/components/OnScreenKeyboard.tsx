@@ -13,13 +13,13 @@ const OnScreenKeyboard: FC<Props> = ({ letters, onClickLetter, onBackSpace, onCl
 			<button key={`btn_letter${index}`} onClick={() => onClickLetter(letter)}>{letter}</button>)
 		}
 		<button key={`btn_space`} style={{ marginLeft: '10px', backgroundColor: 'lightsteelblue' }}
-				onClick={() => onClickLetter(' ')}>␣
+			onClick={() => onClickLetter(' ')}>␣
 		</button>
 		<button key={`btn_backSpace`} style={{ marginLeft: '2px', backgroundColor: 'lightsteelblue' }}
-				onClick={onBackSpace}>&#x232B;
+			onClick={onBackSpace}>&#x232B;
 		</button>
 		<button key={`btn_clearAll`} style={{ marginLeft: '2px', backgroundColor: 'lightsteelblue' }}
-				onClick={onClearAll}>❌
+			onClick={onClearAll}>❌
 		</button>
 	</div>
 }
