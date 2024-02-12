@@ -39,7 +39,7 @@ const letters = [
 	'\uD802\uDE7F', /** #31 𐹿 U+10A7F OLD SOUTH ARABIAN NUMERIC INDICATOR */
 ] as const
 
-export const sa = {
+export const Sa = {
 	He: letters[0], // 𐹠
 	Lamedh: letters[1], // 𐹡
 	Heth: letters[2], // 𐹢
