@@ -1,6 +1,8 @@
 # Changelog
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.5.0]  2024-02-12
+
 ## [0.3.3]  2024-01-20
 ### Fixed
 - letter 𐡈 in Aramaic to Arabic ط
