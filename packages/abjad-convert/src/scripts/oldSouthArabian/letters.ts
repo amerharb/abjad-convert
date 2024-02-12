@@ -38,3 +38,44 @@ const letters = [
 	'\uD802\uDE7E', /** #30 𐹾 U+10A7E OLD SOUTH ARABIAN NUMBER FIFTY */
 	'\uD802\uDE7F', /** #31 𐹿 U+10A7F OLD SOUTH ARABIAN NUMERIC INDICATOR */
 ] as const
+
+export const sa = {
+	He: letters[0], // 𐹠
+	Lamedh: letters[1], // 𐹡
+	Heth: letters[2], // 𐹢
+	Mem: letters[3], // 𐹣
+	Qoph: letters[4], // 𐹤
+	Waw: letters[5], // 𐹥
+	Shin: letters[6], // 𐹦
+	Resh: letters[7], // 𐹧
+	Beth: letters[8], // 𐹨
+	Taw: letters[9], // 𐹩
+	Sat: letters[10], // 𐹪
+	Kaph: letters[11], // 𐹫
+	Nun: letters[12], // 𐹬
+	Kheth: letters[13], // 𐹭
+	Sadhe: letters[14], // 𐹮
+	Samekh: letters[15], // 𐹯
+	Fe: letters[16], // 𐹰
+	Alef: letters[17], // 𐹱
+	Ayin: letters[18], // 𐹲
+	Dhadhe: letters[19], // 𐹳
+	Gimel: letters[20], // 𐹴
+	Daleth: letters[21], // 𐹵
+	Ghayn: letters[22], // 𐹶
+	Teth: letters[23], // 𐹷
+	Zayn: letters[24], // 𐹸
+	Dhaleth: letters[25], // 𐹹
+	Yodh: letters[26], // 𐹺
+	Thaw: letters[27], // 𐹻
+	Theth: letters[28], // 𐹼
+	ONE: letters[29], // 𐹽
+	FIFTY: letters[30], // 𐹾
+	INDICATOR: letters[31], // 𐹿
+}
+
+export const oldSouthArabian = new Script(
+	Abjad.OldSouthArabian,
+	true,
+	letters,
+)
