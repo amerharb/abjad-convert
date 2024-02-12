@@ -10,6 +10,7 @@ import { PhoenicianToArabicConverter } from './scripts/phoenician/toArabic'
 import { SyriacToArabicConverter } from './scripts/syriac/toArabic'
 import { TifinaghToArabicConverter } from './scripts/tifinagh/toArabic'
 import { UgariticToArabicConverter } from './scripts/ugaritic/toArabic'
+import { OldSouthArabicToArabicConverter } from './scripts/oldSouthArabian/toArabic'
 
 const converters: IConverter[] = [
 	new ArabicToImperialAramaicConverter(),
@@ -18,6 +19,7 @@ const converters: IConverter[] = [
 	new ArabicToTifinaghConverter(),
 	new ArabicToUgariticConverter(),
 	new ImperialAramaicToArabicConverter(),
+	new OldSouthArabicToArabicConverter(),
 	new PhoenicianToArabicConverter(),
 	new SyriacToArabicConverter(),
 	new TifinaghToArabicConverter(),
