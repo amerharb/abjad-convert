@@ -9,6 +9,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('𐡀 𐡁 𐡂')
 			})
 		})
+		describe('to OldSouthArabian', () => {
+			it('convert ا ب ج into \uD802\uDE71 \uD802\uDE68 \uD802\uDE74', () => {
+				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.OldSouthArabian)
+				expect(actual).toEqual('\uD802\uDE71 \uD802\uDE68 \uD802\uDE74')
+			})
+		})
 		describe('to Phoenician', () => {
 			it('convert ا ب ج into 𐤀𐤟𐤁𐤟𐤂', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Phoenician)
@@ -63,6 +69,14 @@ describe('convert()', () => {
 			it('convert 𐡀 𐡁 𐡂 into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('𐡀 𐡁 𐡂', Abjad.ImperialAramaic, Abjad.Ugaritic)
 				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+		})
+	})
+	describe('from OldSouthArabian', () => {
+		describe('to Arabic', () => {
+			it('convert \uD802\uDE71 \uD802\uDE68 \uD802\uDE74 into ا ب ج', () => {
+				const actual = convert('\uD802\uDE71 \uD802\uDE68 \uD802\uDE74', Abjad.OldSouthArabian, Abjad.Arabic)
+				expect(actual).toEqual('ا ب ج')
 			})
 		})
 	})
