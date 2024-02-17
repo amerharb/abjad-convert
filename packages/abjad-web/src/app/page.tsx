@@ -15,6 +15,7 @@ export default function Home() {
 	const options = [
 		{ value: Abjad.Arabic, label: 'Arabic ابجد' },
 		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic 𐡀𐡁𐡂𐡃' },
+		{ value: Abjad.OldSouthArabian, label: 'Old South Arabian 𐩱𐩨𐩴𐩵' },
 		{ value: Abjad.Phoenician, label: 'Phoenician 𐤀𐤁𐤂𐤃' },
 		{ value: Abjad.Syriac, label: 'Syriac ܐܒܓܕ' },
 		{ value: Abjad.Tifinagh, label: 'Tifinagh ⴰⴱⵊⴷ' },
