@@ -2,6 +2,8 @@
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
 ## [0.5.0]  2024-02-12
+### Added
+- Support Old South Arabian
 
 ## [0.3.3]  2024-01-20
 ### Fixed

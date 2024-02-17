@@ -9,6 +9,7 @@
 current supported alphabets:
 - Arabic
 - Imperial Aramaic
+- Old South Arabian
 - Phoenician
 - Syriac
 - Tifinagh
@@ -32,6 +33,9 @@ const arabicWord = 'مرحبا';
 
 const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
 console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
+
+const oldSouthArabianWord = convert(arabicWord, Abjad.Arabic, Abjad.OldSouthArabian);
+console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡
 
 const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
 console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀

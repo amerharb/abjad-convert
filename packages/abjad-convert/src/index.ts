@@ -2,6 +2,7 @@ import { getConverter } from './converterFactory'
 import { Abjad } from './types'
 import { arabic } from './scripts/arabic/letters'
 import { imperialAramaic } from './scripts/imperialAramaic/letters'
+import { oldSouthArabian } from './scripts/oldSouthArabian/letters'
 import { phoenician } from './scripts/phoenician/letters'
 import { syriac } from './scripts/syriac/letters'
 import { tifinagh } from './scripts/tifinagh/letters'
@@ -23,6 +24,8 @@ export function getLetters(script: Abjad): readonly string[] {
 		return arabic.letters
 	case Abjad.ImperialAramaic:
 		return imperialAramaic.letters
+	case Abjad.OldSouthArabian:
+		return oldSouthArabian.letters
 	case Abjad.Phoenician:
 		return phoenician.letters
 	case Abjad.Syriac:
