@@ -13,10 +13,10 @@ export class ArabicToOldSouthArabianConverter implements IConverter {
 			[Ar.Hamza, Sa.Alef], // ء ->
 			[Ar.AlefMadda, Sa.Alef], // آ ->
 			[Ar.AlefHamza, Sa.Alef], // أ ->
-			[Ar.WawHamza, Sa.Waw], // ؤ -> 
+			[Ar.WawHamza, Sa.Waw], // ؤ ->
 			[Ar.AlefHamzaMaksura, Sa.Yodh], // ى ->
 			[Ar.Alef, Sa.Alef], // ا ->
-			[Ar.Ba, Sa.Beth], // ب -> 
+			[Ar.Ba, Sa.Beth], // ب ->
 			[Ar.TaMarbuta, Sa.He], // ة ->
 			[Ar.Ta, Sa.Taw], // ت ->
 			[Ar.Tha, Sa.Thaw], // ث ->
@@ -28,8 +28,8 @@ export class ArabicToOldSouthArabianConverter implements IConverter {
 			[Ar.Ra, Sa.Resh], // ر ->
 			[Ar.Zay, Sa.Zayn], // ز ->
 			[Ar.Seen, Sa.Sat], // س ->
-			[Ar.Sheen, Sa.Shin], // ش -> 
-			[Ar.Sad, Sa.Sadhe], // ص -> 
+			[Ar.Sheen, Sa.Shin], // ش ->
+			[Ar.Sad, Sa.Sadhe], // ص ->
 			[Ar.Dad, Sa.Dhadhe], // ض ->
 			[Ar.TTa, Sa.Teth], // ط ->
 			[Ar.THa, Sa.Theth], // ظ ->
