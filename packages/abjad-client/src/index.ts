@@ -7,8 +7,8 @@ log(`convert Arabic text ${arabic} to Ugaritic`)
 log(calmConvert(arabic, Abjad.Arabic, Abjad.Ugaritic))
 log(`convert Arabic text ${arabic} to Phoenician`)
 log(calmConvert(arabic, Abjad.Arabic, Abjad.Phoenician))
-log(`convert Arabic text ${"ابجد"} to Old South Arabian`)
-log(calmConvert("ابجد", Abjad.Arabic, Abjad.OldSouthArabian))
+log(`convert Arabic text ${arabic} to Old South Arabian`)
+log(calmConvert(arabic, Abjad.Arabic, Abjad.OldSouthArabian))
 
 const imperialAramaic = '𐡀 𐡁 𐡂 𐡃 𐡄 𐡅'
 log(`convert ImperialAramaic text ${imperialAramaic} to Arabic`)
