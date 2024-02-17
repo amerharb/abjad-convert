@@ -45,7 +45,7 @@ export class ArabicToOldSouthArabianConverter implements IConverter {
 			[Ar.Waw, Sa.Waw], // و ->
 			[Ar.Yaa, Sa.Yodh], // ي ->
 			[Ar.AlefMaksura, Sa.Alef], // ى ->
-		]
+		],
 	)
 
 	public convert(text: string): string {
