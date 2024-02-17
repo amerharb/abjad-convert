@@ -2,6 +2,12 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.6.0] 2024-02-17
+### Changed
+- Use Abjad Convert v0.5.0
+### Added
+- Support Old South Arabian
+
 ## [0.5.1] 2024-02-01
 ### Fixed
 - text direction to auto to support RTL languages
