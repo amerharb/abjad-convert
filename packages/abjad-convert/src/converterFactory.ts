@@ -7,11 +7,11 @@ import { ArabicToSyriacConverter } from './scripts/arabic/toSyriac'
 import { ArabicToTifinaghConverter } from './scripts/arabic/toTifinagh'
 import { ArabicToUgariticConverter } from './scripts/arabic/toUgaritic'
 import { ImperialAramaicToArabicConverter } from './scripts/imperialAramaic/toArabic'
+import { OldSouthArabicToArabicConverter } from './scripts/oldSouthArabian/toArabic'
 import { PhoenicianToArabicConverter } from './scripts/phoenician/toArabic'
 import { SyriacToArabicConverter } from './scripts/syriac/toArabic'
 import { TifinaghToArabicConverter } from './scripts/tifinagh/toArabic'
 import { UgariticToArabicConverter } from './scripts/ugaritic/toArabic'
-import { OldSouthArabicToArabicConverter } from './scripts/oldSouthArabian/toArabic'
 
 const converters: IConverter[] = [
 	new ArabicToImperialAramaicConverter(),
