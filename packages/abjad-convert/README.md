@@ -51,3 +51,5 @@ console.log(tifinaghWord); // ⵎⵔⵃⴱⴰ
 const ugariticWord = convert(arabicWord, Abjad.Arabic, Abjad.Ugaritic);
 console.log(ugariticWord); // 𐎎𐎗𐎈𐎁𐎀
 ```
+## How to contribute
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct.
