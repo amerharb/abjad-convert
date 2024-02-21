@@ -1,4 +1,4 @@
-import { Ip } from './letters'
+import { IPA } from './letters'
 import { Ar } from '../arabic/letters'
 import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
