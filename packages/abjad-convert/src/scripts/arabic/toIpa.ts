@@ -11,34 +11,34 @@ export class ArabicToIpaConverter implements IConverter {
 		[
 			[' ', ' '],
 			[Ar.Hamza, IPA.ʔ], /** ء -> ʔ */
-			[Ar.AlefMadda, IPA.ʔ + 'a' + IPA.ː], /** آ -> ʔaː */
-			[Ar.AlefHamza, IPA.ʔ + 'a'], /** ʔa <- أ */
-			[Ar.WawHamza, IPA.ʔ + 'u' + IPA.ː], /** ʔːu <- ؤ */
-			[Ar.AlefHamzaMaksura, IPA.ʔ + 'j'], /** ʔj <- إ */
-			[Ar.Alef, 'a' + IPA.ː], /** aː <- ا */
-			[Ar.Ba, 'b'], /** b <- ب */
-			[Ar.TaMarbuta, 'h'], /** h <- ة */
-			[Ar.Ta, 't'], /** t <- ت */
+			[Ar.AlefMadda, IPA.ʔ + IPA.a + IPA.ː], /** آ -> ʔaː */
+			[Ar.AlefHamza, IPA.ʔ + IPA.a], /** ʔa <- أ */
+			[Ar.WawHamza, IPA.ʔ + IPA.u + IPA.ː], /** ʔːu <- ؤ */
+			[Ar.AlefHamzaMaksura, IPA.ʔ + IPA.j], /** ʔj <- إ */
+			[Ar.Alef, IPA.a + IPA.ː], /** aː <- ا */
+			[Ar.Ba, IPA.b], /** b <- ب */
+			[Ar.TaMarbuta, IPA.h], /** h <- ة */
+			[Ar.Ta, IPA.t], /** t <- ت */
 			[Ar.Tha, IPA.θ], /** θ <- ث */
 			[Ar.Jeem, IPA.ʒ], /** ʒ <- ج */
 			[Ar.H7aa, IPA.ħ], /** ħ <- ح */
-			[Ar.Khaa, 'x'], /** x <- خ */
-			[Ar.Dal, 'd'], /** d <- د */
+			[Ar.Khaa, IPA.x], /** x <- خ */
+			[Ar.Dal, IPA.d], /** d <- د */
 			[Ar.Thal, IPA.ð], /** ð <- ذ */
-			[Ar.Ra, 'r'], /** r <- ر */
-			[Ar.Zay, 'z'], /** z <- ز */
-			[Ar.Seen, 's'], /** s <- س */
+			[Ar.Ra, IPA.r], /** r <- ر */
+			[Ar.Zay, IPA.z], /** z <- ز */
+			[Ar.Seen, IPA.s], /** s <- س */
 			[Ar.Sheen, IPA.ʃ], /** ʃ <- ش */
 
-			// still need to replace æ and @
+			// TODO: still need to replace æ and @
 			// [Ar.Sad, IPA.æ], /** @ <- ص */
 			// [Ar.Dad, IPA.æ], /** @ <- ض */
 			// [Ar.TTa, IPA.æ], /** @ <- ط */
 			// [Ar.THa, IPA.æ], /** @ <- ظ */
-			// [Ar.Ayn, IPA.æ], /** @ <- ع */
+			[Ar.Ayn, IPA.ʕ], /** ʕ <- ع */
 			// [Ar.Ghayn, IPA.æ], /** @ <- غ */
-			// [Ar.Fa, IPA.æ], /** @ <- ف */
-			// [Ar.Qaf, IPA.æ], /** @ <- ق */
+			[Ar.Fa, IPA.f], /** f <- ف */
+			[Ar.Qaf, IPA.q], /** q <- ق */
 			// [Ar.Kaf, IPA.æ], /** @ <- ك */
 			// [Ar.Lam, IPA.æ], // 𐤋 <	- ل
 			// [Ar.Meem, IPA.æ], /** @ <- م */

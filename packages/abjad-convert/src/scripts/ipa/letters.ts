@@ -1,6 +1,6 @@
 import { Script } from '../Script'
 import { Abjad } from '../../types'
-
+import { letters as englishLetters } from './englishLetters'
 /**
  * IPA letters
  */
@@ -115,6 +115,9 @@ const letters = [
 	'\u02AF', /** #106 ʯ U+02AF LATIN SMALL LETTER TURNED H WITH FISHHOOK AND TAIL */
 
 	'\u02D0', /** #107 ː U+02D0 MODIFIER LETTER TRIANGULAR COLON */
+
+	/** #108 to #133 from 26 englishLetters a-z*/
+	...englishLetters,
 ] as const
 
 export const IPA = {
@@ -237,6 +240,34 @@ export const IPA = {
 	ʯ: letters[106],
 
 	ː: letters[107],
+
+	// from englishLetters a-z
+	a: letters[108],
+	b: letters[109],
+	c: letters[110],
+	d: letters[111],
+	e: letters[112],
+	f: letters[113],
+	g: letters[114],
+	h: letters[115],
+	i: letters[116],
+	j: letters[117],
+	k: letters[118],
+	l: letters[119],
+	m: letters[120],
+	n: letters[121],
+	o: letters[122],
+	p: letters[123],
+	q: letters[124],
+	r: letters[125],
+	s: letters[126],
+	t: letters[127],
+	u: letters[128],
+	v: letters[129],
+	w: letters[130],
+	x: letters[131],
+	y: letters[132],
+	z: letters[133],
 }
 
 export const ipa = new Script(
