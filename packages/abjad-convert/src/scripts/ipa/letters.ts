@@ -114,9 +114,10 @@ const letters = [
 	'\u02AE', /** #105 ʮ U+02AE LATIN SMALL LETTER TURNED H WITH FISHHOOK */
 	'\u02AF', /** #106 ʯ U+02AF LATIN SMALL LETTER TURNED H WITH FISHHOOK AND TAIL */
 
-	'\u02D0', /** #107 ː U+02D0 MODIFIER LETTER TRIANGULAR COLON */
+	'\u02E4', /** #107 ˤ U+02E4 MODIFIER LETTER SMALL REVERSED GLOTTAL STOP */
+	'\u02D0', /** #108 ː U+02D0 MODIFIER LETTER TRIANGULAR COLON */
 
-	/** #108 to #133 from 26 englishLetters a-z*/
+	/** #109 to #134 from 26 englishLetters a-z*/
 	...englishLetters,
 ] as const
 
@@ -240,34 +241,35 @@ export const IPA = {
 	ʯ: letters[106],
 
 	ː: letters[107],
+	ˤ: letters[108],
 
 	// from englishLetters a-z
-	a: letters[108],
-	b: letters[109],
-	c: letters[110],
-	d: letters[111],
-	e: letters[112],
-	f: letters[113],
-	g: letters[114],
-	h: letters[115],
-	i: letters[116],
-	j: letters[117],
-	k: letters[118],
-	l: letters[119],
-	m: letters[120],
-	n: letters[121],
-	o: letters[122],
-	p: letters[123],
-	q: letters[124],
-	r: letters[125],
-	s: letters[126],
-	t: letters[127],
-	u: letters[128],
-	v: letters[129],
-	w: letters[130],
-	x: letters[131],
-	y: letters[132],
-	z: letters[133],
+	a: letters[109], //
+	b: letters[110],
+	c: letters[111], //
+	d: letters[112],
+	e: letters[113], //
+	f: letters[114],
+	g: letters[115],
+	h: letters[116],
+	i: letters[117],
+	j: letters[118],
+	k: letters[119],
+	l: letters[120],
+	m: letters[121],
+	n: letters[122],
+	o: letters[123],
+	p: letters[124],
+	q: letters[125],
+	r: letters[126],
+	s: letters[127],
+	t: letters[128],
+	u: letters[129],
+	v: letters[130],
+	w: letters[131],
+	x: letters[132],
+	y: letters[133],
+	z: letters[134],
 }
 
 export const ipa = new Script(

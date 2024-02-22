@@ -29,12 +29,10 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.Zay, IPA.z], /** z <- ز */
 			[Ar.Seen, IPA.s], /** s <- س */
 			[Ar.Sheen, IPA.ʃ], /** ʃ <- ش */
-
-			// TODO: still need to replace æ and @
-			// [Ar.Sad, IPA.æ], /** @ <- ص */
-			// [Ar.Dad, IPA.æ], /** @ <- ض */
-			// [Ar.TTa, IPA.æ], /** @ <- ط */
-			// [Ar.THa, IPA.æ], /** @ <- ظ */
+			[Ar.Sad, IPA.s + IPA.ˤ], /** sˤ <- ص */
+			[Ar.Dad, IPA.d + IPA.ˤ], /** dˤ <- ض */
+			[Ar.TTa, IPA.t + IPA.ˤ], /** @ <- ط */
+			[Ar.THa, IPA.ð + IPA.ˤ], /** @ <- ظ */
 			[Ar.Ayn, IPA.ʕ], /** ʕ <- ع */
 			[Ar.Ghayn, IPA.ɣ], /** ɣ <- غ */
 			[Ar.Fa, IPA.f], /** f <- ف */
@@ -44,9 +42,9 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.Meem, IPA.m], /** m <- م */
 			[Ar.Noon, IPA.n], /** n <- ن */
 			[Ar.Ha, IPA.h], /** h <- ه */
-			// [Ar.Waw, IPA.æ], /** @ <- و */
-			// [Ar.Yaa, IPA.æ], /** @ <- ي */
-			// [Ar.AlefMaksura, IPA.æ], /** @ <- ى */
+			[Ar.Waw, IPA.ː + IPA.u], /** ːu <- و */
+			[Ar.Yaa, IPA.ː + IPA.i], /** ːi <- ي */
+			[Ar.AlefMaksura, IPA.a], /** a <- ى */
 		],
 	)
 
