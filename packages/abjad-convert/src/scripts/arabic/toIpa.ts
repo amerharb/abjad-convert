@@ -36,14 +36,14 @@ export class ArabicToIpaConverter implements IConverter {
 			// [Ar.TTa, IPA.æ], /** @ <- ط */
 			// [Ar.THa, IPA.æ], /** @ <- ظ */
 			[Ar.Ayn, IPA.ʕ], /** ʕ <- ع */
-			// [Ar.Ghayn, IPA.æ], /** @ <- غ */
+			[Ar.Ghayn, IPA.ɣ], /** ɣ <- غ */
 			[Ar.Fa, IPA.f], /** f <- ف */
 			[Ar.Qaf, IPA.q], /** q <- ق */
-			// [Ar.Kaf, IPA.æ], /** @ <- ك */
-			// [Ar.Lam, IPA.æ], // 𐤋 <	- ل
-			// [Ar.Meem, IPA.æ], /** @ <- م */
-			// [Ar.Noon, IPA.æ], /** @ <- ن */
-			// [Ar.Ha, IPA.æ], /** @ <- ه */
+			[Ar.Kaf, IPA.k], /** k <- ك */
+			[Ar.Lam, IPA.l], /** l <- ل */
+			[Ar.Meem, IPA.m], /** m <- م */
+			[Ar.Noon, IPA.n], /** n <- ن */
+			[Ar.Ha, IPA.h], /** h <- ه */
 			// [Ar.Waw, IPA.æ], /** @ <- و */
 			// [Ar.Yaa, IPA.æ], /** @ <- ي */
 			// [Ar.AlefMaksura, IPA.æ], /** @ <- ى */
