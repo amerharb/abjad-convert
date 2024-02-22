@@ -20,17 +20,17 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.TaMarbuta, 'h'], /** h <- ة */
 			[Ar.Ta, 't'], /** t <- ت */
 			[Ar.Tha, IPA.θ], /** θ <- ث */
-			[Ar.Jeem, IPA.ʒ  ], /** ʒ <- ج */
+			[Ar.Jeem, IPA.ʒ], /** ʒ <- ج */
 			[Ar.H7aa, IPA.ħ], /** ħ <- ح */
 			[Ar.Khaa, 'x'], /** x <- خ */
 			[Ar.Dal, 'd'], /** d <- د */
 			[Ar.Thal, IPA.ð], /** ð <- ذ */
+			[Ar.Ra, 'r'], /** r <- ر */
+			[Ar.Zay, 'z'], /** z <- ز */
+			[Ar.Seen, 's'], /** s <- س */
+			[Ar.Sheen, IPA.ʃ], /** ʃ <- ش */
 
 			// still need to replace æ and @
-			// [Ar.Ra, IPA.æ], /** @ <- ر */
-			// [Ar.Zay, IPA.æ], /** @ <- ز */
-			// [Ar.Seen, IPA.æ], /** @ <- س */
-			// [Ar.Sheen, IPA.æ], /** @ <- ش */
 			// [Ar.Sad, IPA.æ], /** @ <- ص */
 			// [Ar.Dad, IPA.æ], /** @ <- ض */
 			// [Ar.TTa, IPA.æ], /** @ <- ط */
@@ -47,7 +47,7 @@ export class ArabicToIpaConverter implements IConverter {
 			// [Ar.Waw, IPA.æ], /** @ <- و */
 			// [Ar.Yaa, IPA.æ], /** @ <- ي */
 			// [Ar.AlefMaksura, IPA.æ], /** @ <- ى */
-		]
+		],
 	)
 
 	public convert(text: string): string {
