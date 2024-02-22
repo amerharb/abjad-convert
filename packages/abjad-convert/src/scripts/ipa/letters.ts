@@ -113,6 +113,8 @@ const letters = [
 	'\u02AD', /** #104 ʭ U+02AD LATIN LETTER BIDENTAL PERCUSSIVE */
 	'\u02AE', /** #105 ʮ U+02AE LATIN SMALL LETTER TURNED H WITH FISHHOOK */
 	'\u02AF', /** #106 ʯ U+02AF LATIN SMALL LETTER TURNED H WITH FISHHOOK AND TAIL */
+
+	'\u02D0', /** #107 ː U+02D0 MODIFIER LETTER TRIANGULAR COLON */
 ] as const
 
 export const IPA = {
@@ -233,6 +235,8 @@ export const IPA = {
 	ʭ: letters[104],
 	ʮ: letters[105],
 	ʯ: letters[106],
+
+	ː: letters[107],
 }
 
 export const ipa = new Script(
