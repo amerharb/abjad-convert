@@ -4,7 +4,7 @@ import { IConverter } from '../../IConverter'
 import { Abjad } from '../../types'
 
 export class IpaToArabicConverter implements IConverter {
-	public readonly from = Abjad.OldSouthArabian
+	public readonly from = Abjad.IPA
 	public readonly to = Abjad.Arabic
 
 	private map = new Map<string, string>(
