@@ -56,5 +56,22 @@ export function getConverter(from: Abjad, to: Abjad): IConverter {
 		}
 	}
 
+	// try to find 3 converters and create a composite converter from them
+	for (const fromConverter of fromConverters) {
+		for (const toConverter of toConverters) {
+			for (const middleConverter of converters) {
+				if (fromConverter.to === middleConverter.from && middleConverter.to === toConverter.from) {
+					return {
+						from,
+						to,
+						convert(text: string): string {
+							return toConverter.convert(middleConverter.convert(fromConverter.convert(text)))
+						},
+					}
+				}
+			}
+		}
+	}
+
 	throw new Error(`No converter exists from ${from} to ${to}`)
 }
