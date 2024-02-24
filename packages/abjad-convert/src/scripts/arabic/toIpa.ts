@@ -45,6 +45,16 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.Waw, IPA.u + IPA.ː], /** uː <- و */
 			[Ar.Yaa, IPA.i + IPA.ː], /** iː <- ي */
 			[Ar.AlefMaksura, IPA.a], /** a <- ى */
+			[Ar.Fathatan, IPA.a + IPA.n], /** an <- ً */
+			[Ar.Dammatan, IPA.u + IPA.n], /** un <- ٌ */
+			[Ar.Kasratan, IPA.i + IPA.n], /** in <- ٍ */
+			[Ar.Fatha, IPA.a], /** a <- َ */
+			[Ar.Damma, IPA.u], /** u <- ُ */
+			[Ar.Kasra, IPA.i], /** i <- ِ */
+			[Ar.Shadda, ''], /** ?? <- ّ  TODO: this should repeat letter before */
+			[Ar.Sukun, ''], /** silent <- ْ  */
+			[Ar.AlefKhanjariya, IPA.a], /** a <- ٰ  */
+			[Ar.AlefWasla, ''], /** silent <- ٱ */
 		],
 	)
 
