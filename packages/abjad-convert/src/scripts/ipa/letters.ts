@@ -240,8 +240,8 @@ export const IPA = {
 	ʮ: letters[105],
 	ʯ: letters[106],
 
-	ː: letters[107],
-	ˤ: letters[108],
+	ˤ: letters[107],
+	ː: letters[108],
 
 	// from englishLetters a-z
 	a: letters[109], //
