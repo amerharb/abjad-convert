@@ -4,7 +4,7 @@
 
 ## [0.7.0] 2024-02-23
 ### Changed
-- Use Abjad Convert v0.6.0
+- Use abjad-convert v0.6.0
 - Letters button are larger
 ### Added
 - Support IPA
