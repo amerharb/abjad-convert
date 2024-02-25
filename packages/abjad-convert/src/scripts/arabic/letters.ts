@@ -28,6 +28,7 @@ const letters = [
 	'\u0638', /** #23  ظ */
 	'\u0639', /** #24  ع */
 	'\u063A', /** #25  غ */
+	/** ignore from U+063B to U+0640 */
 	'\u0641', /** #26  ف */
 	'\u0642', /** #27  ق */
 	'\u0643', /** #28  ك */
@@ -46,9 +47,15 @@ const letters = [
 	'\u0650', /** #41  ِ  */
 	'\u0651', /** #42  ّ  */
 	'\u0652', /** #43  ْ  */
-	// ignore from U+0653 to U+066F
+	/** ignore from U+0653 to U+066F */
 	'\u0670', /** #44  ٰ  */
 	'\u0671', /** #45  ٱ */
+
+	/** selective frequently used alternative letters */
+	'\u067E', /** #46  پ */
+	'\u0686', /** #47  چ */
+	'\u06A4', /** #48  ڤ */
+	'\u06AF', /** #49  گ */
 ] as const
 
 export const Ar = {
@@ -98,6 +105,11 @@ export const Ar = {
 	Sukun: letters[43], // ْ
 	AlefKhanjariya: letters[44], // ٰ
 	AlefWasla: letters[45], // ٱ
+	Pe: letters[46], // پ
+	Che: letters[47], // چ
+	Ve: letters[48], // ڤ
+	Gaf: letters[49], // گ
+
 }
 
 export const arabic = new Script(

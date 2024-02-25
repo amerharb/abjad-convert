@@ -1,6 +1,7 @@
 import { Script } from '../Script'
 import { Abjad } from '../../types'
 import { letters as englishLetters } from './englishLetters'
+
 /**
  * IPA letters
  */
@@ -119,6 +120,7 @@ const letters = [
 
 	/** #109 to #134 from 26 englishLetters a-z*/
 	...englishLetters,
+	'\u0361', /** #135 ͡  U+0361 COMBINING DOUBLE INVERTED BREVE */
 ] as const
 
 export const IPA = {
@@ -270,6 +272,8 @@ export const IPA = {
 	x: letters[132],
 	y: letters[133],
 	z: letters[134],
+
+	COMBINING: letters[135],
 }
 
 export const ipa = new Script(
