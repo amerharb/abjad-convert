@@ -56,7 +56,7 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.AlefKhanjariya, IPA.a], /** a <- ٰ  */
 			[Ar.AlefWasla, ''], /** silent <- ٱ */
 			[Ar.Pe, IPA.p], /** p <- پ */
-			[Ar.Che, IPA.t + IPA.COMBINING + IPA.ʃ], /** t͡ʃ <- چ */
+			[Ar.Che, IPA.ʧ], /** ʧ <- چ */
 			[Ar.Ve, IPA.v], /** v <- ڤ */
 			[Ar.Gaf, IPA.ɡ], /** ɡ <- گ */
 		],

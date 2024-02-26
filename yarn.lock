@@ -1717,21 +1717,21 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abjad-client@workspace:packages/abjad-client"
   dependencies:
-    abjad-convert: "npm:0.5.0"
+    abjad-convert: "file:../abjad-convert"
   languageName: unknown
   linkType: soft
 
-"abjad-convert@file:../abjad-convert::locator=abjad-web%40workspace%3Apackages%2Fabjad-web":
+"abjad-convert@file:../abjad-convert::locator=abjad-client%40workspace%3Apackages%2Fabjad-client":
   version: 0.6.0
-  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=d6638d&locator=abjad-web%40workspace%3Apackages%2Fabjad-web"
-  checksum: 10c0/2fcac11fa1a3fd6efae141ff08100fa9766475fb3b3c6ce4419b9d4b4600da6058715e0e98db003fbd4cb1c68bf5dcee1a79eda9e389c6066526adc670630c65
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=ccc05c&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
+  checksum: 10c0/1df8d5c8dd4d97698f969eadb8f0c6dd0396125b160003309b671aa37b064ed187934446b4d8289dbb79819691b58ceb03125df08c905c341001bbdf36543bb0
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.5.0":
-  version: 0.5.0
-  resolution: "abjad-convert@npm:0.5.0"
-  checksum: 10c0/5ad955bb11411d00586866553450abbc4c0498b7e765ec3dfab4c1b08ed9ee96a7335024a78a58264d158c8e9d0fb9c9887f77daf923b97fd48037e3a1273393
+"abjad-convert@file:../abjad-convert::locator=abjad-web%40workspace%3Apackages%2Fabjad-web":
+  version: 0.6.0
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=ccc05c&locator=abjad-web%40workspace%3Apackages%2Fabjad-web"
+  checksum: 10c0/1df8d5c8dd4d97698f969eadb8f0c6dd0396125b160003309b671aa37b064ed187934446b4d8289dbb79819691b58ceb03125df08c905c341001bbdf36543bb0
   languageName: node
   linkType: hard
 
