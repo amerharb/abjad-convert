@@ -1723,15 +1723,15 @@ __metadata:
 
 "abjad-convert@file:../abjad-convert::locator=abjad-client%40workspace%3Apackages%2Fabjad-client":
   version: 0.6.0
-  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=ccc05c&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
-  checksum: 10c0/1df8d5c8dd4d97698f969eadb8f0c6dd0396125b160003309b671aa37b064ed187934446b4d8289dbb79819691b58ceb03125df08c905c341001bbdf36543bb0
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=48a868&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
+  checksum: 10c0/bfa66d690499a5df6d473b97578ac7c21c6b34f8054b58ed41b28712c6018b378b2af521c6cb294e337b303cc06a97ebe6a5c8fdf253da9cff8e41fdd9da7971
   languageName: node
   linkType: hard
 
 "abjad-convert@file:../abjad-convert::locator=abjad-web%40workspace%3Apackages%2Fabjad-web":
   version: 0.6.0
-  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=ccc05c&locator=abjad-web%40workspace%3Apackages%2Fabjad-web"
-  checksum: 10c0/1df8d5c8dd4d97698f969eadb8f0c6dd0396125b160003309b671aa37b064ed187934446b4d8289dbb79819691b58ceb03125df08c905c341001bbdf36543bb0
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=48a868&locator=abjad-web%40workspace%3Apackages%2Fabjad-web"
+  checksum: 10c0/bfa66d690499a5df6d473b97578ac7c21c6b34f8054b58ed41b28712c6018b378b2af521c6cb294e337b303cc06a97ebe6a5c8fdf253da9cff8e41fdd9da7971
   languageName: node
   linkType: hard
 
