@@ -1875,6 +1875,7 @@ __metadata:
     "@vercel/analytics": "npm:^1.1.2"
     "@vercel/speed-insights": "npm:^1.0.9"
     abjad-convert: "file:../abjad-convert"
+    eslint: "npm:^8.54.0"
     eslint-config-next: "npm:^14.1.0"
     next: "npm:^14.1.0"
     react: "npm:^18.2.0"

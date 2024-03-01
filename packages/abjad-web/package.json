@@ -17,7 +17,6 @@
 		"@vercel/analytics": "^1.1.2",
 		"@vercel/speed-insights": "^1.0.9",
 		"abjad-convert": "file:../abjad-convert",
-		"eslint-config-next": "^14.1.0",
 		"next": "^14.1.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -25,6 +24,8 @@
 	},
 	"devDependencies": {
 		"@types/react": "^18",
-		"@types/react-dom": "^18"
+		"@types/react-dom": "^18",
+		"eslint": "^8.54.0",
+		"eslint-config-next": "^14.1.0"
 	}
 }
