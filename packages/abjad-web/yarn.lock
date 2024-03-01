@@ -828,8 +828,8 @@ __metadata:
 
 "abjad-convert@file:../abjad-convert::locator=abjad-web%40workspace%3A.":
   version: 0.6.0
-  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=cc27e7&locator=abjad-web%40workspace%3A."
-  checksum: 10c0/9a740c7a9cd712a9bd2676af15614e55470e948b469ec1ddb90b3d2033ca7f907ea89c44795ea430ebb40a16ddb7c4a427b344bf5350ed233d0efba1e3bf3f3c
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=88316b&locator=abjad-web%40workspace%3A."
+  checksum: 10c0/7e866aee7d7370fb856439fadc5b4ec4ab2b5631914003fb643951c62e9ebe37382d4fa60c4cd08661153f30ebfc392f74d7921f44e5e129e090bf0d56f95213
   languageName: node
   linkType: hard
 
