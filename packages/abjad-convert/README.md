@@ -36,6 +36,9 @@ const arabicWord = 'مرحبا';
 const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
 console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 
+const ipaWord = convert(arabicWord, Abjad.Arabic, Abjad.IPA);
+console.log(ipaWord); // mrħbaː
+
 const oldSouthArabianWord = convert(arabicWord, Abjad.Arabic, Abjad.OldSouthArabian);
 console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡
 
