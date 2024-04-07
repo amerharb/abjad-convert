@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import { Abjad, convert, getLetters } from 'abjad-convert'
-import OnScreenKeyboard from '@/components/OnScreenKeyboard'
+import OnScreenKeyboard from '../components/OnScreenKeyboard'
 import Image from 'next/image'
 
 export default function Home() {
