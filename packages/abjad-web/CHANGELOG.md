@@ -6,6 +6,7 @@
 ### Changed
 - Use abjad-convert v0.6.0
 - Letters button are larger
+- use next.js 14
 ### Added
 - Support IPA
 
