@@ -10,7 +10,7 @@ export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
 	const [resultText, setResultText] = useState('')
 	const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.IPA)
-	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.Phoenician)
+	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.Arabic)
 
 	const options = [
 		{ value: Abjad.IPA, label: 'IPA' },
