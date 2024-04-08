@@ -10,6 +10,12 @@ export class IpaToArabicConverter implements IConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
+			[IPA.æ, Ar.Alef], /** ا <- æ */
+			[IPA.ç, Ar.Che], /** چ <- ç */
+			[IPA.ð, Ar.Thal], /** د <- ð */
+			[IPA.ø, Ar.Waw], /** و <- ø */
+			[IPA.ħ , Ar.Ha], /** ه <- ħ */
+
 			// TODO: add all the IPA letters
 			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
 			[IPA.a, Ar.Alef], /** ا <- a */
