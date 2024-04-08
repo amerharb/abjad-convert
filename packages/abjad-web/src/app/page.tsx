@@ -30,7 +30,7 @@ export default function Home() {
 			id="fromDropdown"
 			isSearchable={false}
 			options={options}
-			defaultValue={options[1]}
+			defaultValue={options[0]}
 			onChange={(selectedOption) => {
 				setFromValue(selectedOption?.value)
 				if (!selectedOption?.value || !toValue) {
@@ -49,7 +49,7 @@ export default function Home() {
 			id="toDropdown"
 			isSearchable={false}
 			options={options}
-			defaultValue={options[0]}
+			defaultValue={options[1]}
 			onChange={(selectedOption) => {
 				setToValue(selectedOption?.value)
 				if (!fromValue || !selectedOption?.value) {
