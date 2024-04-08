@@ -9,12 +9,11 @@ import Image from 'next/image'
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
 	const [resultText, setResultText] = useState('')
-	// const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.IPA)
-	const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.Arabic)
+	const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.IPA)
 	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.Phoenician)
 
 	const options = [
-		// { value: Abjad.IPA, label: 'IPA' },
+		{ value: Abjad.IPA, label: 'IPA' },
 		{ value: Abjad.Arabic, label: 'Arabic ابجد' },
 		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic 𐡀𐡁𐡂𐡃' },
 		{ value: Abjad.OldSouthArabian, label: 'Old South Arabian 𐩱𐩨𐩴𐩵' },
