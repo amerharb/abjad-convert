@@ -35,6 +35,11 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ɛ, Ar.Alef], /** ا <- ɛ */
 			[IPA.ɜ, Ar.Alef], /** ا <- ɜ */
 			[IPA.ɝ, Ar.Alef], /** ا <- ɝ */
+			[IPA.ɞ, Ar.Alef], /** ا <- ɞ */
+			[IPA.ɟ, Ar.Jeem], /** ج <- ɟ */
+			[IPA.ɠ, Ar.Gaf], /** گ <- ɠ */
+			[IPA.ɡ, Ar.Gaf], /** گ <- ɡ */
+			[IPA.ɢ, Ar.Gaf], /** گ <- ɢ */
 
 			// TODO: add all the IPA letters
 			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
