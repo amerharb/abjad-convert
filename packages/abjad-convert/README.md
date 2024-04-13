@@ -10,6 +10,7 @@
 Current supported alphabets:
 - Arabic
 - Imperial Aramaic
+- IPA (International Phonetic Alphabet)
 - Old South Arabian
 - Phoenician
 - Syriac
