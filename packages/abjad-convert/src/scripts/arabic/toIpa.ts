@@ -51,7 +51,7 @@ export class ArabicToIpaConverter implements IConverter {
 			[Ar.Fatha, IPA.a], /** a <- َ */
 			[Ar.Damma, IPA.u], /** u <- ُ */
 			[Ar.Kasra, IPA.i], /** i <- ِ */
-			[Ar.Shadda, ''], /** ?? <- ّ  TODO: this should repeat letter before */
+			[Ar.Shadda, ''], /** repeat letter before <- ّ  */
 			[Ar.Sukun, ''], /** silent <- ْ  */
 			[Ar.AlefKhanjariya, IPA.a], /** a <- ٰ  */
 			[Ar.AlefWasla, ''], /** silent <- ٱ */
@@ -64,9 +64,15 @@ export class ArabicToIpaConverter implements IConverter {
 
 	public convert(text: string): string {
 		let result = ''
+		let lastLetter = ''
 		for (const letter of text) {
 			const u = this.map.get(letter) ?? ''
-			result += u
+			if (letter === Ar.Shadda) {
+				result += lastLetter
+			} else {
+				result += u
+			}
+			lastLetter = u
 		}
 		return result
 	}
