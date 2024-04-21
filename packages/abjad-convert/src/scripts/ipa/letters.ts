@@ -118,7 +118,7 @@ const letters = [
 	'\u02E4', /** #107 ˤ U+02E4 MODIFIER LETTER SMALL REVERSED GLOTTAL STOP */
 	'\u02D0', /** #108 ː U+02D0 MODIFIER LETTER TRIANGULAR COLON */
 
-	/** #109 to #134 from 26 englishLetters a-z*/
+	/** #109 to #134 from 26 englishLetters a-z */
 	...englishLetters,
 	'\u0361', /** #135 ͡  U+0361 COMBINING DOUBLE INVERTED BREVE */
 ] as const
