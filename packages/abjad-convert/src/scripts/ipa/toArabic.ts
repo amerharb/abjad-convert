@@ -49,7 +49,7 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ɫ, Ar.Lam], /** ل <- ɫ */
 			[IPA.ɬ, Ar.Lam], /** ل <- ɬ */
 			[IPA.ɭ, Ar.Lam], /** ل <- ɭ */
-			[IPA.ɮ, Ar.Lam + Ar.Sheen ], /** لش <- ɮ */
+			[IPA.ɮ, Ar.Lam + Ar.Sheen], /** لش <- ɮ */
 			[IPA.ɯ, Ar.Waw], /** و <- ɯ */
 			[IPA.ɰ, Ar.Ghayn], /** غ <- ɰ */
 			[IPA.ɱ, Ar.Meem], /** م <- ɱ */
@@ -80,9 +80,13 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ʎ, Ar.Lam], /** ل <- ʎ */
 			[IPA.ʏ, Ar.Yaa], /** ي <- ʏ */
 			[IPA.ʐ, Ar.Jeem], /** ج <- ʐ */
+			[IPA.ʑ, Ar.Jeem], /** ج <- ʑ */
+			[IPA.ʒ, Ar.Že], /** ژ <- ʒ */
+			[IPA.ʓ, Ar.Že], /** ژ <- ʓ */
+			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
+			[IPA.ʕ, Ar.Ayn], /** ع <- ʕ */
 
 			// TODO: add all the IPA letters
-			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
 			[IPA.a, Ar.Alef], /** ا <- a */
 			[IPA.b, Ar.Ba], /** ب <- b */
 			[IPA.c, Ar.Che], /** چ <- c */
