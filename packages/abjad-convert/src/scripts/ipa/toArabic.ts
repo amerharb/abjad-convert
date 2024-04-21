@@ -55,6 +55,11 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ɱ, Ar.Meem], /** م <- ɱ */
 			[IPA.ɲ, Ar.Noon], /** ن <- ɲ */
 			[IPA.ɳ, Ar.Noon], /** ن <- ɳ */
+			[IPA.ɴ, Ar.Noon], /** ن <- ɴ */
+			[IPA.ɵ, Ar.Waw], /** و <- ɵ */
+			[IPA.ɶ, Ar.Alef], /** ا <- ɶ */
+			[IPA.ɸ, Ar.Fa], /** ف <- ɸ */
+			[IPA.ɹ, Ar.Ra], /** ر <- ɹ */
 
 			// TODO: add all the IPA letters
 			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
