@@ -100,6 +100,11 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ʢ, Ar.Ayn], /** ع <- ʢ */
 			[IPA.ʣ, Ar.Dal + Ar.Zay], /** دز <- ʣ */ // deprecated IPA. use d͡z o  d͜z
 			[IPA.ʤ, Ar.Jeem], /** ج <- ʤ */
+			[IPA.ʥ, Ar.Dal + Ar.Zay], /** دز <- ʥ */
+			[IPA.ʦ, Ar.Ta + Ar.Seen], /** تس <- ʦ */
+			[IPA.ʧ, Ar.Che], /** چ <- ʧ */
+			[IPA.ʨ, Ar.Ta + Ar.Sheen], /** تش <- ʨ */
+			[IPA.ʩ, ''], /** <- ʩ */
 
 			// TODO: add all the IPA letters
 			[IPA.a, Ar.Alef], /** ا <- a */
