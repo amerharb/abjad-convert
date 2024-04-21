@@ -9,10 +9,11 @@ import Image from 'next/image'
 export default function Home() {
 	const [textBoxValue, setTextBoxValue] = useState('')
 	const [resultText, setResultText] = useState('')
-	const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.Arabic)
-	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.ImperialAramaic)
+	const [fromValue, setFromValue] = useState<Abjad | undefined>(Abjad.IPA)
+	const [toValue, setToValue] = useState<Abjad | undefined>(Abjad.Arabic)
 
 	const options = [
+		{ value: Abjad.IPA, label: 'IPA' },
 		{ value: Abjad.Arabic, label: 'Arabic ابجد' },
 		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic 𐡀𐡁𐡂𐡃' },
 		{ value: Abjad.OldSouthArabian, label: 'Old South Arabian 𐩱𐩨𐩴𐩵' },
@@ -123,7 +124,7 @@ export default function Home() {
 			</div>
 			<hr/>
 			<div style={{ marginTop: '20px', fontSize: '22px' }}>
-				This is an open source project. based on npm package{' '}
+				This is an open source project, based on npm package{' '}
 				<a href="https://www.npmjs.com/package/abjad-convert" style={{ textDecoration: 'none' }}>
 					<Image src="/images/Npm-logo.svg" alt="NPM" width={54} height={21}
 						 style={{ width: '54px', height: '21px' }}/>

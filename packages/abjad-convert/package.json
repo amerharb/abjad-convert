@@ -23,6 +23,7 @@
 		"phonetic",
 		"arabic",
 		"imperial-aramaic",
+		"IPA",
 		"old-south-arabian",
 		"phoenician",
 		"syriac",
@@ -32,8 +33,8 @@
 	"license": "ISC",
 	"scripts": {
 		"build": "rm -rf dist && tsc",
-		"start": "node dist/index.js",
-		"test": "jest && yarn run make-coverage-badge",
+		"start": "node dist/src/index.js",
+		"test": "jest",
 		"make-coverage-badge": "npx make-coverage-badge --report-path coverage/coverage-summary.json --output-path badges/coverage.svg",
 		"dev": "ts-node src/index.ts",
 		"lint": "npx eslint . --max-warnings 0",

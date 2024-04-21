@@ -2,6 +2,14 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.7.0] 2024-02-23
+### Changed
+- Use abjad-convert v0.6.0
+- Letters button are larger
+- use next.js 14
+### Added
+- Support IPA
+
 ## [0.6.0] 2024-02-17
 ### Changed
 - Use Abjad Convert v0.5.0
