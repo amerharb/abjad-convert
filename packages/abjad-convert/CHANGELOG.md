@@ -1,7 +1,7 @@
 # abjad-convert Changelog
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
-## [0.6.0] 2024-03-26
+## [0.6.0] 2024-04-22
 ### Added
 - Support IPA
 
