@@ -105,8 +105,14 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ʧ, Ar.Che], /** چ <- ʧ */
 			[IPA.ʨ, Ar.Ta + Ar.Sheen], /** تش <- ʨ */
 			[IPA.ʩ, ''], /** <- ʩ */
-
-			// TODO: add all the IPA letters
+			[IPA.ʪ, ''], /** <- ʪ */
+			[IPA.ʫ, ''], /** <- ʫ */
+			[IPA.ʬ, ''], /** <- ʬ */
+			[IPA.ʭ, ''], /** <- ʭ */
+			[IPA.ʮ, ''], /** <- ʮ */
+			[IPA.ʯ, ''], /** <- ʯ */
+			[IPA.ˤ, ''], /**  <- ˤ */
+			[IPA.ː, Ar.Shadda], /** ّ  <- ː */
 			[IPA.a, Ar.Alef], /** ا <- a */
 			[IPA.b, Ar.Ba], /** ب <- b */
 			[IPA.c, Ar.Che], /** چ <- c */
