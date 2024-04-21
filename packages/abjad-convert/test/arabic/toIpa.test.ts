@@ -23,7 +23,7 @@ describe('ArabicToPhoenicianConverter', () => {
 			})
 			it('convert فَهَّمَ into fahhama', () => {
 				const actual = converter.convert('فَهَّمَ')
-				expect(actual).toEqual('fahhama')
+				expect(actual).toEqual('fahːama')
 			})
 			it('convert فَهِمَ into fahima', () => {
 				const actual = converter.convert('فَهِمَ')
@@ -31,7 +31,7 @@ describe('ArabicToPhoenicianConverter', () => {
 			})
 			it('convert فَهِّمْ into fahhim', () => {
 				const actual = converter.convert('فَهِّمْ')
-				expect(actual).toEqual('fahhim')
+				expect(actual).toEqual('fahːim')
 			})
 		})
 	})
