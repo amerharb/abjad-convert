@@ -835,10 +835,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.6.0-next.2":
-  version: 0.6.0-next.2
-  resolution: "abjad-convert@npm:0.6.0-next.2"
-  checksum: 10c0/718b5eba3df97e4c99307e78ebfb1741e4166233dfaa8130c112c1634a0e6483cbc9589828973fc6786220d0b29e32980373dbbc08a484e45f78ca449d140f5e
+"abjad-convert@npm:0.6.0-next.3":
+  version: 0.6.0-next.3
+  resolution: "abjad-convert@npm:0.6.0-next.3"
+  checksum: 10c0/bac15d6b520ad28c82c42c4e0f23c9bed643c95cf08e62bb8f585b36f802431b56f80ffd1d90f4105980af3d3d209d76a8280efcc1abf26fce2b62ea90387b04
   languageName: node
   linkType: hard
 
@@ -854,7 +854,7 @@ __metadata:
     "@types/react-dom": "npm:^18"
     "@vercel/analytics": "npm:^1.1.2"
     "@vercel/speed-insights": "npm:^1.0.9"
-    abjad-convert: "npm:0.6.0-next.2"
+    abjad-convert: "npm:0.6.0-next.3"
     eslint: "npm:^8.54.0"
     eslint-config-next: "npm:^14.1.0"
     next: "npm:14.1.4"
