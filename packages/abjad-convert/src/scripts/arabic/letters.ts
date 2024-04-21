@@ -51,11 +51,12 @@ const letters = [
 	'\u0670', /** #44  ٰ  */
 	'\u0671', /** #45  ٱ */
 
-	/** selective frequently used alternative letters */
+	/** selectively frequently used alternative letters */
 	'\u067E', /** #46  پ */
 	'\u0686', /** #47  چ */
-	'\u06A4', /** #48  ڤ */
-	'\u06AF', /** #49  گ */
+	'\u0698', /** #48  ژ */
+	'\u06A4', /** #49  ڤ */
+	'\u06AF', /** #50  گ */
 ] as const
 
 export const Ar = {
@@ -107,9 +108,9 @@ export const Ar = {
 	AlefWasla: letters[45], // ٱ
 	Pe: letters[46], // پ
 	Che: letters[47], // چ
-	Ve: letters[48], // ڤ
-	Gaf: letters[49], // گ
-
+	Že: letters[48], // ژ
+	Ve: letters[49], // ڤ
+	Gaf: letters[50], // گ
 }
 
 export const arabic = new Script(
