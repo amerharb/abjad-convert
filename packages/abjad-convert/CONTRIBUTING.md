@@ -47,13 +47,15 @@ export const ugaritic = new Script(
 - Step #6: Add the script to the enum `Abjad` in `src/types.ts` file.
   at this point we have finished adding the script, but it is an island script. Meaning that it can't be converted to or from any other script.
 
-- Step #7: To make it convertable we need at least to have one from and one to converter to another script.
+- Step #7: To make it convertable, we need at least to have one "from" and one "to" converter to another script.
   the preferred way is to add a converter to and from Arabic script, as it is currently act as a de facto hub script for all abjad scripts.
-  The algorithm for converting will look first for 1-step converter (direct converter) the one that convert from the source to the target, in case there isn't any it will look for 2-steps approach where it can find a middle script,
-  after that it won't look for 3 or more steps, it will basically throw an error.
-  That is why Arabic is used as preferred hub, so if all script add converter to Arabic and Arabic add converter to all other scripts then all conversion is possible.
-  However, there is a plan in the future to add IPA to be a canonical hub script.
-
+  Since version 0.6.0 IPA (International Phonetic Alphabet) is added, it is intended to be as a canonical hub script since IPA can cover all sounds.
+  however, the converter can be added to and from any script.
+  The algorithm for converting will look first for 1-step converter (direct converter) the one that converts from the source to the target, 
+  in case there isn't any it will look for 2-steps approach where it can find a middle script,
+  after that it will try 3-steps approach, after that it won't look for 4 or more steps, it will basically throw an error.
+  As of version 0.6.0 scripts are connected as follows:
+  ![converters.png](doc/converters.png)
 - - Adding to Arabic: Add file to `foo` folder with name `toArabic.ts` that include a class called FooToArabicConverter that implements `IConverter` interface.
     it should look like this:
 ```ts

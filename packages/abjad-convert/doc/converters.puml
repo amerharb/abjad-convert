@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+(Arabic) -up-> (Imperial Aramaic)
+(Arabic) <-up- (Imperial Aramaic)
+(Arabic) -up-> (IPA)
+(Arabic) <-up- (IPA)
+(Arabic) -> (Old South Arabian)
+(Arabic) <- (Old South Arabian)
+(Arabic) -left-> (Phoenician)
+(Arabic) <-left- (Phoenician)
+(Arabic) --> (Syriac)
+(Arabic) <-- (Syriac)
+(Arabic) --> (Tifinagh)
+(Arabic) <-- (Tifinagh)
+(Arabic) --> (Uguritic)
+(Arabic) <-- (Uguritic)
+
+@enduml
