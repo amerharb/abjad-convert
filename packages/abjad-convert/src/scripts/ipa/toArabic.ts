@@ -90,6 +90,11 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ʘ, '!'], /**  <- ʘ */ // click sound convert to "!"
 			[IPA.ʙ, Ar.Ba], /** ب <- ʙ */
 			[IPA.ʚ, Ar.Alef], /** ا <- ʚ */
+			[IPA.ʛ, Ar.Gaf], /** گ <- ʛ */
+			[IPA.ʜ, Ar.Ha], /** ه <- ʜ */
+			[IPA.ʝ, Ar.Jeem], /** ج <- ʝ */
+			[IPA.ʞ, '!'], /** ! <- ʞ */ // deprecated IPA, click sound convert to "!"
+			[IPA.ʟ, Ar.Lam], /** ل <- ʟ */
 
 			// TODO: add all the IPA letters
 			[IPA.a, Ar.Alef], /** ا <- a */
