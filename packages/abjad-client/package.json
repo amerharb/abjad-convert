@@ -12,6 +12,6 @@
 		"lint:fix": "npx eslint . --fix"
 	},
 	"dependencies": {
-		"abjad-convert": "0.6.0-next.3"
+		"abjad-convert": "0.6.1"
 	}
 }
