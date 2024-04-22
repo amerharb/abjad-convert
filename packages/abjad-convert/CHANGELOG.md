@@ -1,6 +1,14 @@
 # abjad-convert Changelog
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.6.1] 2024-04-23
+### Added
+- more unit test
+- Converter yields their numberOfConverters
+### Fixed
+- letter Jeem mapping to IPA
+
+
 ## [0.6.0] 2024-04-22
 ### Added
 - Support IPA
