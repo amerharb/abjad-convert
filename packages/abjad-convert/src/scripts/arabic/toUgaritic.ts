@@ -1,9 +1,9 @@
 import { Ar } from './letters'
 import { Ug } from '../ugaritic/letters'
-import { IConverter } from '../../IConverter'
+import { DirectConverter } from '../../DirectConverter'
 import { Abjad } from '../../types'
 
-export class ArabicToUgariticConverter implements IConverter {
+export class ArabicToUgariticConverter extends DirectConverter {
 	public readonly from = Abjad.Arabic
 	public readonly to = Abjad.Ugaritic
 	private map = new Map<string, string>(

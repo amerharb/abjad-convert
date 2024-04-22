@@ -1,6 +1,6 @@
 {
 	"name": "abjad-convert",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"files": [
@@ -21,8 +21,10 @@
 	"keywords": [
 		"abjad",
 		"phonetic",
+		"transcription",
 		"arabic",
 		"imperial-aramaic",
+		"international-phonetic-alphabet",
 		"IPA",
 		"old-south-arabian",
 		"phoenician",

@@ -1,18 +1,18 @@
 # Abjad-convert Contributing
 
-## Adding new script
-Pull requests are welcome. For adding new script. let's say that we want to add a new script "Foo"
+## Adding New Script
+Pull requests are welcome. For adding a new script. Let's say that we want to add a new script "Foo"
 - Step #1: create a feature branch from `main` named `abjad-convert/version/0.[x].0` where `x` is the next minor of current version number.
 - Step #2: create a new branch that will the previous feature branch when creating the PR.
 - Step #3: create a new folder named `foo` in `src`.
 - Step #4: add pdf documentation for the script we want to add from www.unicode.org. for example for Ugaritic the file is `U10380.pdf`. this file will be used as a reference
 - Step #5: add a new file named `letters.ts` in `foo` folder this file will export
 - - `letters` an array of letters written using unicode values with jsdoc each line will contain
-    the value of the letter using UTF-16 BE using escape \u followed by 4 hex digits.
+    the value of the letter using UTF-16 BE using escape \u followed by four hex digits.
     notice that UTF16BE value is not always the same as the unicode value.
-    for example for letter Alpa in Ugaritic the unicode value is `0x10380` but the UTF16BE encode value is `0xD800DF80`
+    for example for letter Alpa in Ugaritic, the unicode value is `0x10380` but the UTF16BE encode value is `0xD800DF80`
     follow the value with jsdoc that contain array index, letter itself, unicode value, and the name of the letter.
-    for example for ugaritic looks like this:
+    for example, ugaritic looks like this:
 
 ```ts
 const letters = [
@@ -24,7 +24,7 @@ const letters = [
 
 - - 'Fo' an alias object called `Fo` short of Foo. this will give an alias for all letters mentioned in the letters array.
 
-for example for ugaritic looks like this:
+for example, ugaritic looks like this:
 ```ts
 export const Ug = {
 	Alpa: letters[0], // 𐎀
@@ -35,7 +35,7 @@ export const Ug = {
 
 - - `foo` an instance of `Script` class, which will be exported
 
-for example for ugaritic looks like this:
+for example, ugaritic looks like this:
 ```ts
 export const ugaritic = new Script(
 	Abjad.Ugaritic, // enum value of the script
@@ -54,7 +54,7 @@ export const ugaritic = new Script(
   The algorithm for converting will look first for 1-step converter (direct converter) the one that converts from the source to the target, 
   in case there isn't any it will look for 2-steps approach where it can find a middle script,
   after that it will try 3-steps approach, after that it won't look for 4 or more steps, it will basically throw an error.
-  As of version 0.6.0 scripts are connected as follows:
+  As of version 0.6.0, scripts are connected as follows:
   ![converters.png](doc/converters.png)
 - - Adding to Arabic: Add file to `foo` folder with name `toArabic.ts` that include a class called FooToArabicConverter that implements `IConverter` interface.
     it should look like this:
@@ -62,10 +62,10 @@ export const ugaritic = new Script(
 import { IConverter } from '../../types';
 import { Fo } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConverter } from '../../IConverter'
+import { DirectConverter } from '../../DirectConverter'
 import { Abjad } from '../../types'
 
-export class FooToArabicConverter implements IConverter {
+export class FooToArabicConverter extends DirectConverter {
 	public readonly from = Abjad.Foo
 	public readonly to = Abjad.Arabic
 	public convert(fooText: string): string {
@@ -94,10 +94,10 @@ const converters: IConverter[] = [
 ```ts
 import { Ar } from './letters'
 import { Fo } from '../foo/letters'
-import { IConverter } from '../../IConverter'
+import { DirectConverter } from '../../DirectConverter'
 import { Abjad } from '../../types'
 
-export class ArabicToFooConverter implements IConverter {
+export class ArabicToFooConverter extends DirectConverter {
 	public readonly from = Abjad.Arabic
 	public readonly to = Abjad.Foo
 
@@ -111,7 +111,7 @@ export class ArabicToFooConverter implements IConverter {
 
 - Step #8 add unit test to`test/index.test.ts`.
 
-- Step #9: update for new version
+- Step #9: update for a new version
 - - update `CHANGELOG.md` with the new version number and the changes.
 - Step #10 update 
 - - `README.md` links and badges.

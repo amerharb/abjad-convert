@@ -48,6 +48,7 @@ export function getConverter(from: Abjad, to: Abjad): IConverter {
 				return {
 					from,
 					to,
+					numberOfConnection: fromConverter.numberOfConnection + toConverter.numberOfConnection,
 					convert(text: string): string {
 						return toConverter.convert(fromConverter.convert(text))
 					},
@@ -64,6 +65,7 @@ export function getConverter(from: Abjad, to: Abjad): IConverter {
 					return {
 						from,
 						to,
+						numberOfConnection: fromConverter.numberOfConnection + middleConverter.numberOfConnection + toConverter.numberOfConnection,
 						convert(text: string): string {
 							return toConverter.convert(middleConverter.convert(fromConverter.convert(text)))
 						},

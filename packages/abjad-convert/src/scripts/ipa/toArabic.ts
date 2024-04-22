@@ -1,9 +1,9 @@
 import { IPA } from './letters'
 import { Ar } from '../arabic/letters'
-import { IConverter } from '../../IConverter'
+import { DirectConverter } from '../../DirectConverter'
 import { Abjad } from '../../types'
 
-export class IpaToArabicConverter implements IConverter {
+export class IpaToArabicConverter extends DirectConverter {
 	public readonly from = Abjad.IPA
 	public readonly to = Abjad.Arabic
 
@@ -81,7 +81,7 @@ export class IpaToArabicConverter implements IConverter {
 			[IPA.ʏ, Ar.Yaa], /** ي <- ʏ */
 			[IPA.ʐ, Ar.Jeem], /** ج <- ʐ */
 			[IPA.ʑ, Ar.Jeem], /** ج <- ʑ */
-			[IPA.ʒ, Ar.Že], /** ژ <- ʒ */
+			[IPA.ʒ, Ar.Jeem], /** ج <- ʒ */
 			[IPA.ʓ, Ar.Že], /** ژ <- ʓ */
 			[IPA.ʔ, Ar.Hamza], /** ء <- ʔ */
 			[IPA.ʕ, Ar.Ayn], /** ع <- ʕ */
