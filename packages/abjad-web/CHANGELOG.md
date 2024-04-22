@@ -4,7 +4,7 @@
 
 ## [0.7.0] 2024-02-23
 ### Changed
-- Use abjad-convert v0.6.0
+- Use abjad-convert v0.6.1
 - Letters button are larger
 - use next.js 14
 ### Added

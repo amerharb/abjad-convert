@@ -1831,14 +1831,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abjad-client@workspace:packages/abjad-client"
   dependencies:
-    abjad-convert: "npm:0.6.0"
+    abjad-convert: "npm:0.6.1"
   languageName: unknown
   linkType: soft
 
-"abjad-convert@npm:0.6.0":
-  version: 0.6.0
-  resolution: "abjad-convert@npm:0.6.0"
-  checksum: 10c0/c11d49095275ab29e2023cc4fea4f17611c5ea3a54a1408de69f3c2b30f178621dbb25cdbfc9ba6dc019446ea209cbea62ead232b5b534c27bd22042fbaea4db
+"abjad-convert@npm:0.6.1":
+  version: 0.6.1
+  resolution: "abjad-convert@npm:0.6.1"
+  checksum: 10c0/97405b7dc6639ccbdad01a05af5b6f1be513091c35d4d0fc5ffa314cd81e03ceeb83baeaaaaae1d251ed1471324dbc41932a878117b1bc430334c041f5cd64fa
   languageName: node
   linkType: hard
 
@@ -1877,7 +1877,7 @@ __metadata:
     "@types/react-dom": "npm:^18"
     "@vercel/analytics": "npm:^1.1.2"
     "@vercel/speed-insights": "npm:^1.0.9"
-    abjad-convert: "npm:0.6.0"
+    abjad-convert: "npm:0.6.1"
     eslint: "npm:^8.54.0"
     eslint-config-next: "npm:^14.1.0"
     next: "npm:14.1.4"
