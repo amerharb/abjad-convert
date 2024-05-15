@@ -9,8 +9,9 @@
 
 Current supported alphabets:
 - Arabic
-- Imperial Aramaic
+- Hanifi Rohingya
 - IPA (International Phonetic Alphabet)
+- Imperial Aramaic
 - Old South Arabian
 - Phoenician
 - Syriac
@@ -34,11 +35,14 @@ import { convert, Abjad } from 'abjad-convert';
 
 const arabicWord = 'مرحبا';
 
-const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
-console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
+const hanifiRohingyaWord = convert(arabicWord, Abjad.Arabic, Abjad.HanifiRohingya);
+console.log(hanifiRohingyaWord); // 𐴔𐴌𐴇𐴁𐴀
 
 const ipaWord = convert(arabicWord, Abjad.Arabic, Abjad.IPA);
 console.log(ipaWord); // mrħbaː
+
+const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
+console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 
 const oldSouthArabianWord = convert(arabicWord, Abjad.Arabic, Abjad.OldSouthArabian);
 console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡
