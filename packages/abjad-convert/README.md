@@ -38,11 +38,11 @@ const arabicWord = 'مرحبا';
 const hanifiRohingyaWord = convert(arabicWord, Abjad.Arabic, Abjad.HanifiRohingya);
 console.log(hanifiRohingyaWord); // 𐴔𐴌𐴇𐴁𐴀
 
-const ipaWord = convert(arabicWord, Abjad.Arabic, Abjad.IPA);
-console.log(ipaWord); // mrħbaː
-
 const imperialAramaicWord = convert(arabicWord, Abjad.Arabic, Abjad.ImperialAramaic);
 console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
+
+const ipaWord = convert(arabicWord, Abjad.Arabic, Abjad.IPA);
+console.log(ipaWord); // mrħbaː
 
 const oldSouthArabianWord = convert(arabicWord, Abjad.Arabic, Abjad.OldSouthArabian);
 console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡

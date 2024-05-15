@@ -1,5 +1,6 @@
 import { Abjad } from './types'
 import { IConverter } from './IConverter'
+import { ArabicToHanifiRohingyaConverter } from './scripts/arabic/toHanifiRohingys'
 import { ArabicToImperialAramaicConverter } from './scripts/arabic/toImperialAramaic'
 import { ArabicToIpaConverter } from './scripts/arabic/toIpa'
 import { ArabicToOldSouthArabianConverter } from './scripts/arabic/toOldSouthArabian'
@@ -7,7 +8,7 @@ import { ArabicToPhoenicianConverter } from './scripts/arabic/toPhoenician'
 import { ArabicToSyriacConverter } from './scripts/arabic/toSyriac'
 import { ArabicToTifinaghConverter } from './scripts/arabic/toTifinagh'
 import { ArabicToUgariticConverter } from './scripts/arabic/toUgaritic'
-import { HanifiRohingyaToArabicConverter } from './scripts/hanifi-rohingya/toArabic'
+import { HanifiRohingyaToArabicConverter } from './scripts/hanifiRohingya/toArabic'
 import { ImperialAramaicToArabicConverter } from './scripts/imperialAramaic/toArabic'
 import { IpaToArabicConverter } from './scripts/ipa/toArabic'
 import { OldSouthArabicToArabicConverter } from './scripts/oldSouthArabian/toArabic'
@@ -17,6 +18,7 @@ import { TifinaghToArabicConverter } from './scripts/tifinagh/toArabic'
 import { UgariticToArabicConverter } from './scripts/ugaritic/toArabic'
 
 const converters: IConverter[] = [
+	new ArabicToHanifiRohingyaConverter(),
 	new ArabicToImperialAramaicConverter(),
 	new ArabicToIpaConverter(),
 	new ArabicToOldSouthArabianConverter(),
