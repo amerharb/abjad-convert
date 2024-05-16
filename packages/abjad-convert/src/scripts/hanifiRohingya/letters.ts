@@ -64,7 +64,51 @@ export const HR = {
 	Pa: letters[2], // 𐴂
 	Ta: letters[3], // 𐴃
 	Tta: letters[4], // 𐴄
-	// TODO: Add the rest of the letters
+	Ja: letters[5], // 𐴅
+	Ca: letters[6], // 𐴆
+	Ha: letters[7], // 𐴇
+	Kha: letters[8], // 𐴈
+	Fa: letters[9], // 𐴉
+	Da: letters[10], // 𐴊
+	Dda: letters[11], // 𐴋
+	Ra: letters[12], // 𐴌
+	Rra: letters[13], // 𐴍
+	Za: letters[14], // 𐴎
+	Sa: letters[15], // 𐴏
+	Sha: letters[16], // 𐴐
+	Ka: letters[17], // 𐴑
+	Ga: letters[18], // 𐴒
+	La: letters[19], // 𐴓
+	Ma: letters[20], // 𐴔
+	Na: letters[21], // 𐴕
+	Wa: letters[22], // 𐴖
+	KinnaWa: letters[23], // 𐴗
+	Ya: letters[24], // 𐴘
+	KinnaYa: letters[25], // 𐴙
+	Nga: letters[26], // 𐴚
+	Nya: letters[27], // 𐴛
+	Va: letters[28], // 𐴜
+	VowelA: letters[29], // 𐴝
+	VowelI: letters[30], // 𐴞
+	VowelU: letters[31], // 𐴟
+	VowelE: letters[32], // 𐴠
+	VowelO: letters[33], // 𐴡
+	MarkSakin: letters[34], // 𐴢
+	MarkNaKhonna: letters[35], // 𐴣
+	SignHarbahay: letters[36], // 𐴤
+	SignTahala: letters[37], // 𐴥
+	SignTana: letters[38], // 𐴦
+	SignTassi: letters[39], // 𐴧
+	DigitZero: letters[40], // 𐴰
+	DigitOne: letters[41], // 𐴱
+	DigitTwo: letters[42], // 𐴲
+	DigitThree: letters[43], // 𐴳
+	DigitFour: letters[44], // 𐴴
+	DigitFive: letters[45], // 𐴵
+	DigitSix: letters[46], // 𐴶
+	DigitSeven: letters[47], // 𐴷
+	DigitEight: letters[48], // 𐴸
+	DigitNine: letters[49], // 𐴹
 }
 
 export const hanifiRohingya = new Script(
