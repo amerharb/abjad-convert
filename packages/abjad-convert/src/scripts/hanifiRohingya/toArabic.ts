@@ -50,17 +50,17 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			// [HR.SignTahala, Ar], //
 			// [HR.SignTana, Ar], //
 			[HR.SignTassi, Ar.Shadda], // 𐴢 -> ّ
-			// [HR.DigitZero, Ar], //
-			// [HR.DigitOne, Ar], //
-			// [HR.DigitTwo, Ar], //
-			// [HR.DigitThree, Ar], //
-			// [HR.DigitFour, Ar], //
-			// [HR.DigitFive, Ar], //
-			// [HR.DigitSix, Ar], //
-			// [HR.DigitSeven, Ar], //
-			// [HR.DigitEight, Ar], //
-			// [HR.DigitNine, Ar], //
-			// TODO: Add the rest of the letters
+
+			[HR.DigitZero, '0'], // 𐴰 -> 0
+			[HR.DigitOne, '1'], // 𐴱 -> 1
+			[HR.DigitTwo, '2'], // 𐴲 -> 2
+			[HR.DigitThree, '3'], // 𐴳 -> 3
+			[HR.DigitFour, '4'], // 𐴴 -> 4
+			[HR.DigitFive, '5'], // 𐴵 -> 5
+			[HR.DigitSix, '6'], // 𐴶 -> 6
+			[HR.DigitSeven, '7'], // 𐴷 -> 7
+			[HR.DigitEight, '8'], // 𐴸 -> 8
+			[HR.DigitNine, '9'], // 𐴹 -> 9
 		],
 	)
 
