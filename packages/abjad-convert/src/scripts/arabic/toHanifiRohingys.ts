@@ -11,41 +11,51 @@ export class ArabicToHanifiRohingyaConverter extends DirectConverter {
 		[
 			[' ', ' '],
 			[Ar.Hamza, HR.A], //
-			// TODO
-			// [Ar.AlefMadda, Sy.Alaph], // آ -> ܐ
-			// [Ar.AlefHamza, Sy.Alaph], // أ -> ܐ
-			// [Ar.WawHamza, Sy.Waw], // ؤ -> ܘ
-			// [Ar.AlefHamzaMaksura, Sy.YudhHe], // ى -> ܞ
-			// [Ar.Alef, Sy.Alaph], // ا -> ܐ
-			// [Ar.Ba, Sy.Beth], // ب -> ܒ
-			// [Ar.TaMarbuta, Sy.Taw], // ة -> ܬ
-			// [Ar.Ta, Sy.Taw], // ت -> ܬ
-			// [Ar.Tha, Sy.Taw], // ث -> ܬ
-			// [Ar.Jeem, Sy.Gamal], // ج -> ܓ
-			// [Ar.H7aa, Sy.Heth], // ح -> ܚ
-			// [Ar.Khaa, Sy.Heth], // خ -> ܚ
-			// [Ar.Dal, Sy.Dalath], // د -> ܕ
-			// [Ar.Thal, Sy.Dalath], // ذ -> ܕ
-			// [Ar.Ra, Sy.Rish], // ر -> ܪ
-			// [Ar.Zay, Sy.Zain], // ز -> ܙ
-			// [Ar.Seen, Sy.Semkath], // س -> ܣ
-			// [Ar.Sheen, Sy.Shin], // ش -> ܫ
-			// [Ar.Sad, Sy.Sadhe], // ص -> ܨ
-			// [Ar.Dad, Sy.Dalath], // ض -> ܕ
-			// [Ar.TTa, Sy.Teth], // ط -> ܛ
-			// [Ar.THa, Sy.Taw], // ظ -> ܬ
-			// [Ar.Ayn, Sy.E], // ع -> ܥ
-			// [Ar.Ghayn, Sy.E], // غ -> ܥ
-			// [Ar.Fa, Sy.Pe], // ف -> ܦ
-			// [Ar.Qaf, Sy.Qaph], // ق -> ܩ
-			// [Ar.Kaf, Sy.Kaph], // ك -> ܟ
-			// [Ar.Lam, Sy.Lamadh], // ل -> ܠ
-			// [Ar.Meem, Sy.Mim], // م -> ܡ
-			// [Ar.Noon, Sy.Nun], // ن -> ܢ
-			// [Ar.Ha, Sy.He], // ه -> ܗ
-			// [Ar.Waw, Sy.Waw], // و -> ܘ
-			// [Ar.Yaa, Sy.Yudh], // ي -> ܝ
-			// [Ar.AlefMaksura, Sy.Alaph], // ى -> ܐ
+			[Ar.AlefMadda, HR.A], // آ -> 𐴀
+			[Ar.AlefHamza, HR.A], // أ -> 𐴀
+			[Ar.WawHamza, HR.Wa], // ؤ -> 𐴖
+			[Ar.AlefHamzaMaksura, HR.Ya], // ى -> 𐴘
+			[Ar.Alef, HR.A], // ا -> 𐴀
+			[Ar.Ba, HR.Ba], // ب -> 𐴁
+			[Ar.TaMarbuta, HR.Ta], // ة -> 𐴃
+			[Ar.Ta, HR.Ta], // ت -> 𐴃
+			[Ar.Tha, HR.Tta], // ث -> 𐴄
+			[Ar.Jeem, HR.Ja], // ج -> 𐴅
+			[Ar.H7aa, HR.Ha], // ح -> 𐴇
+			[Ar.Khaa, HR.Kha], // خ -> 𐴈
+			[Ar.Dal, HR.Da], // د -> 𐴊
+			[Ar.Thal, HR.Za], // ذ -> 𐴎
+			[Ar.Ra, HR.Ra], // ر -> 𐴌
+			[Ar.Zay, HR.Za], // ز -> 𐴎
+			[Ar.Seen, HR.Sa], // س -> 𐴏
+			[Ar.Sheen, HR.Sha], // ش -> 𐴐
+			[Ar.Sad, HR.Sa], // ص -> 𐴏
+			[Ar.Dad, HR.Da], // ض -> 𐴊
+			[Ar.TTa, HR.Tta], // ط -> 𐴃
+			[Ar.THa, HR.Za], // ظ -> 𐴎
+			[Ar.Ayn, HR.A], // ع -> 𐴀
+			[Ar.Ghayn, HR.Ga], // غ -> 𐴒
+			[Ar.Fa, HR.Fa], // ف -> 𐴉
+			[Ar.Qaf, HR.Ka], // ق -> 𐴑
+			[Ar.Kaf, HR.Ka], // ك -> 𐴑
+			[Ar.Lam, HR.La], // ل -> 𐴓
+			[Ar.Meem, HR.Ma], // م -> 𐴔
+			[Ar.Noon, HR.Na], // ن -> 𐴕
+			[Ar.Ha, HR.Ha], // ه -> 𐴇
+			[Ar.Waw, HR.Wa], // و -> 𐴖
+			[Ar.Yaa, HR.Ya], // ي -> 𐴘
+			[Ar.AlefMaksura, HR.Ya], // ى -> 𐴘
+
+			['0', HR.DigitZero], // 0 -> 𐴰
+			['1', HR.DigitOne], // 1 -> 𐴱
+			['2', HR.DigitTwo], // 2 -> 𐴲
+			['3', HR.DigitThree], // 3 -> 𐴳
+			['4', HR.DigitFour], // 4 -> 𐴴
+			['5', HR.DigitFive], // 5 -> 𐴵
+			['6', HR.DigitSix], // 6 -> 𐴶
+			['7', HR.DigitSeven], // 7 -> 𐴷
+			['8', HR.DigitEight], // 8 -> 𐴸
+			['9', HR.DigitNine], // 9 -> 𐴹
 		]
 	)
 
