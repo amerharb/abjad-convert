@@ -21,11 +21,11 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			[HR.Kha, Ar.Khaa], // 𐴈 -> خ
 			[HR.Fa, Ar.Fa], // 𐴉 -> ف
 			[HR.Da, Ar.Dal], // 𐴊 -> د
-			// [HR.Dda, Ar], //
-			// [HR.Ra, Ar], //
-			// [HR.Rra, Ar], //
-			// [HR.Za, Ar], //
-			// [HR.Sa, Ar], //
+			[HR.Dda, Ar.Dal], // 𐴋 -> د
+			[HR.Ra, Ar.Ra], // 𐴌 -> ر
+			[HR.Rra, Ar.Ra], // 𐴍 -> ر
+			[HR.Za, Ar.Zay], // 𐴎 -> ز
+			[HR.Sa, Ar.Seen], // 𐴏 -> س
 			// [HR.Sha, Ar], //
 			// [HR.Ka, Ar], //
 			// [HR.Ga, Ar], //
