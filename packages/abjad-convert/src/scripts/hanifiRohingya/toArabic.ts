@@ -36,9 +36,9 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			[HR.KinnaWa, Ar.Waw], // 𐴗 -> و
 			[HR.Ya, Ar.Yaa], // 𐴘 -> ي
 			[HR.KinnaYa, Ar.Yaa], // 𐴙 -> ي
-			// [HR.Nga, Ar], //
-			// [HR.Nya, Ar], //
-			// [HR.Va, Ar], //
+			[HR.Nga, Ar.Nga], // 𐴚 -> ڠ
+			[HR.Nya, Ar.Noon + Ar.Yaa], // 𐴛 -> ني
+			[HR.Va, Ar.Ve], // 𐴜 -> ڤ
 			// [HR.VowelA, Ar], //
 			// [HR.VowelI, Ar], //
 			// [HR.VowelU, Ar], //
@@ -49,7 +49,7 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			// [HR.SignHarbahay, Ar], //
 			// [HR.SignTahala, Ar], //
 			// [HR.SignTana, Ar], //
-			// [HR.SignTassi, Ar], //
+			[HR.SignTassi, Ar.Shadda], // 𐴢 -> ّ
 			// [HR.DigitZero, Ar], //
 			// [HR.DigitOne, Ar], //
 			// [HR.DigitTwo, Ar], //
