@@ -34,4 +34,16 @@ Char	Burmese	Name	    Final	Medial	Latin Script	Arabic Script	Pronunciation	Unic
 𐴛			ည	    NYA				𐴛			ـ𐴛ـ			ny						ني						/ɲ/						U+10D1B
 𐴜			ဝ				VA				𐴜𐴢			ـ𐴜ـ			v							ڤ							/v/						U+10D1C
 𐴧							Tassi								double consonant	ّ														U+10D27
+
+𐴝							aa-for									a	◌َ												/a/						U+10D1D
+𐴞							i-for										i	◌ِ												/i/						U+10D1E
+𐴟							u-for										u	◌ُ												/u/						U+10D1F
+𐴠							e-for										e	◌ࣦ													/e/						U+10D20
+𐴡							o-for										o	◌ࣤ, ◌ࣥ											/o/						U+10D21
+
+𐴢							Sakin (Ttura/Les)	none							◌ۡ	Vowel silencer	none			U+10D22
+𐴣							Na-Khonna	ñ (full letter)						ں, ◌ً, ◌ࣧ, ◌ٍ, ◌ࣩ, ◌ٌ, ◌ࣨ	Nasalization mark	/◌̃/	U+10D23
+◌𐴤							Harbai	á (acute accent)						◌࣪ / ◌࣭	Short high tone		/˥/		U+10D24
+◌𐴥							Tela	áa (double, acute at first)		◌࣫ / ◌࣮	Long falling tone	/˥˩/	U+10D25
+◌𐴦							Tana	aá (double, acute at second)	◌࣬ / ◌࣯	Long rising tone	/˨˦/	U+10D26
 ```

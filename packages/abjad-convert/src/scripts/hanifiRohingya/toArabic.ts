@@ -39,11 +39,12 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			[HR.Nga, Ar.Nga], // 𐴚 -> ڠ
 			[HR.Nya, Ar.Noon + Ar.Yaa], // 𐴛 -> ني
 			[HR.Va, Ar.Ve], // 𐴜 -> ڤ
-			// [HR.VowelA, Ar], //
-			// [HR.VowelI, Ar], //
-			// [HR.VowelU, Ar], //
-			// [HR.VowelE, Ar], //
-			// [HR.VowelO, Ar], //
+			// TODO: Add the rest of the letters
+			[HR.VowelA, Ar.Alef], // 𐴝 -> ا
+			[HR.VowelI, Ar.Yaa], // 𐴞 -> ي
+			[HR.VowelU, Ar.Waw], // 𐴟 -> و
+			[HR.VowelE, Ar.Alef], // 𐴠 -> ا
+			[HR.VowelO, Ar.Waw], // 𐴡 -> و
 			// [HR.MarkSakin, Ar], //
 			// [HR.MarkNaKhonna, Ar], //
 			// [HR.SignHarbahay, Ar], //
