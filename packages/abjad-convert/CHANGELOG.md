@@ -4,6 +4,8 @@
 ## [0.9.0] 2024-05-15
 ### Added
 - Support Hanifi Rohingya
+- letter ڠ
+- mapping to IPA for letter ژ
 
 ## [0.6.1] 2024-04-23
 ### Added

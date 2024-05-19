@@ -55,8 +55,9 @@ const letters = [
 	'\u067E', /** #46  پ */
 	'\u0686', /** #47  چ */
 	'\u0698', /** #48  ژ */
-	'\u06A4', /** #49  ڤ */
-	'\u06AF', /** #50  گ */
+	String.fromCodePoint(0x06A0), /** #49 ڠ */
+	'\u06A4', /** #50  ڤ */
+	'\u06AF', /** #51  گ */
 ] as const
 
 export const Ar = {
@@ -109,8 +110,9 @@ export const Ar = {
 	Pe: letters[46], // پ
 	Che: letters[47], // چ
 	Že: letters[48], // ژ
-	Ve: letters[49], // ڤ
-	Gaf: letters[50], // گ
+	Nga: letters[49], // ڠ
+	Ve: letters[50], // ڤ
+	Gaf: letters[51], // گ
 }
 
 export const arabic = new Script(

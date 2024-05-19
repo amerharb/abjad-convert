@@ -57,6 +57,8 @@ export class ArabicToIpaConverter extends DirectConverter {
 			[Ar.AlefWasla, ''], /** silent <- ٱ */
 			[Ar.Pe, IPA.p], /** p <- پ */
 			[Ar.Che, IPA.ʧ], /** ʧ <- چ */
+			[Ar.Že, IPA.ʓ], /** ژ -> ʓ */
+			[Ar.Nga, IPA.ŋ], /** ڠ -> ŋ */
 			[Ar.Ve, IPA.v], /** v <- ڤ */
 			[Ar.Gaf, IPA.ɡ], /** ɡ <- گ */
 		],
