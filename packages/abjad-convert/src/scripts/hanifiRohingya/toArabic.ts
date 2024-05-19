@@ -26,16 +26,16 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 			[HR.Rra, Ar.Ra], // 𐴍 -> ر
 			[HR.Za, Ar.Zay], // 𐴎 -> ز
 			[HR.Sa, Ar.Seen], // 𐴏 -> س
-			// [HR.Sha, Ar], //
-			// [HR.Ka, Ar], //
-			// [HR.Ga, Ar], //
-			// [HR.La, Ar], //
-			// [HR.Ma, Ar], //
-			// [HR.Na, Ar], //
-			// [HR.Wa, Ar], //
-			// [HR.KinnaWa, Ar], //
-			// [HR.Ya, Ar], //
-			// [HR.KinnaYa, Ar], //
+			[HR.Sha, Ar.Sheen], // 𐴐 -> ش
+			[HR.Ka, Ar.Kaf], // 𐴑 -> ك
+			[HR.Ga, Ar.Gaf], // 𐴒 -> گ
+			[HR.La, Ar.Lam], // 𐴓 -> ل
+			[HR.Ma, Ar.Meem], // 𐴔 -> م
+			[HR.Na, Ar.Noon], // 𐴕 -> ن
+			[HR.Wa, Ar.Waw], // 𐴖 -> و
+			[HR.KinnaWa, Ar.Waw], // 𐴗 -> و
+			[HR.Ya, Ar.Yaa], // 𐴘 -> ي
+			[HR.KinnaYa, Ar.Yaa], // 𐴙 -> ي
 			// [HR.Nga, Ar], //
 			// [HR.Nya, Ar], //
 			// [HR.Va, Ar], //
