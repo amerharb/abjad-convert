@@ -10,8 +10,8 @@
 Current supported alphabets:
 - Arabic
 - Hanifi Rohingya
-- IPA (International Phonetic Alphabet)
 - Imperial Aramaic
+- IPA (International Phonetic Alphabet)
 - Old South Arabian
 - Phoenician
 - Syriac
