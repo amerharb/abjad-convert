@@ -10,14 +10,15 @@ Pull requests are welcome. For adding a new script. Let's say that we want to ad
 - - `letters` an array of letters written using unicode values with jsdoc each line will contain
     the value of the letter using UTF-16 BE using escape \u followed by four hex digits.
     notice that UTF16BE value is not always the same as the unicode value.
-    for example for letter Alpa in Ugaritic, the unicode value is `0x10380` but the UTF16BE encode value is `0xD800DF80`
-    follow the value with jsdoc that contain array index, letter itself, unicode value, and the name of the letter.
+    for example, for letter Alpa in Ugaritic, the unicode value is `0x10380` but the UTF16BE encode value is `0xD800DF80`,
+    so either write the value as `'\uD800\uDF80'` or use the `String.fromCodePoint(0x10380)` which more recommended for getting the letter.
+    follow the value with jsdoc that contains array index, letter itself, unicode value, and the name of the letter.
     for example, ugaritic looks like this:
 
 ```ts
 const letters = [
-	'\uD800\uDF80', /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
-	'\uD800\uDF81', /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
+	String.fromCodePoint(0x10380), /** #0  𐎀 U+10380 UGARITIC LETTER ALPA */
+	String.fromCodePoint(0x10381), /** #1  𐎁 U+10381 UGARITIC LETTER BETA */
 	//...
 ];
 ```
