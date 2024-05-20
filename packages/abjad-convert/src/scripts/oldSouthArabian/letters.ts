@@ -36,7 +36,7 @@ const letters = [
 	String.fromCodePoint(0x10A7C), /** #28 𐹼 U+10A7C OLD SOUTH ARABIAN LETTER Theth */
 	String.fromCodePoint(0x10A7D), /** #29 𐹽 U+10A7D OLD SOUTH ARABIAN NUMBER ONE */
 	String.fromCodePoint(0x10A7E), /** #30 𐹾 U+10A7E OLD SOUTH ARABIAN NUMBER FIFTY */
-  String.fromCodePoint(0x10A7F), /** #31 𐹿 U+10A7F OLD SOUTH ARABIAN NUMERIC INDICATOR */
+	String.fromCodePoint(0x10A7F), /** #31 𐹿 U+10A7F OLD SOUTH ARABIAN NUMERIC INDICATOR */
 ] as const
 
 export const Sa = {
