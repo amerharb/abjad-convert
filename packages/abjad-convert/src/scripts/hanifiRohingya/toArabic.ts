@@ -10,7 +10,7 @@ export class HanifiRohingyaToArabicConverter extends DirectConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[HR.A, Ar.Hamza], // 𐴀 -> ا
+			[HR.A, Ar.Alef], // 𐴀 -> ا
 			[HR.Ba, Ar.Ba], // 𐴁 -> ب
 			[HR.Pa, Ar.Pe], // 𐴂 -> پ
 			[HR.Ta, Ar.Ta], // 𐴃 -> ت
