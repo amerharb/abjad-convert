@@ -6,6 +6,7 @@ ref: https://en.wikipedia.org/wiki/Hanifi_Rohingya_script
 Char	Burmese	Name	    Final	Medial	Latin Script	Arabic Script	Pronunciation	Unicode [5]
 𐴀			အ			A					  𐴀		ـ𐴀ـ			-							ا, ع					/ɔ/, /ʔ/			U+10D00
 𐴁			ဗ				BA				  𐴁𐴢		ـ𐴁ـ			b							ب							/b/						U+10D01
+𐴂			ပ				PA				 𐴂𐴢		ـ𐴂ـ			p							پ							/p/						U+10D02
 𐴃			တ			TA				  𐴃𐴢		ـ𐴃ـ			t							ت, ط					/t/						U+10D03
 𐴄			ထ			TTA				  𐴄𐴢		ـ𐴄ـ			th						ٹ							/ʈ/						U+10D04
 𐴅			ဇ				JA				  𐴅		ـ𐴅ـ			j							ج							/ɟ/						U+10D05
@@ -13,7 +14,6 @@ Char	Burmese	Name	    Final	Medial	Latin Script	Arabic Script	Pronunciation	Unic
 𐴇			ဟ			HA				𐴇𐴢		ـ𐴇ـ			h, h'					ح, ه					/h/						U+10D07
 𐴈			ခ				KHA				  𐴈𐴢		ـ𐴈ـ			h, kh					خ							/x/						U+10D08
 𐴉			ဖ				FA				  𐴉𐴢		ـ𐴉ـ			f							ف							/f/						U+10D09
-𐴂			ပ				PA				 𐴂𐴢		ـ𐴂ـ			p							پ							/p/						U+10D02
 𐴊			ဒ				DA      	  𐴊𐴢		ـ𐴊ـ			d							د, ض					/d/						U+10D0A
 𐴋			ဓ				DDA     	  𐴋		ـ𐴋ـ			dh						ڈ							/ɖ/						U+10D0B
 𐴌			ရ				RA      	  𐴌		ـ𐴌ـ			r							ر							/ɾ/						U+10D0C
