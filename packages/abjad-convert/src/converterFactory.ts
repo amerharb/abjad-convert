@@ -9,6 +9,7 @@ import { ArabicToSyriacConverter } from './scripts/arabic/toSyriac'
 import { ArabicToTifinaghConverter } from './scripts/arabic/toTifinagh'
 import { ArabicToUgariticConverter } from './scripts/arabic/toUgaritic'
 import { HanifiRohingyaToArabicConverter } from './scripts/hanifiRohingya/toArabic'
+import { HanifiRohingyaToIpaConverter } from './scripts/hanifiRohingya/toIpa'
 import { ImperialAramaicToArabicConverter } from './scripts/imperialAramaic/toArabic'
 import { IpaToArabicConverter } from './scripts/ipa/toArabic'
 import { OldSouthArabicToArabicConverter } from './scripts/oldSouthArabian/toArabic'
@@ -27,6 +28,7 @@ const converters: IConverter[] = [
 	new ArabicToTifinaghConverter(),
 	new ArabicToUgariticConverter(),
 	new HanifiRohingyaToArabicConverter(),
+	new HanifiRohingyaToIpaConverter(),
 	new ImperialAramaicToArabicConverter(),
 	new IpaToArabicConverter(),
 	new OldSouthArabicToArabicConverter(),
