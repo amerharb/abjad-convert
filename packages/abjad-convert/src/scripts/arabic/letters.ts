@@ -2,61 +2,62 @@ import { Script } from '../Script'
 import { Abjad } from '../../types'
 
 const letters = [
-	'\u0621', /** #0   ء */
-	'\u0622', /** #1   آ */
-	'\u0623', /** #2   أ */
-	'\u0624', /** #3   ؤ */
-	'\u0625', /** #4   إ */
-	'\u0626', /** #5   ئ */
-	'\u0627', /** #6   ا */
-	'\u0628', /** #7   ب */
-	'\u0629', /** #8   ة */
-	'\u062A', /** #9   ت */
-	'\u062B', /** #10  ث */
-	'\u062C', /** #11  ج */
-	'\u062D', /** #12  ح */
-	'\u062E', /** #13  خ */
-	'\u062F', /** #14  د */
-	'\u0630', /** #15  ذ */
-	'\u0631', /** #16  ر */
-	'\u0632', /** #17  ز */
-	'\u0633', /** #18  س */
-	'\u0634', /** #19  ش */
-	'\u0635', /** #20  ص */
-	'\u0636', /** #21  ض */
-	'\u0637', /** #22  ط */
-	'\u0638', /** #23  ظ */
-	'\u0639', /** #24  ع */
-	'\u063A', /** #25  غ */
+	String.fromCodePoint(0x0621), /** #0   ء */
+	String.fromCodePoint(0x0622), /** #1   آ */
+	String.fromCodePoint(0x0623), /** #2   أ */
+	String.fromCodePoint(0x0624), /** #3   ؤ */
+	String.fromCodePoint(0x0625), /** #4   إ */
+	String.fromCodePoint(0x0626), /** #5   ئ */
+	String.fromCodePoint(0x0627), /** #6   ا */
+	String.fromCodePoint(0x0628), /** #7   ب */
+	String.fromCodePoint(0x0629), /** #8   ة */
+	String.fromCodePoint(0x062A), /** #9   ت */
+	String.fromCodePoint(0x062B), /** #10  ث */
+	String.fromCodePoint(0x062C), /** #11  ج */
+	String.fromCodePoint(0x062D), /** #12  ح */
+	String.fromCodePoint(0x062E), /** #13  خ */
+	String.fromCodePoint(0x062F), /** #14  د */
+	String.fromCodePoint(0x0630), /** #15  ذ */
+	String.fromCodePoint(0x0631), /** #16  ر */
+	String.fromCodePoint(0x0632), /** #17  ز */
+	String.fromCodePoint(0x0633), /** #18  س */
+	String.fromCodePoint(0x0634), /** #19  ش */
+	String.fromCodePoint(0x0635), /** #20  ص */
+	String.fromCodePoint(0x0636), /** #21  ض */
+	String.fromCodePoint(0x0637), /** #22  ط */
+	String.fromCodePoint(0x0638), /** #23  ظ */
+	String.fromCodePoint(0x0639), /** #24  ع */
+	String.fromCodePoint(0x063A), /** #25  غ */
 	/** ignore from U+063B to U+0640 */
-	'\u0641', /** #26  ف */
-	'\u0642', /** #27  ق */
-	'\u0643', /** #28  ك */
-	'\u0644', /** #29  ل */
-	'\u0645', /** #30  م */
-	'\u0646', /** #31  ن */
-	'\u0647', /** #32  ه */
-	'\u0648', /** #33  و */
-	'\u0649', /** #34  ى */
-	'\u064A', /** #35  ي */
-	'\u064B', /** #36  ً  */
-	'\u064C', /** #37  ٌ  */
-	'\u064D', /** #38  ٍ  */
-	'\u064E', /** #39  َ  */
-	'\u064F', /** #40  ُ  */
-	'\u0650', /** #41  ِ  */
-	'\u0651', /** #42  ّ  */
-	'\u0652', /** #43  ْ  */
+	String.fromCodePoint(0x0641), /** #26  ف */
+	String.fromCodePoint(0x0642), /** #27  ق */
+	String.fromCodePoint(0x0643), /** #28  ك */
+	String.fromCodePoint(0x0644), /** #29  ل */
+	String.fromCodePoint(0x0645), /** #30  م */
+	String.fromCodePoint(0x0646), /** #31  ن */
+	String.fromCodePoint(0x0647), /** #32  ه */
+	String.fromCodePoint(0x0648), /** #33  و */
+	String.fromCodePoint(0x0649), /** #34  ى */
+	String.fromCodePoint(0x064A), /** #35  ي */
+	String.fromCodePoint(0x064B), /** #36  ً  */
+	String.fromCodePoint(0x064C), /** #37  ٌ  */
+	String.fromCodePoint(0x064D), /** #38  ٍ  */
+	String.fromCodePoint(0x064E), /** #39  َ  */
+	String.fromCodePoint(0x064F), /** #40  ُ  */
+	String.fromCodePoint(0x0650), /** #41  ِ  */
+	String.fromCodePoint(0x0651), /** #42  ّ  */
+	String.fromCodePoint(0x0652), /** #43  ْ  */
 	/** ignore from U+0653 to U+066F */
-	'\u0670', /** #44  ٰ  */
-	'\u0671', /** #45  ٱ */
+	String.fromCodePoint(0x0670), /** #44  ٰ  */
+	String.fromCodePoint(0x0671), /** #45  ٱ */
 
 	/** selectively frequently used alternative letters */
-	'\u067E', /** #46  پ */
-	'\u0686', /** #47  چ */
-	'\u0698', /** #48  ژ */
-	'\u06A4', /** #49  ڤ */
-	'\u06AF', /** #50  گ */
+	String.fromCodePoint(0x067E), /** #46  پ */
+	String.fromCodePoint(0x0686), /** #47  چ */
+	String.fromCodePoint(0x0698), /** #48  ژ */
+	String.fromCodePoint(0x06A0), /** #49 ڠ */
+	String.fromCodePoint(0x06A4), /** #50  ڤ */
+	String.fromCodePoint(0x06AF), /** #51  گ */
 ] as const
 
 export const Ar = {
@@ -109,8 +110,9 @@ export const Ar = {
 	Pe: letters[46], // پ
 	Che: letters[47], // چ
 	Že: letters[48], // ژ
-	Ve: letters[49], // ڤ
-	Gaf: letters[50], // گ
+	Nga: letters[49], // ڠ
+	Ve: letters[50], // ڤ
+	Gaf: letters[51], // گ
 }
 
 export const arabic = new Script(

@@ -1,6 +1,6 @@
 {
 	"name": "abjad-convert",
-	"version": "0.6.1",
+	"version": "0.9.0",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
 	"files": [
@@ -23,6 +23,7 @@
 		"phonetic",
 		"transcription",
 		"arabic",
+		"hanifi-rohingya",
 		"imperial-aramaic",
 		"international-phonetic-alphabet",
 		"IPA",

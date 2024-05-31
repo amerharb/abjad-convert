@@ -3,6 +3,12 @@ import { describe, expect, it } from '@jest/globals'
 
 describe('convert()', () => {
 	describe('from Arabic', () => {
+		describe('to HanifiRohingya', () => {
+			it('convert ا ب ج into 𐴀 𐴁 𐴅', () => {
+				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.HanifiRohingya)
+				expect(actual).toEqual('𐴀 𐴁 𐴅')
+			})
+		})
 		describe('to ImperialAramaic', () => {
 			it('convert ا ب ج into 𐡀 𐡁 𐡂', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.ImperialAramaic)
@@ -43,6 +49,14 @@ describe('convert()', () => {
 			it('convert ا ب ج into 𐎀 𐎁 𐎂', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Ugaritic)
 				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+		})
+	})
+	describe('from HanifiRohingya', () => {
+		describe('to Arabic', () => {
+			it('convert 𐴀 𐴁 𐴅 into ا ب ج', () => {
+				const actual = convert('𐴀 𐴁 𐴅', Abjad.HanifiRohingya, Abjad.Arabic)
+				expect(actual).toEqual('ا ب ج')
 			})
 		})
 	})

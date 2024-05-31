@@ -1,7 +1,7 @@
 import { ArabicToIpaConverter } from '../../src/scripts/arabic/toIpa'
 import { describe, expect, it } from '@jest/globals'
 
-describe('ArabicToPhoenicianConverter', () => {
+describe('ArabicToIpaConverter', () => {
 	describe('convert()', () => {
 		const converter = new ArabicToIpaConverter()
 		it('convert ا ب ج into aː b ʒ', () => {
