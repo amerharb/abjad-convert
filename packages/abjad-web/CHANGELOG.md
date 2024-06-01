@@ -2,6 +2,12 @@
 
 <!-- https://keepachangelog.com/en/1.0.0/ -->
 
+## [0.9.0] 2024-02-23
+### Changed
+- Use abjad-convert v0.9.0
+### Added
+- Support Hanifi Rohingya
+
 ## [0.7.0] 2024-02-23
 ### Changed
 - Use abjad-convert v0.6.1
