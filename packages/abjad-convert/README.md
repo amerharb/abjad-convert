@@ -14,6 +14,7 @@ Current supported alphabets:
 - IPA (International Phonetic Alphabet)
 - Old South Arabian
 - Phoenician
+- Runic
 - Syriac
 - Tifinagh
 - Uguritic
