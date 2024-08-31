@@ -51,6 +51,9 @@ console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡
 const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
 console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
 
+const runicWord = convert(arabicWord, Abjad.Arabic, Abjad.Runic);
+console.log(runicWord); // (TODO: not supported yet)
+
 const syriacWord = convert(arabicWord, Abjad.Arabic, Abjad.Syriac);
 console.log(syriacWord); // ܡܪܚܒܐ
 
