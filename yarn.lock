@@ -1842,13 +1842,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"abjad-convert@npm:0.9.0":
-  version: 0.9.0
-  resolution: "abjad-convert@npm:0.9.0"
-  checksum: 10c0/49fb7b4e9d7bfe559a32f076b08a1bf6c16642ddf7894b69114d6697f81b9d303dc58431d7bf6aa6acbe3da1cb08c94d8139a5cd7ae16ce0f9582c583ec5611c
-  languageName: node
-  linkType: hard
-
 "abjad-convert@workspace:packages/abjad-convert":
   version: 0.0.0-use.local
   resolution: "abjad-convert@workspace:packages/abjad-convert"
@@ -1884,7 +1877,7 @@ __metadata:
     "@types/react-dom": "npm:^18"
     "@vercel/analytics": "npm:1.1.2"
     "@vercel/speed-insights": "npm:1.0.9"
-    abjad-convert: "npm:0.9.0"
+    abjad-convert: "npm:0.10.0-next.0"
     eslint: "npm:^8.54.0"
     eslint-config-next: "npm:^14.1.0"
     next: "npm:14.1.4"
