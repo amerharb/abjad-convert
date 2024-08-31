@@ -10,7 +10,7 @@ export class IpaToRunicConverter extends DirectConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[IPA.æ, Ru.Aesc], 		// æ -> ᚫ
+			[IPA.æ, Ru.Aesc],			// æ -> ᚫ
 			[IPA.ç, Ru.Sh],				// ç -> ᛲ historically there is no should ch or sh, so used ext. ᛲ
 			[IPA.ð, Ru.Eth],			// ð -> ᚧ
 			[IPA.ø, Ru.Oe],				// ø -> ᚯ
@@ -118,33 +118,33 @@ export class IpaToRunicConverter extends DirectConverter {
 			[IPA.ˤ, Ru.Haegl],		// ˤ -> ᚻ (Closest approximation for the pharyngeal articulation, though not historically used)
 			[IPA.ː, Ru.O],				// ː -> ᚩ (Closest approximation for vowel length, though not used historically)
 			[IPA.a, Ru.Aesc],			// a -> ᚫ (Closest approximation for /a/)
-			[IPA.b, Ru.Berkanan]	// b -> ᛒ (Closest approximation for /b/)
+			[IPA.b, Ru.Berkanan],	// b -> ᛒ (Closest approximation for /b/)
 
-			// [IPA.c, Ar.Che], /** چ <- c */
-			// [IPA.d, Ar.Dal], /** د <- d */
-			// [IPA.e, Ar.Alef], /** ا <- e */
-			// [IPA.f, Ar.Fa], /** ف <- f */
-			// [IPA.g, Ar.Gaf], /** گ <- g */
-			// [IPA.h, Ar.Ha], /** ه <- h */
-			// [IPA.i, Ar.Yaa], /** ي <- i */
-			// [IPA.j, Ar.Yaa + Ar.Fatha], /** يَ <- j */
-			// [IPA.k, Ar.Kaf], /** ك <- k */
-			// [IPA.l, Ar.Lam], /** ل <- l */
-			// [IPA.m, Ar.Meem], /** م <- m */
-			// [IPA.n, Ar.Noon], /** ن <- n */
-			// [IPA.o, Ar.Waw], /** و <- o */
-			// [IPA.p, Ar.Pe], /** پ <- p */
-			// [IPA.q, Ar.Qaf], /** ق <- q */
-			// [IPA.r, Ar.Ra], /** ر <- r */
-			// [IPA.s, Ar.Seen], /** س <- s */
-			// [IPA.t, Ar.Ta], /** ت <- t */
-			// [IPA.u, Ar.Waw], /** و <- u */
-			// [IPA.v, Ar.Ve], /** ڤ <- v */
-			// [IPA.w, ''], /** w -> silent */
-			// [IPA.x, Ar.Khaa], /** خ <- x */
-			// [IPA.y, Ar.Yaa], /** ي <- y */
-			// [IPA.z, Ar.Zay], /** ز <- z */
-			// [IPA.ʧ, Ar.Che], /** چ <- ʧ */
+			[IPA.c, Ru.Cen],			// c -> ᚳ (Closest approximation for /c/, though historically not used)
+			[IPA.d, Ru.Dagaz],		// d -> ᛞ (Closest approximation for /d/)
+			[IPA.e, Ru.Ear],			// e -> ᛠ (Closest approximation for /e/)
+			[IPA.f, Ru.Fe],				// f -> ᚠ (Closest approximation for /f/)
+			[IPA.g, Ru.Ger],			// g -> ᚷ (Closest approximation for /g/)
+			[IPA.h, Ru.Haegl],		// h -> ᚻ (Closest approximation for /h/)
+			[IPA.i, Ru.Ior],			// i -> ᛁ (Closest approximation for /i/)
+			[IPA.j, Ru.Iwaz],			// j -> ᛇ (Closest approximation for /j/, though historically not used)
+			[IPA.k, Ru.K],				// k -> ᚲ (Closest approximation for /k/)
+			[IPA.l, Ru.Laukaz],		// l -> ᛚ (Closest approximation for /l/)
+			[IPA.m, Ru.Mannaz],		// m -> ᛗ (Closest approximation for /m/)
+			[IPA.n, Ru.Naudiz],		// n -> ᚾ (Closest approximation for /n/)
+			[IPA.o, Ru.Oe],				// o -> ᚯ (Closest approximation for /o/)
+			[IPA.p, Ru.Pertho],		// p -> ᛈ (Closest approximation for /p/)
+			[IPA.q, Ru.Q],				// q -> ᛩ (Closest approximation for /q/, though historically not used)
+			[IPA.r, Ru.Raido],		// r -> ᚱ (Closest approximation for /r/)
+			[IPA.s, Ru.Sowilo],		// s -> ᛊ (Closest approximation for /s/)
+			[IPA.t, Ru.Tiwaz],		// t -> ᛏ (Closest approximation for /t/)
+			[IPA.u, Ru.Uru],			// u -> ᚢ (Closest approximation for /u/)
+			[IPA.v, Ru.Berkanan],	// v -> ᛒ (Closest approximation for /v/)
+			[IPA.w, Ru.Wunjo],		// w -> ᚹ (Closest approximation for /w/)
+			[IPA.x, Ru.Cweorth],	// x -> ᛪ (Closest approximation for /x/)
+			[IPA.y, Ru.Y],				// y -> ᚤ (Closest approximation for /y/)
+			[IPA.z, Ru.Z],				// z -> ᛉ (Closest approximation for /z/)
+			[IPA.ʧ, Ru.Tiwaz],		// ʧ -> ᛏ (Closest approximation for /tʃ/)
 		]
 	)
 
