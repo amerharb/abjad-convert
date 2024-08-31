@@ -52,7 +52,7 @@ const phoenicianWord = convert(arabicWord, Abjad.Arabic, Abjad.Phoenician);
 console.log(phoenicianWord); // 𐤌𐤓𐤇𐤁𐤀
 
 const runicWord = convert(arabicWord, Abjad.Arabic, Abjad.Runic);
-console.log(runicWord); // (TODO: not supported yet)
+console.log(runicWord); // ᛗᚱᚻᛒᚫᚮ
 
 const syriacWord = convert(arabicWord, Abjad.Arabic, Abjad.Syriac);
 console.log(syriacWord); // ܡܪܚܒܐ

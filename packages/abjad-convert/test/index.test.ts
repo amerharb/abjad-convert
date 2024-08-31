@@ -33,6 +33,12 @@ describe('convert()', () => {
 				expect(actual).toEqual('𐤀𐤟𐤁𐤟𐤂')
 			})
 		})
+		describe('to Runic', () => {
+			it('convert مرحبا into ᛗᚱᚻᛒᚫᚮ', () => {
+				const actual = convert('مرحبا', Abjad.Arabic, Abjad.Runic)
+				expect(actual).toEqual('ᛗᚱᚻᛒᚫᚮ')
+			})
+		})
 		describe('to Syriac', () => {
 			it('convert ا ب ج into ܐ ܒ ܓ', () => {
 				const actual = convert('ا ب ج', Abjad.Arabic, Abjad.Syriac)
@@ -137,6 +143,14 @@ describe('convert()', () => {
 			it('convert 𐤀𐤟𐤁𐤟𐤂 into 𐎀𐎁𐎂', () => {
 				const actual = convert('𐤀𐤟𐤁𐤟𐤂', Abjad.Phoenician, Abjad.Ugaritic)
 				expect(actual).toEqual('𐎀 𐎁 𐎂')
+			})
+		})
+	})
+	describe('from Runic', () => {
+		describe('to IPA', () => {
+			it('convert ᚱ ᚷ ᛈ ᛏ ᛒ ᛗ into r g p t b m', () => {
+				const actual = convert('ᚱ ᚷ ᛈ ᛏ ᛒ ᛗ', Abjad.Runic, Abjad.IPA)
+				expect(actual).toEqual('r g p t b m')
 			})
 		})
 	})
