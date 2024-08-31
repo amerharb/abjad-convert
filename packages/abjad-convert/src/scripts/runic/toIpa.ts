@@ -100,7 +100,7 @@ export class RunicToIpaConverter extends DirectConverter {
 			// TODO: support below
 			// Tolkienian extensions
 			[Ru.K, ''],
-			[Ru.Sh, ''],
+			[Ru.Sh, IPA.ʃ],
 			[Ru.Oo, ''],
 
 			// TODO: support below
