@@ -40,6 +40,12 @@ log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Arabic))
 log(`convert Phoenician text ${phoenician} to Ugaritic`)
 log(calmConvert(phoenician, Abjad.Phoenician, Abjad.Ugaritic))
 
+const runic = 'ᚨ ᛒ ᛊ ᛏ ᚢ ᚦ'
+log(`convert Runic text ${runic} to Arabic`)
+log(calmConvert(runic, Abjad.Runic, Abjad.Arabic))
+log(`convert Runic text ${runic} to IPA`)
+log(calmConvert(runic, Abjad.Runic, Abjad.IPA))
+
 const syriac = 'ܐ ܒ ܓ ܕ ܗ ܘ'
 log(`convert Syriac text ${syriac} to Arabic`)
 log(calmConvert(syriac, Abjad.Syriac, Abjad.Arabic))
