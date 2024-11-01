@@ -42,40 +42,40 @@ const letters = [
 ] as const
 
 export const Na = {
-	FinalAleph: letters[0],
-	Aleph: letters[1],
-	FinalBeth: letters[2],
-	Beth: letters[3],
-	Gimel: letters[4],
-	Daleth: letters[5],
-	FinalHe: letters[6],
-	He: letters[7],
+	FinalAleph: letters[0], // 𐢀
+	Aleph: letters[1], // 𐢁
+	FinalBeth: letters[2], // 𐢂
+	Beth: letters[3], // 𐢃
+	Gimel: letters[4], // 𐢄
+	Daleth: letters[5], // 𐢅
+	FinalHe: letters[6], // 𐢆
+	He: letters[7], // 𐢇
 
-	Waw: letters[8],
-	Zayin: letters[9],
-	Heth: letters[10],
-	Teth: letters[11],
-	FinalYodh: letters[12],
-	Yodh: letters[13],
-	FinalKaph: letters[14],
-	Kaph: letters[15],
+	Waw: letters[8], // 𐢈
+	Zayin: letters[9], // 𐢉
+	Heth: letters[10], // 𐢊
+	Teth: letters[11], // 𐢋
+	FinalYodh: letters[12], // 𐢌
+	Yodh: letters[13], // 𐢍
+	FinalKaph: letters[14], // 𐢎
+	Kaph: letters[15], // 𐢏
 
-	FinalLamedh: letters[16],
-	Lamedh: letters[17],
-	FinalMem: letters[18],
-	Mem: letters[19],
-	FinalNun: letters[20],
-	Nun: letters[21],
-	Samekh: letters[22],
-	Ayin: letters[23],
+	FinalLamedh: letters[16], // 𐢐
+	Lamedh: letters[17], // 𐢑
+	FinalMem: letters[18], // 𐢒
+	Mem: letters[19], // 𐢓
+	FinalNun: letters[20], // 𐢔
+	Nun: letters[21], // 𐢕
+	Samekh: letters[22], // 𐢖
+	Ayin: letters[23], // 𐢗
 
-	Pe: letters[24],
-	Sadhe: letters[25],
-	Qoph: letters[26],
-	Resh: letters[27],
-	FinalShin: letters[28],
-	Shin: letters[29],
-	Taw: letters[30],
+	Pe: letters[24], // 𐢘
+	Sadhe: letters[25], // 𐢙
+	Qoph: letters[26], // 𐢚
+	Resh: letters[27], // 𐢛
+	FinalShin: letters[28], // 𐢜
+	Shin: letters[29], // 𐢝
+	Taw: letters[30], // 𐢞
 }
 
 export const nabataean = new Script(
