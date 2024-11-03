@@ -19,32 +19,32 @@ export class NabataeanToArabicConverter extends DirectConverter {
 			[Na.FinalHe, Ar.Ha], // 𐢆 -> ه
 			[Na.He, Ar.Ha], // 𐢇 -> ه
 
-			[Na.Waw, Ar.Waw],
-			[Na.Zayin, Ar.Zay],
-			[Na.Heth, Ar.H7aa],
-			[Na.Teth, Ar.TTa],
-			[Na.FinalYodh, Ar.Yaa],
-			[Na.Yodh, Ar.Yaa],
-			[Na.FinalKaph, Ar.Kaf],
-			[Na.Kaph, Ar.Kaf],
+			[Na.Waw, Ar.Waw], // 𐢈 -> و
+			[Na.Zayin, Ar.Zay], // 𐢉 -> ز
+			[Na.Heth, Ar.H7aa], // 𐢊 -> ح
+			[Na.Teth, Ar.TTa], // 𐢋 -> ط
+			[Na.FinalYodh, Ar.Yaa], // 𐢌 -> ي
+			[Na.Yodh, Ar.Yaa],// 𐢍 -> ي
+			[Na.FinalKaph, Ar.Kaf], // 𐢎 -> ك
+			[Na.Kaph, Ar.Kaf], // 𐢏 -> ك
 
-			[Na.FinalLamedh, Ar.Lam],
-			[Na.Lamedh, Ar.Lam],
-			[Na.FinalMem, Ar.Meem],
-			[Na.Mem, Ar.Meem],
-			[Na.FinalNun, Ar.Noon],
-			[Na.Nun, Ar.Noon],
-			[Na.Samekh, Ar.Seen],
-			[Na.Ayin, Ar.Ayn],
+			[Na.FinalLamedh, Ar.Lam], // 𐢐 -> ل
+			[Na.Lamedh, Ar.Lam], // 𐢑 -> ل
+			[Na.FinalMem, Ar.Meem], // 𐢒 -> م
+			[Na.Mem, Ar.Meem], // 𐢓 -> م
+			[Na.FinalNun, Ar.Noon], // 𐢔 -> ن
+			[Na.Nun, Ar.Noon], // 𐢕 -> ن
+			[Na.Samekh, Ar.Seen], // 𐢖 -> س
+			[Na.Ayin, Ar.Ayn], // 𐢗 -> ع
 
-			// [Na.Pe, Ar.Zay],
-			// [Na.Sadhe, Ar.Thal],
-			// [Na.Qoph, Ar.Yaa],
-			// [Na.Resh, Ar.Tha],
-			// [Na.FinalShin, Ar.THa],
-			// [Na.Shin, Ar.Dha],
-			// [Na.Taw, Ar.Ghain],
-		]
+			[Na.Pe, Ar.Fa], // 𐢘 -> ف
+			[Na.Sadhe, Ar.Sad], // 𐢙 -> ص
+			[Na.Qoph, Ar.Qaf], // 𐢚 -> ق
+			[Na.Resh, Ar.Ra], // 𐢛 -> ر
+			[Na.FinalShin, Ar.Sheen], // 𐢜 -> ش
+			[Na.Shin, Ar.Sheen], // 𐢝 -> ش
+			[Na.Taw, Ar.Ta], // 𐢞 -> ت
+		],
 	)
 
 	public convert(text: string): string {
