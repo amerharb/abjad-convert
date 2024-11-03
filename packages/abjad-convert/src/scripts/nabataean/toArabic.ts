@@ -10,14 +10,14 @@ export class NabataeanToArabicConverter extends DirectConverter {
 	private map = new Map<string, string>(
 		[
 			[' ', ' '],
-			[Na.FinalAleph, Ar.Alef], //  ـا -> ا
-			[Na.Aleph, Ar.Alef], // ا -> ا
-			[Na.FinalBeth, Ar.Ba], // ـب -> ب
-			[Na.Beth, Ar.Ba],
-			[Na.Gimel, Ar.Jeem],
-			[Na.Daleth, Ar.Dal],
-			[Na.FinalHe, Ar.Ha],
-			[Na.He, Ar.Ha],
+			[Na.FinalAleph, Ar.Alef], //  𐢀 -> ا
+			[Na.Aleph, Ar.Alef], // 𐢁 -> ا
+			[Na.FinalBeth, Ar.Ba], // 𐢂 -> ب
+			[Na.Beth, Ar.Ba], // 𐢃 -> ب
+			[Na.Gimel, Ar.Jeem], // 𐢄 -> ج
+			[Na.Daleth, Ar.Dal], // 𐢅 -> د
+			[Na.FinalHe, Ar.Ha], // 𐢆 -> ه
+			[Na.He, Ar.Ha], // 𐢇 -> ه
 
 			[Na.Waw, Ar.Waw],
 			[Na.Zayin, Ar.Zay],
