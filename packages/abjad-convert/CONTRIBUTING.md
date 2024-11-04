@@ -44,6 +44,7 @@ export function getLetters(script: Abjad): readonly string[] {
 			return foo.letters
 		// ...
 	}
+}
 ```
 for example, ugaritic looks like this:
 ```ts
