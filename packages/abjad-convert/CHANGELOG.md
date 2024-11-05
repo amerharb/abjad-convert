@@ -4,6 +4,7 @@
 ## [0.11.0] 2024-11-01
 ### Added
 - Support for Nabataean
+- getConverterPath() function to get the path of the converter
 
 ## [0.10.0] 2024-08-31
 ### Added
