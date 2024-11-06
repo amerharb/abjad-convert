@@ -1836,9 +1836,9 @@ __metadata:
   linkType: soft
 
 "abjad-convert@file:../abjad-convert::locator=abjad-client%40workspace%3Apackages%2Fabjad-client":
-  version: 0.11.0-next.0
-  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=3581ec&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
-  checksum: 10c0/8e26c7f6784a29fbf81d785de052d6e76f086607452d537aac28d9d9b4b8df95eed55643104a4a850e24df2b9f1537b9fe8f2a3a906d67540ba8474db74f6da8
+  version: 0.11.0-next.1
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=a5740c&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
+  checksum: 10c0/f8abb251aed323d6ca1d05332fa8e5ecf27b191e5e26bcc4fe2598c56ac5c178609c00ab50724e5c42565b8f305e6e482c97382bc3fba974d1f3e4e0137db570
   languageName: node
   linkType: hard
 
