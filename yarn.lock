@@ -1831,9 +1831,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "abjad-client@workspace:packages/abjad-client"
   dependencies:
-    abjad-convert: "npm:0.10.0-next.1"
+    abjad-convert: "file:../abjad-convert"
   languageName: unknown
   linkType: soft
+
+"abjad-convert@file:../abjad-convert::locator=abjad-client%40workspace%3Apackages%2Fabjad-client":
+  version: 0.11.0-next.0
+  resolution: "abjad-convert@file:../abjad-convert#../abjad-convert::hash=3581ec&locator=abjad-client%40workspace%3Apackages%2Fabjad-client"
+  checksum: 10c0/8e26c7f6784a29fbf81d785de052d6e76f086607452d537aac28d9d9b4b8df95eed55643104a4a850e24df2b9f1537b9fe8f2a3a906d67540ba8474db74f6da8
+  languageName: node
+  linkType: hard
 
 "abjad-convert@npm:0.10.0-next.1":
   version: 0.10.0-next.1
