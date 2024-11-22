@@ -17,6 +17,7 @@ export default function Home() {
 		{ value: Abjad.Arabic, label: 'Arabic ابجد' },
 		{ value: Abjad.HanifiRohingya, label: 'HanifiRohingya 𐴀𐴁𐴅𐴊' },
 		{ value: Abjad.ImperialAramaic, label: 'Imperial Aramaic 𐡀𐡁𐡂𐡃' },
+		{ value: Abjad.Nabataean, label: 'Nabataean 𐢀𐢂𐢄𐢅' },
 		{ value: Abjad.OldSouthArabian, label: 'Old South Arabian 𐩱𐩨𐩴𐩵' },
 		{ value: Abjad.Phoenician, label: 'Phoenician 𐤀𐤁𐤂𐤃' },
 		{ value: Abjad.Runic, label: 'Runic ᚫᚮᛒᛲᛞ' },
