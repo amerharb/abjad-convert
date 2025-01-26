@@ -46,6 +46,9 @@ console.log(imperialAramaicWord); // 𐡌𐡓𐡇𐡁𐡀
 const ipaWord = convert(arabicWord, Abjad.Arabic, Abjad.IPA);
 console.log(ipaWord); // mrħbaː
 
+const nabataeanWord = convert(arabicWord, Abjad.Arabic, Abjad.Nabataean);
+console.log(nabataeanWord); // 𐢓𐢛𐢊𐢃𐢁
+
 const oldSouthArabianWord = convert(arabicWord, Abjad.Arabic, Abjad.OldSouthArabian);
 console.log(oldSouthArabianWord); // 𐩣𐩧𐩢𐩨𐩡
 
